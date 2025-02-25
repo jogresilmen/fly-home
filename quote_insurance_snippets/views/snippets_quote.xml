@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="inherit_snippets" inherit_id="web_editor.snippets">
+        <xpath expr="//div[@id='o_scroll']/t[@id='default_snippets']" position="after">
+            <div id="snippet_animate" class="o_panel">
+                <div class="o_panel_header">Animated Snippet</div>
+                <div class="o_panel_body">
+                    <t t-snippet="quote_insurance_snippets.quote_insurance"
+                       t-thumbnail="/quote_insurance_snippets/static/src/img/icon.PNG">
+                        <keywords>Fea</keywords>
+                    </t>
+                </div>
+            </div>
+        </xpath>
+    </template>
+    <!-- <template id="s_quote_insurance" inherit_id="web_editor.snippets">
+        <xpath expr="//div[@id='snippet_structure']//div[hasclass('o_panel_body')]"
+            position="inside">
+            <t t-snippet="quote_insurance_snippets.quote_insurance"
+                t-thumbnail="/quote_insurance_snippets/static/src/img/icon.PNG" />
+        </xpath>
+    </template> -->
+    <template id="quote_insurance" name="survey form">
+        <section class="s_badge container quote_insurance"  data-name="quote" id="quote_insurance_s" >
+           
+                <form action="/website/form/" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-md-12 mb-6">
+                            <label for="typeviaje" class="form-label">Trip Type:</label>
+                            <select class="form-select" id="typeviaje" name="typeviaje">
+                                <option value="ida-vuelta" selected="selected">Round trip</option>
+                                <option value="Multidestino">Multi-destination</option>
+                                <option value="anual">Annual</option>
+                                <option value="student">Student</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12 mb-6" id="ida-vuelta-fields">
+                            <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="origin-country" class="form-label">Country of Origin</label>
+                                <select class="form-select" id="origin-country" name="origin_country"></select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="destination" class="form-label">Destination</label>
+                                <select class="form-select" id="destination" name="destination"></select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="departure-date" class="form-label">Departure</label>
+                                <input type="date" class="form-control" id="departure-date" name="departure_date"/>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="return-date" class="form-label">Return</label>
+                                <input type="date" class="form-control" id="return-date" name="return_date"/>
+                            </div>
+                        </div>
+                        </div>
+                        <div id="multidestino-fields" style="display: none;">
+                            <label for="multidestino-destinations" class="form-label">Selected Destinations</label>
+                            <div id="multidestino-destinations" class="form-control" style="height: 38px;" ></div>
+                            <button type="button" class="btn btn-primary" id="add-destinations-btn">Add Destinations</button>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <label for="travelers-count" class="form-label">How many people are traveling?</label>
+                            <input type="text" class="form-control" id="travelers-count" name="travelers_count" />
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email-address" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email-address" name="email_address" />
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="mobile-number" class="form-label">Mobile Number</label>
+                            <input type="tel" class="form-control" id="mobile-number" name="mobile_number"/>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="travelersModal" tabindex="-1" role="dialog" aria-labelledby="travelersModalLabel" aria-hidden="true">
+                        <div class="modal-dialog person modal-sm"  role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="travelersModalLabel">Passenger Age(s)</h5>
+                            </div>
+                            
+                            <div class="modal-body">
+                                <div id="travelers-selection"/>
+                                
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary" id="confirmTravelers">Confirm Passengers</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="modal fade" id="MultidestinoModal" tabindex="-1" role="dialog" aria-labelledby="MultidestinoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="MultidestinoModalLabel">Add Destinations</h5>
+                            </div>
+                            
+                            <div class="modal-body">
+                                <div  class='row' id="Multidestino-selection"/>
+                                <a class="tooltipL" href="#" >                                            
+                                    <h1 class="col-sm-12 text-center pb-3" id="AddTrip"><i class="fa fa-plus" aria-hidden="true"></i> Add Trip</h1>
+                                </a>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary" id="confirmMultidestino">Confirm Trips</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </form>
+           
+            
+        </section>
+    </template>
+
+</odoo>

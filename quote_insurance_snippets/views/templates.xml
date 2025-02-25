@@ -1,0 +1,297 @@
+<odoo>
+  <template id="template_pag_plan" name="Nombre de la Plantilla">
+      <t t-call="website.layout">
+        <style>
+
+          .container {
+            margin-right: auto;
+            margin-left: auto;
+          }
+          
+          .row {
+            margin-right: -15px;
+            margin-left: -15px;
+          }
+          
+          .col-md-12 {
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+          }
+          
+          .col-md-6 {
+            position: relative;
+            width: 50%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+          }
+          
+          .heading {
+            text-align: center;
+            color: #777777;
+            padding-bottom: 70px;
+          }
+          
+          .subheading {
+            color: #3c3c3c;
+            padding-bottom: 15px;
+            text-transform: capitalize;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 45px;
+          }
+          
+          .btn {
+            border-radius: 0;
+          }
+          
+          .btn-main {
+            color: #fff;
+            border-radius: 30px;
+            font-size: 18px;
+            padding: 15px 40px;
+            display: inline-block;
+            background-color: #f9a743;
+          }
+          
+          .btn-main-sm {
+            padding: 12px 35px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+          }
+
+          .img-responsive {
+            display: block;
+            max-width: 100%;
+            height: auto;
+          }
+          
+        </style>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            
+                            <section class="feature-list section">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="heading">
+                                                <h2>plans</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <!-- Bucle para mostrar la lista de productos -->
+                                    <t t-set="counter" t-value="1"/>
+                                    <t t-foreach="productos" t-as="producto">
+                                      <br/>
+                                      <t t-set="counter" t-value="counter + 1"/>
+                                      <t t-if="counter % 2 == 0"> <!-- Verificar si el índice del producto es par -->
+                                          <div class="row">
+                                              <div class="col-md-6 text-center">
+                                                  <img class="img-responsive" t-attf-src="data:image/png;base64,{{producto['image_url']}}" style="border:auto; width: 500px; height: auto;"/>
+                                              </div>
+                                              <div class="col-md-6">
+                                                  <div class="content mt-100">
+                                                      <h4 class="subheading"><t t-esc="producto['name']"/></h4>
+                                                      <p><t t-esc="producto['description']"/></p>
+                                                      <table class="responsive" style="width: 100%;"> 
+                                                              <thead>
+                                                                <tr>
+                                                                  <th>Condición</th>
+                                                                  <th>Monto de la cobertura </th>
+                                                                  <th>Condición</th>
+                                                                </tr>
+                                                              </thead>
+                                                            
+                                                              <tbody>
+                                                                <t t-foreach="producto['coberturas']" t-as="cobertura">
+                                                                  <tr>
+                                                                    <td><t t-esc="cobertura['name']"/></td>
+                                                                    <td><t t-esc="cobertura['scopes']"/></td>
+                                                                    <td><t t-esc="cobertura['condicion']"/></td>
+                                                                  </tr>
+                                                                </t>
+                                                          </tbody>
+                                                            </table>
+                                                            
+                                                        
+                                                      <a href="#" class="btn btn-main btn-main-sm" t-attf-data-product-id="{{producto['id']}}"  t-attf-data-plan-id="{{plan}}" t-attf-data-product-price="{{producto['list_price']}}">Price $ <t t-esc="producto['list_price']"/></a>
+
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </t>
+                                      <t t-else=""> 
+                                        <div class="row">
+                                
+                                          <div class="col-md-6">
+                                              <div class="content mt-100">
+                                                <h4 class="subheading"><t t-esc="producto['name']"/></h4>
+                                                <p><t t-esc="producto['description']"/></p>
+                                                <table class="responsive" style="width: 100%;"> 
+                                                  <thead>
+                                                    <tr>
+                                                      <th>Condición</th>
+                                                      <th>Monto de la cobertura </th>
+                                                      <th>Condición</th>
+                                                    </tr>
+                                                  </thead>
+                                                
+                                                  <tbody>
+                                                    <t t-foreach="producto['coberturas']" t-as="cobertura">
+                                                      <tr>
+                                                        <td><t t-esc="cobertura['name']"/></td>
+                                                        <td><t t-esc="cobertura['scopes']"/></td>
+                                                        <td><t t-esc="cobertura['condicion']"/></td>
+                                                      </tr>
+                                                    </t>
+                                              </tbody>
+                                                </table>
+                                                <a href="#" class="btn btn-main btn-main-sm" t-attf-data-product-id="{{producto['id']}}" t-attf-data-plan-id="{{plan}}" t-attf-data-product-price="{{producto['list_price']}}">Price $ <t t-esc="producto['list_price']"/></a>
+
+                                              </div>
+                                          </div>
+                                          <div class="col-md-6 text-center">
+                                              <img class="img-responsive" t-attf-src="data:image/png;base64,{{producto['image_url']}}" style="border:auto; width: 500px; height: auto;"/>
+                                          </div>
+                                      </div>
+
+                                    </t>
+                                  </t>
+                                  
+        
+                                </div>
+                            </section>
+                            <br/>
+                        </div>
+                    </div>
+                </div>
+      </t>
+  </template>
+
+  <template id="sale_order_Cobertura_inherit" name="Coberturas de portal" inherit_id="sale.sale_order_portal_content">
+    <xpath expr="//div[@id='informations']" position="inside">
+      <style>
+        .watermark-container {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          z-index: 10;
+          pointer-events: none; /* Ensure it doesn't interfere with other elements */
+      }
+      .watermark-text {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(-45deg); /* Rotate the text */
+          font-size: 5em; /* Adjust the font size as needed */
+          color: rgba(0, 0, 0, 0.1); /* Adjust color and opacity */
+          font-weight: bold;
+          z-index: 10;
+          pointer-events: none; /* Ensure it doesn't interfere with other elements */
+          white-space: nowrap; /* Ensure the text doesn't wrap */
+          text-align: center;
+        }
+    </style>
+      <div class="watermark-container">
+          <div class="watermark-text">NO VÁLIDO</div>
+      </div>
+  </xpath>
+  <xpath expr="//div">
+   <div class="watermark-text">NO VÁLIDO</div>
+  </xpath>
+    <xpath expr="//section[@id='terms']" position="before">
+        <section class="mt-5">
+            <h3 class="">Coberturas</h3>
+            <hr class="mt-0 mb-1"/>
+            
+                <t t-set="lines_to_report" t-value="sale_order._get_order_lines_to_report()"/>
+                <t t-foreach="lines_to_report" t-as="line">
+                    <div>
+                      <p>In our company, we are committed to offering you a comprehensive and high-quality service. Below you will find a detailed list of the services included in the quote:</p>
+                      
+                        <h3>Plans: <span t-field="line.product_id.name"/></h3>
+                        <t t-set="coberturas" t-value="env['product.plan.cobertura'].search([('product_ids', 'in', line.product_id.id)])"/>
+                        <div class="watermark-text">NO VÁLIDO</div>
+                        <table class="responsive" style="width: 100%;"> 
+                          <thead>
+                            <tr>
+                              <th>Coverage</th>
+                              <th>Coverage amount</th>
+                              <th>Conditions </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                        
+                        <t t-foreach="coberturas" t-as="cobertura">
+                            <div>
+                              <tr  class='border'>
+                                <td><span t-field="cobertura.name"/></td>
+                                <td><span t-field="cobertura.montos"/></td>
+                                <td><span t-field="cobertura.condicion"/></td>
+                              </tr>
+                                
+                            </div>
+                        </t>
+                      </tbody>
+                    </table>
+                    </div>
+                </t>
+            
+            
+        </section>
+        <section class="mt-5">
+          <h3 class="">Clasificación - Sintomas</h3>
+          <hr class="mt-0 mb-1"/>
+          
+              <t t-set="lines_to_report" t-value="sale_order._get_order_lines_to_report()"/>
+              <t t-foreach="lines_to_report" t-as="line">
+                  <div>
+                    <p>At fly-assist, we understand the importance of an accurate diagnosis for the proper treatment of any medical condition.
+                      Our plan, <span t-field="line.product_id.name"/>, covers a wide range of symptoms to ensure you receive the necessary support when you need it most.
+                       Below you will find a detailed list of the symptom categories that our coverage includes</p>
+                    
+                      
+                      <t t-set="coberturas" t-value="env['product.plan.cobertura'].search([('product_ids', 'in', line.product_id.id)])"/>
+                      <table class="responsive" style="width: 100%;"> 
+                        <thead>
+                          <tr>
+                            <th>Symptom</th>
+                            <th>Description </th>
+                          </tr>
+                        </thead>
+                        <div class="watermark-text">NO VÁLIDO</div>
+                        <tbody>
+                      
+                      <t t-foreach="coberturas" t-as="cobertura">
+                        
+                            <tr class='border'>
+                              <td><span t-out="cobertura.Clasificación_id.name"/></td>
+                              <td>
+                                <t t-foreach="cobertura.Clasificación_id.sintoma_ids" t-as="sintoma_id">
+                                    <span t-out="sintoma_id.name"/>
+                                  <br/>
+                                 </t>
+                              </td>
+                            </tr>
+                      </t>
+                    </tbody>
+                  </table>
+                  </div>
+              </t>
+          
+          
+      </section>
+    </xpath>
+    
+    
+</template>
+
+  
+</odoo>

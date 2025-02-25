@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_quote_insurance_snippets_quote_insurance_snippets,quote_insurance_snippets.quote_insurance_snippets,model_quote_insurance_snippets_quote_insurance_snippets,base.group_user,1,1,1,1
+access_sale_orde_ages,sale.order.ages,model_sale_order_ages,base.group_user,1,1,1,1
+access_sale_order_temp,sale.order.temp,model_sale_order_temp,base.group_user,1,1,1,1
+access_product_plan_cobertura,product.plan.cobertura,model_product_plan_cobertura,base.group_user,1,1,1,1
+access_product_sintomas_cobertura,product.sintomas.cobertura,model_product_sintomas_cobertura,base.group_user,1,1,1,1
+access_product_categoria_cobertura,product.categoria.cobertura,model_product_categoria_cobertura,base.group_user,1,1,1,1
+access_sale_travel,sale.travel,model_sale_travel,base.group_user,1,1,1,1
+access_product_cobertura,product.cobertura,model_product_cobertura,base.group_user,1,1,1,1
+access_product_cobertura_categoria,product.cobertura.categoria,model_product_cobertura_categoria,base.group_user,1,1,1,1
+access_product_condicion,product.condicion,model_product_condicion,base.group_user,1,1,1,1

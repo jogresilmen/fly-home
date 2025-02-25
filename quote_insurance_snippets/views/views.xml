@@ -1,0 +1,242 @@
+<odoo>
+  <data>
+    <record id="view_res_users_form_inherit_custom" model="ir.ui.view">
+        <field name="name">res.users.form.inherit.custom</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <!-- Agregar los campos personalizados al formulario -->
+            <!-- <xpath expr="//sheet[@name='general']/group" position="after"> -->
+                <group>
+                    <field name="fee"/>
+                    <field name="operation_type"  invisible="fee == False" />
+                    <field name="type_discount"  invisible="fee == False" />
+                    <field name="operation"  invisible="fee == False" />
+                </group>
+            <!-- </xpath> -->
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="sale_order_ages_list">
+      <field name="name">sale.order.ages_list</field>
+      <field name="model">sale.order.ages</field>
+      <field name="arch" type="xml">
+        <tree editable="bottom">
+            <field name="name"/>
+            <field name="ages_init"/>
+            <field name="ages_end"/>
+            <field name="operation_type"/>
+            <field name="type_discount"/>
+            <field name="operation"/>
+            
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="sale_order_ages_action_window">
+      <field name="name">Grupos de edades </field>
+      <field name="res_model">sale.order.ages</field>
+      <field name="view_mode">tree</field>
+    </record>
+    <menuitem id="menu_sale_order_ages"   name="Grupos de edades"   parent="sale.menu_sales_config"   sequence="3"   action="sale_order_ages_action_window"/>
+
+    <record model="ir.ui.view" id="product_plan_cobertura__list">
+      <field name="name">product.plan.cobertura_list</field>
+      <field name="model">product.plan.cobertura</field>
+      <field name="arch" type="xml">
+        <tree editable="top">
+        <field name="categoria" widget="many2many_tags"/>
+        <field name="name" domain="[('categoria', '=', categoria)]" string="Cobertura"/>
+          <field name="montos" string='Cobertura'/>
+          
+          <field name="Clasificación_id" widget="many2many_tags"/>
+          <field name="condicion" widget="many2many_tags" string="Condiciones"/>
+          <field name="currency_id" invisible="1"/> 
+          <field name="product_ids" widget="many2many_tags"/>
+          <field name="operation_type"/>
+          <field name="cost"/>
+          <field name="prist_list"/>
+        </tree>
+      </field>
+    </record>
+
+    
+
+    <!-- Vistas de Sintomas Cobertura -->
+    <record id="view_sintomas_cobertura_tree" model="ir.ui.view">
+        <field name="name">product.sintomas.cobertura.tree</field>
+        <field name="model">product.sintomas.cobertura</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="categoria_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_sintomas_cobertura_form" model="ir.ui.view">
+        <field name="name">product.sintomas.cobertura.form</field>
+        <field name="model">product.sintomas.cobertura</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="categoria_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vistas de Categoria Cobertura -->
+    <record id="view_categoria_cobertura_tree" model="ir.ui.view">
+        <field name="name">product.categoria.cobertura.tree</field>
+        <field name="model">product.categoria.cobertura</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_categoria_cobertura_form" model="ir.ui.view">
+        <field name="name">product.categoria.cobertura.form</field>
+        <field name="model">product.categoria.cobertura</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="sintoma_ids">
+                            <tree>
+                                <field name="name"/>
+                            </tree>
+                            <form>
+                                <sheet>
+                                    <group>
+                                        <field name="name"/>
+                                        <field name="categoria_id"/>
+                                    </group>
+                                </sheet>
+                            </form>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="product_cobertura__list">
+        <field name="name">product.cobertura_list</field>
+        <field name="model">product.cobertura</field>
+        <field name="arch" type="xml">
+          <tree editable="top" string="Categorías de cobertura">
+            <field name="name"/>
+            <field name="categoria"/>
+          </tree>
+        </field>
+      </record>
+
+    <!-- Acciones -->
+    <record id="action_sintomas_cobertura" model="ir.actions.act_window">
+        <field name="name">Sintomas Cobertura</field>
+        <field name="res_model">product.sintomas.cobertura</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_categoria_cobertura" model="ir.actions.act_window">
+        <field name="name">Categoria Cobertura</field>
+        <field name="res_model">product.categoria.cobertura</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="product_plan_cobertura_action_window">
+      <field name="name">product.plan.cobertura.window</field>
+      <field name="res_model">product.plan.cobertura</field>
+      <field name="view_mode">tree</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="product_cobertura_action_window">
+        <field name="name">product.cobertura.window</field>
+        <field name="res_model">product.cobertura</field>
+        <field name="view_mode">tree</field>
+      </record>
+
+    <record id="view_sale_travel_tree" model="ir.ui.view">
+        <field name="name">sale.travel.tree</field>
+        <field name="model">sale.travel</field>
+        <field name="arch" type="xml">
+            <tree string="Sale Travel" editable="top">
+                <field name="name"/>
+                <field name="operation_type"/>
+                <field name="status" widget="boolean_toggle"/>
+                <field name="origen"/>
+                <field name="destination"/>
+                
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_sale_travel" model="ir.actions.act_window">
+        <field name="name">Sale Travel</field>
+        <field name="res_model">sale.travel</field>
+        <field name="view_mode">tree</field>
+    </record>
+    <record model="ir.actions.act_window" id="action_product_plan_cobertura_cate_tree_view">
+        <field name="name">Categorías de Cobertura</field>
+        <field name="res_model">product.cobertura.categoria</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Haga clic en Crear para agregar una nueva categoría de cobertura.
+            </p>
+        </field>
+    </record>
+    
+    
+    
+    <record model="ir.ui.view" id="product_plan_cobertura_cate_tree_view">
+        <field name="name">product.cobertura.categoria.tree</field>
+        <field name="model">product.cobertura.categoria</field>
+        <field name="arch" type="xml">
+            <tree editable="top">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="action_product_plan_cobertura_name_tree_view">
+        <field name="name">Condiciones de Cobertura</field>
+        <field name="res_model">product.condicion</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Haga clic en Crear para agregar una nueva condición de cobertura.
+            </p>
+        </field>
+    </record>
+    
+   
+    
+    <record model="ir.ui.view" id="product_plan_cobertura_name_tree_view">
+        <field name="name">product.condicion.tree</field>
+        <field name="model">product.condicion</field>
+        <field name="arch" type="xml">
+            <tree editable="top">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    
+    
+
+    <menuitem id="Coberturas_menu"   name="Categorías de cobertura"   parent="sale.menu_sales_config"   sequence="4"   action="product_plan_cobertura_action_window"/>
+    <menuitem id="Coberturas_menu_name"   name="Categorías"   parent="sale.menu_sales_config"   sequence="4"   action="product_cobertura_action_window"/>
+    <menuitem id="menu_categoria_cobertura" name="Clasificación de síntomas " parent="sale.menu_sales_config" action="action_categoria_cobertura" sequence="10"/>
+    <menuitem id="menu_sintomas_cobertura" name="Sintomas" parent="sale.menu_sales_config" action="action_sintomas_cobertura" sequence="20"/>
+    <menuitem id="menu_sale_travel" name="Tarifa De destino" parent="sale.menu_sales_config" action="action_sale_travel" sequence="40"/>
+    <menuitem id="menu_product_plan_cobertura_name" name="Condiciones de Cobertura" parent="sale.menu_sales_config" action="action_product_plan_cobertura_name_tree_view"/>
+    <!-- <menuitem id="menu_product_plan_cobertura_cate" name="Categorías" parent="sale.menu_sales_config" action="action_product_plan_cobertura_cate_tree_view"/> -->
+</data>
+</odoo>
