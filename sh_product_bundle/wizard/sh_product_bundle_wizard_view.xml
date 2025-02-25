@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sh_product_bundle_wizard_form_view" model="ir.ui.view">
+        <field name="name">sh.product.bundle.wizard.form.view</field>
+        <field name="model">sh.product.bundle.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Agregar Paquete / Combo">
+                <group>
+                    <group>
+                        <field name="sh_partner_id" />
+                        <field name="sh_bundle_id" />
+                    </group>
+                    <group>
+                        <field name="sh_qty" />
+                        <field name="sh_price" readonly="1" />
+                    </group>
+                </group>
+                <notebook>
+                    <page string="Productos">
+                        <field name="sh_bundle_lines">
+                            <tree editable="bottom">
+                                <field name="sh_product_id" domain='[("product_tmpl_id", "in", tag_sh_product_id)]' />
+                                <field name="tag_sh_product_id" column_invisible='True' />
+                                <field name="sh_bundle_quantity" />
+                                <field name="sh_bundle_uom" column_invisible='True' />
+                                <field name="sh_price_unit" />
+                                <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
+                <footer>
+                    <button string="Agregar Paquete/Combo" name="action_add_pack" type="object" class="btn-primary" />
+                    o
+                    <button string="Cancelar" class="btn-default" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="sh_action_add_pack" model="ir.actions.act_window">
+        <field name="name">Agregar Paquete/Combo</field>
+        <field name="res_model">sh.product.bundle.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="sh_product_bundle_wizard_form_view" />
+        <field name="target">new</field>
+    </record>
+</odoo>

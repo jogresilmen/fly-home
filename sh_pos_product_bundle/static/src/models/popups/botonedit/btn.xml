@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <!-- Plantilla para el ícono en los ítems de la orden -->
+    <t t-name="Orderline" t-inherit="point_of_sale.Orderline" t-inherit-mode="extension" owl="1">
+        <xpath expr="//ul[hasclass('info-list')]" position="before">
+            <div>
+                <!-- Agregar ícono pequeño a los ítems de la orden -->
+                <span style="float: right;">
+                    <i t-if="props.line.parent_product_id"
+                       t-on-click.stop="onComboIcondeletClick"
+                       class="fa fa-trash-o combo-icon"
+                       title="Manage Combo Items"
+                       style="color: #875A7B; font-size: 30px; "/>
+                </span>
+                <span style="float: right;">
+                    <i t-if="props.line.parent_product_id"
+                       t-on-click.stop="onComboIconClick"
+                       class="fa fa-cogs combo-icon"
+                       title="Manage Combo Items"
+                       style="color: #875A7B; font-size: 30px; "/>
+                </span>
+                
+            </div>
+        </xpath>
+    </t>
+</templates>

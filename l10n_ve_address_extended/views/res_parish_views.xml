@@ -1,0 +1,30 @@
+<odoo>
+    <record id="view_res_parish_tree" model="ir.ui.view">
+        <field name="name">res.parish.tree</field>
+        <field name="model">res.parish</field>
+        <field name="arch" type="xml">
+            <tree string="Parish" editable="bottom">
+                <field name="name"/>
+                <field name="municipality_id" context="{'default_country_id': country_id, 'default_state_id': state_id}"/>
+                <field name="state_id" context="{'default_country_id': country_id}"/>
+                <field name="country_id" options='{"no_open": True, "no_create": True}'/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- creating an action -->
+    <record id="action_res_parish" model="ir.actions.act_window">
+        <field name="name">Parishes</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.parish</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+    <!-- adding menuitem -->
+    <record id="menu_res_parish" model="ir.ui.menu">
+        <field name="name">Parishes</field>
+        <field name="sequence">11</field>
+        <field name="action" ref="action_res_parish"/>
+        <field name="parent_id" ref="contacts.menu_localisation"/>
+    </record>
+</odoo>

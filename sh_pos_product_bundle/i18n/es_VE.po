@@ -1,0 +1,863 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hide_powered_by_odoo
+# 	* bi_pos_salesperson
+# 	* account_reports_cash_basis
+# 	* sh_base_bundle
+# 	* sh_pos_product_variant
+# 	* gasto_custom
+# 	* sh_pos_product_bundle
+# 	* sh_product_bundle_website
+# 	* l10n_ve_vpos
+# 	* sh_product_bundle
+# 	* pos_posagent
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20240603\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-13 03:20+0000\n"
+"PO-Revision-Date: 2024-08-13 00:03-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.4\n"
+
+#. module: l10n_ve_vpos
+#: model_terms:ir.ui.view,arch_db:l10n_ve_vpos.view_pos_config_kanban_vpos
+msgid "<span>VPOS</span>"
+msgstr "<span>VPOS</span>"
+
+#. module: sh_product_bundle_website
+#: model_terms:ir.ui.view,arch_db:sh_product_bundle_website.sh_website_sale_product
+msgid ""
+"<strong style=\"font-size: 18px; margin-bottom: 10px; display: block;"
+"\">Bundle\n"
+"                            Products</strong>"
+msgstr ""
+"<strong style=\"font-size: 18px; margin-bottom: 10px; display: block;"
+"\">Paquete\n"
+"                            Productos</strong>"
+
+#. module: l10n_ve_vpos
+#: model_terms:ir.ui.view,arch_db:l10n_ve_vpos.res_config_settings_view_form_vpos
+msgid "Accept payments with an VPOS payment terminal"
+msgstr "Acepte pagos con un terminal de pago VPOS"
+
+#. module: account_reports_cash_basis
+#: model:ir.model,name:account_reports_cash_basis.model_account_report
+msgid "Accounting Report"
+msgstr "Reporte contable"
+
+#. module: sh_product_bundle
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard__sh_bundle_id
+#: model_terms:ir.ui.view,arch_db:sh_product_bundle.sh_product_bundle_wizard_form_view
+msgid "Add Pack / Bundle"
+msgstr "Añadir paquete"
+
+#. module: sh_product_bundle
+#: model:ir.actions.act_window,name:sh_product_bundle.sh_action_add_pack
+#: model_terms:ir.ui.view,arch_db:sh_product_bundle.sh_customer_invoice_form_view
+#: model_terms:ir.ui.view,arch_db:sh_product_bundle.sh_product_bundle_wizard_form_view
+#: model_terms:ir.ui.view,arch_db:sh_product_bundle.sh_purchase_order_form_view
+#: model_terms:ir.ui.view,arch_db:sh_product_bundle.sh_sale_order_form_view
+#: model_terms:ir.ui.view,arch_db:sh_product_bundle.sh_stock_picking_form_view
+msgid "Add Pack/Bundle"
+msgstr "Añadir paquete"
+
+#. module: sh_pos_product_bundle
+#. odoo-javascript
+#: code:addons/sh_pos_product_bundle/static/src/models/popups/ProductQtyPopup/ProductQtyPopup.xml:0
+#, python-format
+msgid "Add To Cart"
+msgstr "Agregar al carrito"
+
+#. module: sh_pos_product_variant
+#. odoo-javascript
+#: code:addons/sh_pos_product_variant/static/src/app/popups/product_attribute_popup/product_attribute_popup.xml:0
+#, python-format
+msgid "Add Variant"
+msgstr "Añadir variante"
+
+#. module: bi_pos_salesperson
+#: model:ir.model.fields,field_description:bi_pos_salesperson.field_pos_config__allow_cashier
+#: model:ir.model.fields,field_description:bi_pos_salesperson.field_res_config_settings__allow_cashier
+msgid "Allow Cashier"
+msgstr "Permitir cajero"
+
+#. module: bi_pos_salesperson
+#: model:ir.model.fields,field_description:bi_pos_salesperson.field_pos_config__allow_user_ids
+#: model:ir.model.fields,field_description:bi_pos_salesperson.field_res_config_settings__allow_user_ids
+msgid "Allow User"
+msgstr "Permitir usuario"
+
+#. module: sh_pos_product_variant
+#. odoo-javascript
+#: code:addons/sh_pos_product_variant/static/src/app/popups/product_attribute_popup/product_attribute_popup.xml:0
+#: code:addons/sh_pos_product_variant/static/src/app/popups/variant_popup/variant_popup.xml:0
+#: model:ir.model.fields,field_description:sh_pos_product_variant.field_product_product__sh_alternative_products
+#: model:ir.model.fields,field_description:sh_pos_product_variant.field_product_template__sh_alternative_products
+#, python-format
+msgid "Alternative Products"
+msgstr "Productos Alternativos"
+
+#. module: l10n_ve_vpos
+#: model_terms:ir.ui.view,arch_db:l10n_ve_vpos.view_pos_config_kanban_vpos
+msgid "Anulación"
+msgstr "Anulación"
+
+#. module: sh_pos_product_variant
+#: model:ir.model.fields,field_description:sh_pos_product_variant.field_pos_config__sh_close_popup_after_single_selection
+#: model:ir.model.fields,field_description:sh_pos_product_variant.field_res_config_settings__pos_sh_close_popup_after_single_selection
+msgid "Auto close popup after single variant selection"
+msgstr ""
+"Ventana emergente de cierre automático después de la selección de una única "
+"variante"
+
+#. module: sh_base_bundle
+#: model:ir.model.fields,field_description:sh_base_bundle.field_sh_product_bundle__sh_bundle_id
+msgid "Bundle ID"
+msgstr "ID del paquete"
+
+#. module: sh_product_bundle_website
+#: model:ir.model.fields,field_description:sh_product_bundle_website.field_sale_order_line__sh_bundle_initial_qty
+msgid "Bundle Initial Qty"
+msgstr "Cantidad inicial del paquete"
+
+#. module: sh_base_bundle
+#: model:ir.model.fields,field_description:sh_base_bundle.field_product_product__sh_bundle_product_ids
+#: model:ir.model.fields,field_description:sh_base_bundle.field_product_template__sh_bundle_product_ids
+msgid "Bundle Line"
+msgstr "Línea de paquete"
+
+#. module: sh_product_bundle
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard__sh_bundle_lines
+msgid "Bundle Lines"
+msgstr "Línea de paquetes"
+
+#. modules: sh_base_bundle, sh_pos_product_bundle
+#. odoo-javascript
+#: code:addons/sh_pos_product_bundle/static/src/models/popups/ProductQtyPopup/ProductQtyPopup.xml:0
+#: model:ir.actions.act_window,name:sh_base_bundle.sh_bundled_products
+#: model:ir.model,name:sh_base_bundle.model_sh_product_bundle
+#, python-format
+msgid "Bundle Products"
+msgstr "Productos agrupados"
+
+#. module: sh_product_bundle
+#: model:ir.model,name:sh_product_bundle.model_sh_product_bundle_wizard
+msgid "Bundle Wizard"
+msgstr "Asistente de paquetes"
+
+#. module: sh_product_bundle
+#: model:ir.model,name:sh_product_bundle.model_sh_product_bundle_wizard_line
+msgid "Bundle Wizard Lines"
+msgstr "Líneas del asistente de paquetes"
+
+#. module: gasto_custom
+#: model_terms:ir.ui.view,arch_db:gasto_custom.address_form_extension
+msgid "CI/RIF/Pasaporte"
+msgstr "CI/RIF/Pasaporte"
+
+#. module: l10n_ve_vpos
+#: model:ir.model.fields.selection,name:l10n_ve_vpos.selection__pos_payment_method__vpos_methodType__cambio
+msgid "Cambio"
+msgstr "Cambio"
+
+#. modules: sh_pos_product_bundle, sh_product_bundle
+#. odoo-javascript
+#: code:addons/sh_pos_product_bundle/static/src/models/popups/ProductBundlePopup/ProductBundlePopup.xml:0
+#: model_terms:ir.ui.view,arch_db:sh_product_bundle.sh_product_bundle_wizard_form_view
+#, python-format
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: l10n_ve_vpos
+#. odoo-javascript
+#: code:addons/l10n_ve_vpos/static/src/app/payment_vpos.js:0
+#, python-format
+msgid "Cannot connect with vpos"
+msgstr "No se puede conectar con vpos"
+
+#. module: l10n_ve_vpos
+#. odoo-javascript
+#: code:addons/l10n_ve_vpos/static/src/app/payment_vpos.js:0
+#, python-format
+msgid "Cannot process transactions with zero or negative amount."
+msgstr "No se pueden procesar transacciones con monto cero o negativo."
+
+#. module: account_reports_cash_basis
+#: model:ir.model.fields,field_description:account_reports_cash_basis.field_account_report__filter_cash_basis
+msgid "Cash Basis"
+msgstr "Base de efectivo"
+
+#. module: account_reports_cash_basis
+#. odoo-javascript
+#: code:addons/account_reports_cash_basis/static/src/components/cash_basis_report/filter_extra_options.xml:0
+#, python-format
+msgid "Cash Basis Method"
+msgstr "Método de base de efectivo"
+
+#. module: pos_posagent
+#: model:ir.model.fields,field_description:pos_posagent.field_pos_config__posagent_enable_cashdrawer
+msgid "Cash Drawer"
+msgstr "Cajón de dinero"
+
+#. module: pos_posagent
+#: model_terms:ir.ui.view,arch_db:pos_posagent.pos_use_posagent_config_view_form
+msgid "Cashdrawer"
+msgstr "Cajón de dinero"
+
+#. module: bi_pos_salesperson
+#. odoo-javascript
+#: code:addons/bi_pos_salesperson/static/src/xml/pos_salesperson_button.xml:0
+#: model:ir.model.fields,field_description:bi_pos_salesperson.field_pos_order_line__customer_id
+#, python-format
+msgid "Cashier"
+msgstr "Cajero"
+
+#. module: l10n_ve_vpos
+#: model:ir.model.fields.selection,name:l10n_ve_vpos.selection__pos_payment_method__vpos_methodType__cheque
+msgid "Cheque"
+msgstr "Cheque"
+
+#. module: bi_pos_salesperson
+#. odoo-javascript
+#: code:addons/bi_pos_salesperson/static/src/app/order_line_user.js:0
+#: code:addons/bi_pos_salesperson/static/src/app/pos_salesperson_button.js:0
+#, python-format
+msgid "Choose Cashier"
+msgstr "Seleccione Cajero"
+
+#. module: l10n_ve_vpos
+#: model_terms:ir.ui.view,arch_db:l10n_ve_vpos.view_pos_config_kanban_vpos
+msgid "Cierre"
+msgstr "Cierre"
+
+#. modules: sh_pos_product_bundle, sh_pos_product_variant
+#. odoo-javascript
+#: code:addons/sh_pos_product_bundle/static/src/models/popups/ProductQtyPopup/ProductQtyPopup.xml:0
+#: code:addons/sh_pos_product_variant/static/src/app/popups/product_attribute_popup/product_attribute_popup.xml:0
+#: code:addons/sh_pos_product_variant/static/src/app/popups/variant_popup/variant_popup.xml:0
+#, python-format
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: l10n_ve_vpos
+#: model:ir.model.fields.selection,name:l10n_ve_vpos.selection__pos_payment_method__vpos_methodType__compraconcards
+msgid "Compra Con Cards"
+msgstr "Compra Con Tarjetas"
+
+#. module: sh_base_bundle
+#: model_terms:ir.ui.view,arch_db:sh_base_bundle.sh_product_form_view
+msgid "Compute Bundle Cost Price"
+msgstr "Precio de costo del paquete de cálculo"
+
+#. module: sh_base_bundle
+#: model_terms:ir.ui.view,arch_db:sh_base_bundle.sh_product_form_view
+msgid "Compute Bundle Sales Price"
+msgstr "Precio de costo del paquete de cálculo"
+
+#. module: sh_base_bundle
+#: model:ir.model.fields,field_description:sh_base_bundle.field_product_product__computed_barcode
+msgid "Computed Barcode"
+msgstr "Código de barras calculado"
+
+#. module: sh_pos_product_variant
+#: model:ir.model,name:sh_pos_product_variant.model_res_config_settings
+msgid "Config Settings"
+msgstr "Ajustes de configuración"
+
+#. module: gasto_custom
+#: model:ir.model,name:gasto_custom.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: gasto_custom
+#: model:ir.model.fields,field_description:gasto_custom.field_res_partner__ws_phone
+#: model:ir.model.fields,field_description:gasto_custom.field_res_users__ws_phone
+msgid "Contacto de WhatsApp"
+msgstr "Contacto de WhatsApp"
+
+#. module: sh_base_bundle
+#: model:ir.model.fields,field_description:sh_base_bundle.field_sh_product_bundle__sh_cost_price
+msgid "Cost"
+msgstr "Costo"
+
+#. module: sh_base_bundle
+#: model_terms:ir.actions.act_window,help:sh_base_bundle.sh_bundled_products
+msgid "Create a new product"
+msgstr "Crear un nuevo producto"
+
+#. modules: sh_base_bundle, sh_product_bundle
+#: model:ir.model.fields,field_description:sh_base_bundle.field_sh_product_bundle__create_uid
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard_line__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. modules: sh_base_bundle, sh_product_bundle
+#: model:ir.model.fields,field_description:sh_base_bundle.field_sh_product_bundle__create_date
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard__create_date
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard_line__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. modules: bi_pos_salesperson, sh_product_bundle
+#. odoo-javascript
+#: code:addons/bi_pos_salesperson/static/src/xml/pos_salesperson_button.xml:0
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard__sh_partner_id
+#, python-format
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: bi_pos_salesperson
+#: model:ir.model.fields,field_description:bi_pos_salesperson.field_pos_order_line__customer_name
+msgid "Customer Name"
+msgstr "Nombre del cliente"
+
+#. module: gasto_custom
+#: model_terms:ir.ui.view,arch_db:gasto_custom.checkout_layout_custom
+msgid "Datos para el pago movil"
+msgstr "Datos para el pago movil"
+
+#. module: sh_pos_product_variant
+#: model:ir.model.fields,field_description:sh_pos_product_variant.field_pos_config__sh_pos_display_alternative_products
+#: model:ir.model.fields,field_description:sh_pos_product_variant.field_res_config_settings__pos_sh_pos_display_alternative_products
+msgid "Display Alternative product"
+msgstr "Mostrar producto alternativo"
+
+#. modules: sh_base_bundle, sh_product_bundle
+#: model:ir.model.fields,field_description:sh_base_bundle.field_sh_product_bundle__display_name
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard__display_name
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard_line__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: account_reports_cash_basis
+#: model:ir.model.fields,help:account_reports_cash_basis.field_account_report__filter_cash_basis
+msgid "Display the option to switch to cash basis mode."
+msgstr "Mostrar la opción para cambiar a aceptar base de efectivo."
+
+#. module: l10n_ve_vpos
+#. odoo-javascript
+#: code:addons/l10n_ve_vpos/static/src/app/payment_vpos.js:0
+#, python-format
+msgid "El Cliente debe estar Seleccionado."
+msgstr "El Cliente debe estar Seleccionado."
+
+#. module: bi_pos_salesperson
+#. odoo-javascript
+#: code:addons/bi_pos_salesperson/static/src/app/pos_salesperson_button.js:0
+#, python-format
+msgid "Empty Order"
+msgstr "Orden vacía"
+
+#. module: sh_pos_product_bundle
+#: model:ir.model.fields,field_description:sh_pos_product_bundle.field_pos_config__enable_product_bundle
+#: model:ir.model.fields,field_description:sh_pos_product_bundle.field_res_config_settings__pos_enable_product_bundle
+#: model_terms:ir.ui.view,arch_db:sh_pos_product_bundle.sh_pos_config_form_view_inherit_product_bundle
+msgid "Enable Product Bundle"
+msgstr "Habilitar paquete de productos"
+
+#. module: sh_pos_product_variant
+#: model:ir.model.fields,field_description:sh_pos_product_variant.field_pos_config__sh_pos_enable_product_variants
+#: model:ir.model.fields,field_description:sh_pos_product_variant.field_res_config_settings__pos_sh_pos_enable_product_variants
+msgid "Enable Product Variants"
+msgstr "Habilitar variantes de producto"
+
+#. module: pos_posagent
+#: model_terms:ir.ui.view,arch_db:pos_posagent.pos_use_posagent_config_view_form
+msgid "Enable using POSAgent proxy server for POS Hardware"
+msgstr "Habilitar el uso del servidor proxy POSAgent para hardware POS"
+
+#. module: l10n_ve_vpos
+#. odoo-javascript
+#: code:addons/l10n_ve_vpos/static/src/app/payment_vpos.js:0
+#, python-format
+msgid "Error"
+msgstr "Error"
+
+#. module: bi_pos_salesperson
+#. odoo-javascript
+#: code:addons/bi_pos_salesperson/static/src/app/TicketScreen.js:0
+#, python-format
+msgid "Fiscal Position not found"
+msgstr "Posición fiscal no encontrada"
+
+#. module: sh_pos_product_variant
+#: model:ir.model.fields,field_description:sh_pos_product_variant.field_pos_config__sh_pos_variants_group_by_attribute
+#: model:ir.model.fields,field_description:sh_pos_product_variant.field_res_config_settings__pos_sh_pos_variants_group_by_attribute
+msgid "Group By Attribute"
+msgstr "Agrupar por atributo"
+
+#. modules: sh_base_bundle, sh_product_bundle
+#: model:ir.model.fields,field_description:sh_base_bundle.field_sh_product_bundle__id
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard__id
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard_line__id
+msgid "ID"
+msgstr "Identificación"
+
+#. module: l10n_ve_vpos
+#: model_terms:ir.ui.view,arch_db:l10n_ve_vpos.view_pos_config_kanban_vpos
+msgid "Impresión de última transacción aprobada"
+msgstr "Impresión de última transacción aprobada"
+
+#. module: l10n_ve_vpos
+#: model_terms:ir.ui.view,arch_db:l10n_ve_vpos.view_pos_config_kanban_vpos
+msgid "Impresión de última transacción procesada"
+msgstr "Impresión de última transacción procesada"
+
+#. module: sh_product_bundle_website
+#: model:ir.model.fields,field_description:sh_product_bundle_website.field_sale_order_line__is_bundle_item
+msgid "Is Bundle Item ?"
+msgstr "¿Es el artículo del paquete?"
+
+#. module: sh_base_bundle
+#: model:ir.model.fields,field_description:sh_base_bundle.field_product_product__sh_is_bundle
+#: model:ir.model.fields,field_description:sh_base_bundle.field_product_template__sh_is_bundle
+#: model_terms:ir.ui.view,arch_db:sh_base_bundle.sh_product_form_view
+msgid "Is Bundled ?"
+msgstr "¿Es paquete?"
+
+#. module: sh_product_bundle
+#: model:ir.model,name:sh_product_bundle.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: account_reports_cash_basis
+#: model:ir.model,name:account_reports_cash_basis.model_account_move_line
+msgid "Journal Item"
+msgstr "Apunte contable"
+
+#. modules: sh_base_bundle, sh_product_bundle
+#: model:ir.model.fields,field_description:sh_base_bundle.field_sh_product_bundle__write_uid
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard_line__write_uid
+msgid "Last Updated by"
+msgstr "Actualizado por última vez por"
+
+#. modules: sh_base_bundle, sh_product_bundle
+#: model:ir.model.fields,field_description:sh_base_bundle.field_sh_product_bundle__write_date
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard__write_date
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard_line__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: hide_powered_by_odoo
+#: model_terms:ir.ui.view,arch_db:hide_powered_by_odoo.login_page_layout
+msgid "Manage Databases"
+msgstr "Administrar bases de datos"
+
+#. module: sh_pos_product_bundle
+#. odoo-javascript
+#: code:addons/sh_pos_product_bundle/static/src/models/popups/ProductBundlePopup/ProductBundlePopup.xml:0
+#: code:addons/sh_pos_product_bundle/static/src/models/popups/ProductQtyPopup/ProductQtyPopup.xml:0
+#, python-format
+msgid "No"
+msgstr "No"
+
+#. module: sh_base_bundle
+#: model:ir.model.fields,field_description:sh_base_bundle.field_sh_product_bundle__sh_options_bundle_product_ids
+msgid "Opciones de cambio"
+msgstr "Opciones de cambio"
+
+#. module: pos_posagent
+#: model:ir.model.fields,field_description:pos_posagent.field_pos_config__use_posagent
+msgid "POS Agent"
+msgstr "Agente de punto de venta"
+
+#. module: bi_pos_salesperson
+#: model_terms:ir.ui.view,arch_db:bi_pos_salesperson.res_config_settings_view_form
+msgid "POS SalePerson Configuration"
+msgstr "Configuración del vendedor POS"
+
+#. module: sh_product_bundle
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard__sh_price
+msgid "Pack / Bundle Price"
+msgstr "Precio del paquete / paquete"
+
+#. module: l10n_ve_vpos
+#. odoo-javascript
+#: code:addons/l10n_ve_vpos/static/src/app/payment_vpos.js:0
+#, python-format
+msgid "Payment Terminal Error"
+msgstr "Error en la terminal de pago"
+
+#. module: bi_pos_salesperson
+#: model:ir.model.fields,field_description:bi_pos_salesperson.field_report_pos_order__customer_id
+msgid "PoS Cashier"
+msgstr "Cajero punto de venta"
+
+#. module: sh_pos_product_variant
+#: model:ir.model,name:sh_pos_product_variant.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "Configuración del punto de venta"
+
+#. module: bi_pos_salesperson
+#: model:ir.model,name:bi_pos_salesperson.model_pos_order_line
+msgid "Point of Sale Order Lines"
+msgstr "Líneas de orden del Punto de venta"
+
+#. module: bi_pos_salesperson
+#: model:ir.model,name:bi_pos_salesperson.model_report_pos_order
+msgid "Point of Sale Orders Report"
+msgstr "Reporte de órdenes del Punto de venta"
+
+#. module: l10n_ve_vpos
+#: model:ir.model,name:l10n_ve_vpos.model_pos_payment_method
+msgid "Point of Sale Payment Methods"
+msgstr "Métodos de pago del Punto de venta."
+
+#. module: sh_pos_product_variant
+#: model:ir.model,name:sh_pos_product_variant.model_pos_session
+msgid "Point of Sale Session"
+msgstr "Sesión del punto de venta"
+
+#. module: l10n_ve_vpos
+#: model_terms:ir.ui.view,arch_db:l10n_ve_vpos.view_pos_config_kanban_vpos
+msgid "Pre-cierre"
+msgstr "Pre-cierre"
+
+#. module: sh_pos_product_bundle
+#. odoo-javascript
+#: code:addons/sh_pos_product_bundle/static/src/models/popups/ProductQtyPopup/ProductQtyPopup.xml:0
+#, python-format
+msgid "Price :"
+msgstr "Precio"
+
+#. modules: sh_base_bundle, sh_pos_product_bundle, sh_pos_product_variant,
+#. sh_product_bundle
+#. odoo-javascript
+#: code:addons/sh_pos_product_bundle/static/src/models/popups/ProductBundlePopup/ProductBundlePopup.xml:0
+#: code:addons/sh_pos_product_bundle/static/src/models/popups/ProductQtyPopup/ProductQtyPopup.xml:0
+#: model:ir.model,name:sh_pos_product_variant.model_product_template
+#: model:ir.model.fields,field_description:sh_base_bundle.field_sh_product_bundle__sh_product_id
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard_line__sh_product_id
+#, python-format
+msgid "Product"
+msgstr "Producto"
+
+#. module: sh_base_bundle
+#: model_terms:ir.ui.view,arch_db:sh_base_bundle.sh_product_form_view
+msgid "Product Bundles"
+msgstr "Paquetes de productos"
+
+#. module: sh_base_bundle
+#: model:ir.ui.menu,name:sh_base_bundle.pack_product_sale
+msgid "Product Pack"
+msgstr "Paquete de productos"
+
+#. module: sh_pos_product_variant
+#. odoo-javascript
+#: code:addons/sh_pos_product_variant/static/src/overrides/Components/ProductsWidget.js:0
+#, python-format
+msgid "Product Varaint !"
+msgstr "¡Variante del producto!"
+
+#. module: sh_pos_product_variant
+#. odoo-javascript
+#: code:addons/sh_pos_product_variant/static/src/overrides/Components/ProductsWidget.js:0
+#, python-format
+msgid "Product Varaint Not Found"
+msgstr "Variante del producto no encontrada"
+
+#. module: sh_base_bundle
+#: model:ir.model,name:sh_base_bundle.model_product_product
+msgid "Product Variant"
+msgstr "Variante de producto"
+
+#. module: sh_pos_product_variant
+#: model_terms:ir.ui.view,arch_db:sh_pos_product_variant.sh_pos_product_variant_config_inherit
+msgid "Product Variant Config"
+msgstr "Variante de producto"
+
+#. module: sh_pos_product_variant
+#. odoo-javascript
+#: code:addons/sh_pos_product_variant/static/src/overrides/Components/ProductsWidget.js:0
+#, python-format
+msgid "Product Variants"
+msgstr "Variantes de producto"
+
+#. module: sh_product_bundle
+#: model_terms:ir.ui.view,arch_db:sh_product_bundle.sh_product_bundle_wizard_form_view
+msgid "Products"
+msgstr "Productos"
+
+#. module: pos_posagent
+#: model:ir.model.fields,field_description:pos_posagent.field_pos_config__pos_agent_port
+#: model_terms:ir.ui.view,arch_db:pos_posagent.pos_use_posagent_config_view_form
+msgid "Proxy Port"
+msgstr "Puerto proxy"
+
+#. module: sh_product_bundle
+#: model:ir.model,name:sh_product_bundle.model_purchase_order
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. modules: sh_pos_product_bundle, sh_product_bundle_website
+#. odoo-javascript
+#: code:addons/sh_pos_product_bundle/static/src/models/popups/ProductBundlePopup/ProductBundlePopup.xml:0
+#: code:addons/sh_pos_product_bundle/static/src/models/popups/ProductQtyPopup/ProductQtyPopup.xml:0
+#: model_terms:ir.ui.view,arch_db:sh_product_bundle_website.sh_website_sale_product
+#, python-format
+msgid "Qty"
+msgstr "Cantidad"
+
+#. modules: sh_base_bundle, sh_product_bundle
+#: model:ir.model.fields,field_description:sh_base_bundle.field_sh_product_bundle__sh_qty
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard__sh_qty
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard_line__sh_bundle_quantity
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: sh_pos_product_bundle
+#. odoo-javascript
+#: code:addons/sh_pos_product_bundle/static/src/models/popups/ProductQtyPopup/ProductQtyPopup.xml:0
+#, python-format
+msgid "Quantity :"
+msgstr "Cantidad"
+
+#. module: gasto_custom
+#: model_terms:ir.ui.view,arch_db:gasto_custom.checkout_layout_custom
+msgid "RIF:J-123456789-1"
+msgstr "RIF:J-123456789-1"
+
+#. module: pos_posagent
+#: model:ir.model.fields,field_description:pos_posagent.field_pos_config__posagent_enable_printer
+#: model_terms:ir.ui.view,arch_db:pos_posagent.pos_use_posagent_config_view_form
+msgid "Receipt Printer"
+msgstr "Impresora de recibos"
+
+#. module: bi_pos_salesperson
+#: model:ir.model.fields,field_description:bi_pos_salesperson.field_pos_order_line__employee_id
+msgid "Sale Person"
+msgstr "Vendedor"
+
+#. module: sh_product_bundle_website
+#: model:ir.model,name:sh_product_bundle_website.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: sh_product_bundle_website
+#: model:ir.model,name:sh_product_bundle_website.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea pedido de venta"
+
+#. module: sh_pos_product_variant
+#. odoo-javascript
+#: code:addons/sh_pos_product_variant/static/src/app/popups/variant_popup/variant_popup.xml:0
+#, python-format
+msgid "Search variant"
+msgstr "Variante de búsqueda"
+
+#. module: bi_pos_salesperson
+#. odoo-javascript
+#: code:addons/bi_pos_salesperson/static/src/xml/pos_salesperson_button.xml:0
+#, python-format
+msgid "Select Cashier"
+msgstr "Seleccionar Cajero"
+
+#. module: gasto_custom
+#. odoo-javascript
+#: code:addons/gasto_custom/static/src/js/website_sale_delivery_extension.js:0
+#, python-format
+msgid "Select to compute delivery rate"
+msgstr "Seleccione para calcular la tasa de entrega"
+
+#. module: bi_pos_salesperson
+#: model_terms:ir.ui.view,arch_db:bi_pos_salesperson.res_config_settings_view_form
+msgid "Set cashier on pos order lines"
+msgstr "Establecer cajero en líneas de pedido pos"
+
+#. module: sh_base_bundle
+#: model:ir.model.fields,field_description:sh_base_bundle.field_sh_product_bundle__sh_price_subtotal
+msgid "Sub Total"
+msgstr "Sub-Total"
+
+#. module: sh_pos_product_bundle
+#. odoo-javascript
+#: code:addons/sh_pos_product_bundle/static/src/models/popups/ProductBundlePopup/ProductBundlePopup.xml:0
+#, python-format
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#. module: l10n_ve_vpos
+#: model:ir.model.fields.selection,name:l10n_ve_vpos.selection__pos_payment_method__vpos_methodType__tarjeta
+msgid "Tarjeta"
+msgstr "Tarjeta"
+
+#. module: bi_pos_salesperson
+#. odoo-javascript
+#: code:addons/bi_pos_salesperson/static/src/app/TicketScreen.js:0
+#, python-format
+msgid ""
+"The fiscal position used in the original order is not loaded. Make sure it "
+"is loaded by adding it in the pos configuration."
+msgstr ""
+"La posición fiscal utilizada en el pedido original no está cargada. "
+"Asegúrese de que esté cargado agregándolo en la configuración pos."
+
+#. module: bi_pos_salesperson
+#. odoo-javascript
+#: code:addons/bi_pos_salesperson/static/src/app/pos_salesperson_button.js:0
+#, python-format
+msgid ""
+"There must be at least one product in your order before applying cashier."
+msgstr ""
+"Debe haber al menos un producto en su pedido antes de aplicar al cajero."
+
+#. module: l10n_ve_vpos
+#: model:ir.model.fields,field_description:l10n_ve_vpos.field_pos_payment_method__vpos_methodType
+msgid "Tipo"
+msgstr "Tipo"
+
+#. module: sh_base_bundle
+#: model:ir.model.fields,field_description:sh_base_bundle.field_product_product__sh_amount_total
+#: model:ir.model.fields,field_description:sh_base_bundle.field_product_template__sh_amount_total
+msgid "Total"
+msgstr "Total"
+
+#. module: sh_pos_product_bundle
+#. odoo-javascript
+#: code:addons/sh_pos_product_bundle/static/src/models/popups/ProductBundlePopup/ProductBundlePopup.xml:0
+#, python-format
+msgid "Total :"
+msgstr "Total"
+
+#. module: sh_product_bundle
+#: model:ir.model,name:sh_product_bundle.model_stock_picking
+msgid "Transfer"
+msgstr "Transferir"
+
+#. module: sh_pos_product_bundle
+#. odoo-javascript
+#: code:addons/sh_pos_product_bundle/static/src/models/popups/ProductBundlePopup/ProductBundlePopup.xml:0
+#: code:addons/sh_pos_product_bundle/static/src/models/popups/ProductQtyPopup/ProductQtyPopup.xml:0
+#, python-format
+msgid "UOM"
+msgstr "Unidad de medida"
+
+#. module: sh_product_bundle
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard_line__sh_bundle_uom
+msgid "Unit Of Measure"
+msgstr "Unidad de medida"
+
+#. modules: sh_base_bundle, sh_pos_product_bundle
+#. odoo-javascript
+#: code:addons/sh_pos_product_bundle/static/src/models/popups/ProductBundlePopup/ProductBundlePopup.xml:0
+#: model:ir.model.fields,field_description:sh_base_bundle.field_sh_product_bundle__sh_price_unit
+#, python-format
+msgid "Unit Price"
+msgstr "Precio unitario"
+
+#. module: sh_base_bundle
+#: model:ir.model.fields,field_description:sh_base_bundle.field_sh_product_bundle__sh_uom
+msgid "Unit of Measure"
+msgstr "Unidad de medida"
+
+#. module: l10n_ve_vpos
+#: model_terms:ir.ui.view,arch_db:l10n_ve_vpos.res_config_settings_view_form_vpos
+msgid "Url"
+msgstr "Url"
+
+#. module: pos_posagent
+#: model_terms:ir.ui.view,arch_db:pos_posagent.pos_use_posagent_config_view_form
+msgid ""
+"Use POS Agent as proxy service to print directly                 without "
+"the print dialog, additionally, it allows you to use a cash box. "
+"Note                 that enabling this overrides the IoTBox settings."
+msgstr ""
+"Utilice POS Agent como servicio proxy para imprimir directamente sin el "
+"cuadro de diálogo de impresión; además, le permite utilizar una caja de "
+"efectivo. Tenga en cuenta que habilitar esto anula la configuración de "
+"IoTBox."
+
+#. module: pos_posagent
+#: model_terms:ir.ui.view,arch_db:pos_posagent.pos_use_posagent_config_view_form
+msgid "Use POSAgent"
+msgstr "Utilice POSAgent"
+
+#. module: l10n_ve_vpos
+#: model:ir.model.fields,field_description:l10n_ve_vpos.field_pos_config__vpos
+#: model:ir.model.fields,field_description:l10n_ve_vpos.field_res_config_settings__pos_vpos
+#: model_terms:ir.ui.view,arch_db:l10n_ve_vpos.res_config_settings_view_form_vpos
+msgid "VPOS"
+msgstr "Punto de venta"
+
+#. module: l10n_ve_vpos
+#: model:ir.model.fields,field_description:l10n_ve_vpos.field_pos_config__vpos_restApi
+#: model:ir.model.fields,field_description:l10n_ve_vpos.field_res_config_settings__pos_vpos_restApi
+msgid "VPOS Terminal Url"
+msgstr "URL del terminal VPOS"
+
+#. module: sh_base_bundle
+#: model:ir.model.fields,help:sh_base_bundle.field_sh_product_bundle__sh_cost_price
+msgid ""
+"Value of the product (automatically computed in AVCO).\n"
+"        Used to value the product when the purchase cost is not known (e.g. "
+"inventory adjustment).\n"
+"        Used to compute margins on sale orders."
+msgstr ""
+"Valor del producto (calculado automáticamente en AVCO).\n"
+"        Se utiliza para valorar el producto cuando se desconoce el costo de "
+"compra (por ejemplo, ajuste de inventario).\n"
+"        Se utiliza para calcular márgenes en pedidos de venta."
+
+#. module: l10n_ve_vpos
+#: model:ir.model.fields,field_description:l10n_ve_vpos.field_pos_payment_method__valid_to_change
+msgid "Válido para Cambio"
+msgstr "Válido para Cambio"
+
+#. module: sh_product_bundle
+#: model:ir.model.fields,field_description:sh_product_bundle.field_sh_product_bundle_wizard_line__wizard_id
+msgid "Wizard ID"
+msgstr "ID del asistente"
+
+#. module: sh_base_bundle
+#: model_terms:ir.actions.act_window,help:sh_base_bundle.sh_bundled_products
+msgid ""
+"You must define a product for everything you sell or purchase, whether it's "
+"a storable product, a consumable or a service."
+msgstr ""
+"Debes definir un producto para todo lo que vendes o compras, ya sea un "
+"producto almacenable, un consumible o un servicio."
+
+#. module: gasto_custom
+#: model_terms:ir.ui.view,arch_db:gasto_custom.checkout_layout_custom
+msgid "bancamiga"
+msgstr "bancamiga"
+
+#. module: sh_product_bundle_website
+#: model_terms:ir.ui.view,arch_db:sh_product_bundle_website.sh_website_sale_product
+msgid "inside Bundle."
+msgstr "Paquete interior."
+
+#. module: sh_product_bundle
+#: model_terms:ir.ui.view,arch_db:sh_product_bundle.sh_product_bundle_wizard_form_view
+msgid "or"
+msgstr "o"
+
+#. module: sh_base_bundle
+#: model_terms:ir.ui.view,arch_db:sh_base_bundle.sh_product_form_view
+msgid "paquete de productos"
+msgstr "paquete de productos"
+
+#. module: gasto_custom
+#: model_terms:ir.ui.view,arch_db:gasto_custom.checkout_layout_custom
+msgid "teléfono:0412XXXXXXXX"
+msgstr "teléfono:0412XXXXXXXX"
+
+#. module: gasto_custom
+#: model_terms:ir.ui.view,arch_db:gasto_custom.address_form_extension
+msgid "ws_phone"
+msgstr "ws_teléfono"
+
+#. module: l10n_ve_vpos
+#: model_terms:ir.ui.view,arch_db:l10n_ve_vpos.view_pos_config_kanban_vpos
+msgid "Último cierre"
+msgstr "Último cierre"

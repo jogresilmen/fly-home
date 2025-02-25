@@ -1,0 +1,53 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_ve_address_extended
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-12 02:50+0000\n"
+"PO-Revision-Date: 2023-12-12 02:50+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_ve_address_extended
+#: model:ir.model.fields,field_description:l10n_ve_address_extended.field_res_municipality__country_id
+#: model:ir.model.fields,field_description:l10n_ve_address_extended.field_res_parish__country_id
+msgid "Country"
+msgstr "País"
+
+#. module: l10n_ve_address_extended
+#: model:ir.actions.act_window,name:l10n_ve_address_extended.action_res_municipality
+#: model:ir.ui.menu,name:l10n_ve_address_extended.menu_res_municipality
+msgid "Municipalities"
+msgstr "Municipios"
+
+#. module: l10n_ve_address_extended
+#: model:ir.model,name:l10n_ve_address_extended.model_res_municipality
+#: model:ir.model.fields,field_description:l10n_ve_address_extended.field_res_parish__municipality_id
+#: model_terms:ir.ui.view,arch_db:l10n_ve_address_extended.view_res_municipality_tree
+msgid "Municipality"
+msgstr "Municipio"
+
+#. module: l10n_ve_address_extended
+#: model:ir.model,name:l10n_ve_address_extended.model_res_parish
+#: model_terms:ir.ui.view,arch_db:l10n_ve_address_extended.view_res_parish_tree
+msgid "Parish"
+msgstr "Parroquia"
+
+#. module: l10n_ve_address_extended
+#: model:ir.actions.act_window,name:l10n_ve_address_extended.action_res_parish
+#: model:ir.ui.menu,name:l10n_ve_address_extended.menu_res_parish
+msgid "Parishes"
+msgstr "Parroquias"
+
+#. module: l10n_ve_address_extended
+#: model:ir.model.fields,field_description:l10n_ve_address_extended.field_res_municipality__state_id
+#: model:ir.model.fields,field_description:l10n_ve_address_extended.field_res_parish__state_id
+msgid "State"
+msgstr "Estado"

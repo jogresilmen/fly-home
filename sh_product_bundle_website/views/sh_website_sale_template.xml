@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <template id="sh_website_sale_cart" inherit_id="website_sale.cart_lines">
+        <xpath expr="//div[contains(@t-attf-class, 'css_quantity')]//a[hasclass('js_add_cart_json')]" position='attributes'>
+            <attribute name="t-if">line.is_bundle_item==False</attribute>
+        </xpath>
+
+        <xpath expr="//div[contains(@t-attf-class, 'css_quantity')]//a[hasclass('js_add_cart_json')][2]" position='attributes'>
+            <attribute name="t-if">line.is_bundle_item==False</attribute>
+        </xpath>
+
+        <xpath expr="//div[contains(@t-attf-class, 'css_quantity')]//input[hasclass('js_quantity')]" position='attributes'>
+            <attribute name="t-att-disabled" separator=" " add="'disabled' if line.is_bundle_item else None" remove="" value=""></attribute>
+        </xpath>
+    </template>
+
+
+    <template id="sh_website_sale_product" inherit_id="website_sale.product" name="Bundle Products"
+        customize_show="True" active="True">
+        <xpath expr="//section[@id='product_detail']//div[@id='product_details']" position="after">
+            <t t-if="product.sh_bundle_product_ids">
+                <div class="col-md-8">
+                    <div class="container">
+                        <strong style="font-size: 18px; margin-bottom: 10px; display: block;">Bundle
+                            Productos</strong>
+                        <div class="row">
+                            <t t-foreach="product.sh_bundle_product_ids" t-as="product_id">
+                                <div class="col-md-3">
+                                    <div class=""
+                                        style="border: 1px solid #d4d4d4; text-align: center; padding: 10px 0; min-height: 150px;">
+                                        <span style="height: 55px; width: 60px;"
+                                            t-field="product_id.sh_product_id.image_128"
+                                            t-options="{'widget': 'image', 'qweb_img_responsive': False, 'class': 'rounded o_image_64_max'}" /><br />
+                                        <a
+                                            t-att-href="'/shop/product/' + str(product_id.sh_product_id.product_tmpl_id.id)">
+                                            <span
+                                                style="margin-top: 15px; font-size: 14px; color: #00a09d; font-weight: 600; margin-bottom: 0px; display: block;"
+                                                t-field="product_id.sh_product_id.name" />
+                                        </a>
+                                        Cantidad <span style="font-size: 14px; font-weight: 600;"
+                                            t-field="product_id.sh_qty" /> dentro del paquete. </div>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+    
+    <template id="cart_lines_optional_products" inherit_id="website_sale.cart_lines">
+        <xpath expr="//t[@t-call='website_sale.cart_line_product_link']" position="replace">
+            <div>
+                <select name="optional_products" class="form-select o_optional_product_select" 
+                        t-att-data-line-id="line.id" 
+                        t-att-data-qty-id="line.product_uom_qty" 
+                        t-att-data-product-id="line.product_id.id">
+                        
+                    <!-- Este select se llenará con opciones usando JavaScript -->
+                </select>
+                <input type="text" class="form-control o_optional_product_input d-none"  />
+                <a href="#" class="o_change_product d-none">Cambiar un producto</a>
+            </div>
+            <div class="modal fade" id="productSelectionModal" tabindex="-1" role="dialog" aria-labelledby="productSelectionModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="productSelectionModalLabel">Seleccionar Producto Opcional</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <select id="productSelectModal" class="form-select">
+                                <!-- Las opciones se llenarán con JavaScript -->
+                            </select>
+                            <button type="button" id="addProductButton" class="btn btn-primary mt-2">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath> 
+    </template>
+</odoo>

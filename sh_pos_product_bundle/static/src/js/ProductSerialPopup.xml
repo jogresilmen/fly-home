@@ -1,0 +1,136 @@
+<templates id="template" xml:space="preserve">
+    <t t-name="sh_pos_product_bundle.ProductSerialPopup">
+        <style>
+            .popup {
+                background-color: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                overflow: hidden;
+                max-width: 400px;
+                margin: auto;
+            }
+
+            .modal-header {
+                color: #ffffff;
+                padding: 16px;
+                border-bottom: 1px solid #ddd;
+                text-align: center;
+            }
+
+            .modal-header .title {
+                font-size: 18px;
+                font-weight: 600;
+                margin: 0;
+            }
+
+            .modal-body {
+                padding: 16px;
+            }
+
+            .input-group {
+                margin-bottom: 16px;
+            }
+
+            .input,
+            .select {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                font-size: 16px;
+                box-sizing: border-box;
+                margin-bottom: 8px;
+            }
+
+            footer {
+                display: flex;
+                justify-content: flex-end;
+                padding: 16px;
+                border-top: 1px solid #ddd;
+                background-color: #f9f9f9;
+            }
+
+            .btn {
+                padding: 8px 16px;
+                font-size: 16px;
+                font-weight: 600;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-left: 8px;
+            }
+
+            .btn-primary:hover,
+            .btn-secondary:hover {
+                opacity: 0.8;
+            }
+
+            .btn-link {
+                color: #007bff;
+                background-color: transparent;
+                text-decoration: none;
+                padding: 8px 16px;
+                font-size: 16px;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            .btn-link:hover {
+                text-decoration: underline;
+            }
+        </style>
+        <div class="popup popup-textinput">
+            <div class="modal-header">
+                <h4 class="title">
+                    <t t-esc="props.title" />
+                </h4>
+            </div>
+            <div class="modal-body">
+
+                <table width="100%" class="wh_qty" id="">
+                    <thead>
+                        <tr>
+                            <th width="25%" class="head_td">Codigo:</th>
+                            <th width="70%" class="head_td">Producto:</th>
+                            <th width="5%" class="head_td">Cantidad:</th>
+                        </tr>
+                    </thead>
+                    <tbody t-ref="tbodyElement">
+                        <tr class="data_tr" data-row-id="row_0">
+                            <td class="data_td">
+                                <input type="text" t-model="state.serial" placeholder="Enter product serial" class="input bard" t-on-change="searchProductByBarcode"/>
+                            </td>
+                            <td class="data_td">
+                                <select class="select" t-model="state.selected_product" t-on-change='updateLineData' t-ref="selectElement">
+                                    <t t-foreach="state.optional_products" t-as="product" t-key="product.id">
+                                        <option t-att-value="product.id"  t-att-data-product-id="product.barcode">
+                                            <t t-esc="product.display_name"/>
+                                        </option>
+                                    </t>
+                                </select>
+                            </td>
+                            <td class="data_td">
+                                <input type="number" t-model="state.qty" class="input qty" t-on-change='updateLineData'/>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="data_td">
+                                <t t-if="state.qty > 1">
+                                <a t-on-click="addNewLine" class="btn-link">Agregar nueva línea...</a>
+                                </t>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                
+            </div>
+            <footer>
+                <button t-on-click="confirm" class="btn btn-primary">Confirm</button>
+                <button t-on-click="cancel" class="btn btn-secondary">Cancel</button>
+            </footer>
+        </div>
+    </t>
+</templates>

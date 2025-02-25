@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="fiscal_templates" xml:space="preserve">
+    <t t-name="FiscalPrinting" t-inherit="point_of_sale.ReceiptScreen" t-inherit-mode="extension" owl="1">
+        <xpath expr="//button[hasclass('print')]" position="after">
+            <button class="button print btn btn-lg btn-secondary w-100 mt-2" t-on-click="() => this.doPrinting('fiscal')">
+                Factura fiscal
+            </button>
+            <button class="button print btn btn-lg btn-secondary w-100 mt-2" t-on-click="() => this.doPrinting('noFiscal')">
+                Nota de entrega
+            </button>
+            <!-- <button class="button print btn btn-lg btn-secondary w-100 mt-2" t-on-click="() => this.doPrinting('notaCredito')">
+                Nota de crédito
+            </button> -->
+        </xpath>
+    </t>
+    <t t-name="FiscalReprinting" t-inherit="point_of_sale.ReprintReceiptScreen" t-inherit-mode="extension" owl="1">
+        <xpath expr="//button[hasclass('print')]" position="after">
+            <button class="button print btn btn-lg btn-secondary w-100 mt-2" t-on-click="() => this.doPrinting('fiscal')">
+                Factura fiscal
+            </button>
+            <button class="button print btn btn-lg btn-secondary w-100 mt-2" t-on-click="() => this.doPrinting('noFiscal')">
+                Nota de entrega
+            </button>
+            <!-- <button class="button print btn btn-lg btn-secondary w-100 mt-2" t-on-click="() => this.doPrinting('notaCredito')">
+                Nota de crédito
+            </button> -->
+        </xpath>
+    </t>
+    <t t-name="ReporteZ" t-inherit="point_of_sale.ClosePosPopup" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[@class='notes-container d-flex flex-column flex-sm-row gap-3 border-top mt-3 pt-3']" position="before">
+            <input type="text" name="zReport" placeholder="Reporte Z" t-model="state.zReport" />
+        </xpath>
+        <xpath expr="//footer[@class='footer modal-footer justify-content-between']" position="inside">
+            <div class="button" t-on-click="() => this.printZReport()" >
+                Reporte Z
+            </div>
+            <div class="button" t-on-click="() => this.printXReport()">
+                Reporte X
+            </div>
+        </xpath>
+    </t>
+</templates>

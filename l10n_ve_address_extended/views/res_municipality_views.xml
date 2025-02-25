@@ -1,0 +1,29 @@
+<odoo>
+    <record id="view_res_municipality_tree" model="ir.ui.view">
+        <field name="name">res.municipality.tree</field>
+        <field name="model">res.municipality</field>
+        <field name="arch" type="xml">
+            <tree string="Municipality" editable="bottom">
+                <field name="name"/>
+                <field name="state_id" context="{'default_country_id': country_id}"/>
+                <field name="country_id" options="{'no_open': True, 'no_create': True}"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- creating an action -->
+    <record id="action_res_municipality" model="ir.actions.act_window">
+        <field name="name">Municipalities</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.municipality</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+    <!-- adding menuitem -->
+    <record id="menu_res_municipality" model="ir.ui.menu">
+        <field name="name">Municipalities</field>
+        <field name="sequence">10</field>
+        <field name="action" ref="action_res_municipality"/>
+        <field name="parent_id" ref="contacts.menu_localisation"/>
+    </record>
+</odoo>

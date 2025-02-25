@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates>
+    <t t-name="show_currency_difReportFilterExtraOptions" t-inherit="account_reports.AccountReportFilterExtraOptions" t-inherit-mode="extension">
+        <xpath expr="//t[@t-set-slot='toggler']" position="inside">
+            <t t-if="controller.filters.show_currency_dif">
+                <t t-if="controller.filters.show_draft || controller.filters.show_unreconciled || controller.options.include_analytic_without_aml"> ,</t>
+                <t t-esc="(controller.options.report_currency_dif) ? ' Moneda Base' : ' Multi Moneda'"/>
+            </t>
+        </xpath>
+
+        <xpath expr="//DropdownItem[contains(@class, 'filter_show_all_hook')]" position="after">
+            <t t-if="controller.groups.account_user &amp;&amp; controller.filters.show_currency_dif">
+                <DropdownItem
+                    class="{ 'selected': controller.options.report_currency_dif }"
+                    onSelected="() => this.toggleFilter('report_currency_dif')"
+                >
+                    Multi Moneda
+                </DropdownItem>
+            </t>
+        </xpath>
+    </t>
+</templates>

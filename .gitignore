@@ -1,0 +1,7 @@
+.env
+docker-compose.yml
+etc/
+__pycache__/
+**/__pycache__/*.pyc
+*.pyc
+

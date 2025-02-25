@@ -1,0 +1,336 @@
+id,state_id:id,name,country_id:id
+municipal_ve_1,l10n_ve_address_extended.state_ve_1,Alto Orinoco,base.ve
+municipal_ve_2,l10n_ve_address_extended.state_ve_1,Atabapo,base.ve
+municipal_ve_3,l10n_ve_address_extended.state_ve_1,Atures,base.ve
+municipal_ve_4,l10n_ve_address_extended.state_ve_1,Autana,base.ve
+municipal_ve_5,l10n_ve_address_extended.state_ve_1,Manapiare,base.ve
+municipal_ve_6,l10n_ve_address_extended.state_ve_1,Maroa,base.ve
+municipal_ve_7,l10n_ve_address_extended.state_ve_1,Río Negro,base.ve
+municipal_ve_8,l10n_ve_address_extended.state_ve_2,Anaco,base.ve
+municipal_ve_9,l10n_ve_address_extended.state_ve_2,Aragua,base.ve
+municipal_ve_10,l10n_ve_address_extended.state_ve_2,Manuel Ezequiel Bruzual,base.ve
+municipal_ve_11,l10n_ve_address_extended.state_ve_2,Diego Bautista Urbaneja,base.ve
+municipal_ve_12,l10n_ve_address_extended.state_ve_2,Fernando Peñalver,base.ve
+municipal_ve_13,l10n_ve_address_extended.state_ve_2,Francisco Del Carmen Carvajal,base.ve
+municipal_ve_14,l10n_ve_address_extended.state_ve_2,General Sir Arthur McGregor,base.ve
+municipal_ve_15,l10n_ve_address_extended.state_ve_2,Guanta,base.ve
+municipal_ve_16,l10n_ve_address_extended.state_ve_2,Independencia,base.ve
+municipal_ve_17,l10n_ve_address_extended.state_ve_2,José Gregorio Monagas,base.ve
+municipal_ve_18,l10n_ve_address_extended.state_ve_2,Juan Antonio Sotillo,base.ve
+municipal_ve_19,l10n_ve_address_extended.state_ve_2,Juan Manuel Cajigal,base.ve
+municipal_ve_20,l10n_ve_address_extended.state_ve_2,Libertad,base.ve
+municipal_ve_21,l10n_ve_address_extended.state_ve_2,Francisco de Miranda,base.ve
+municipal_ve_22,l10n_ve_address_extended.state_ve_2,Pedro María Freites,base.ve
+municipal_ve_23,l10n_ve_address_extended.state_ve_2,Píritu,base.ve
+municipal_ve_24,l10n_ve_address_extended.state_ve_2,San José de Guanipa,base.ve
+municipal_ve_25,l10n_ve_address_extended.state_ve_2,San Juan de Capistrano,base.ve
+municipal_ve_26,l10n_ve_address_extended.state_ve_2,Santa Ana,base.ve
+municipal_ve_27,l10n_ve_address_extended.state_ve_2,Simón Bolívar,base.ve
+municipal_ve_28,l10n_ve_address_extended.state_ve_2,Simón Rodríguez,base.ve
+municipal_ve_29,l10n_ve_address_extended.state_ve_3,Achaguas,base.ve
+municipal_ve_30,l10n_ve_address_extended.state_ve_3,Biruaca,base.ve
+municipal_ve_31,l10n_ve_address_extended.state_ve_3,Muñóz,base.ve
+municipal_ve_32,l10n_ve_address_extended.state_ve_3,Páez,base.ve
+municipal_ve_33,l10n_ve_address_extended.state_ve_3,Pedro Camejo,base.ve
+municipal_ve_34,l10n_ve_address_extended.state_ve_3,Rómulo Gallegos,base.ve
+municipal_ve_35,l10n_ve_address_extended.state_ve_3,San Fernando,base.ve
+municipal_ve_36,l10n_ve_address_extended.state_ve_4,Atanasio Girardot,base.ve
+municipal_ve_37,l10n_ve_address_extended.state_ve_4,Bolívar,base.ve
+municipal_ve_38,l10n_ve_address_extended.state_ve_4,Camatagua,base.ve
+municipal_ve_39,l10n_ve_address_extended.state_ve_4,Francisco Linares Alcántara,base.ve
+municipal_ve_40,l10n_ve_address_extended.state_ve_4,José Ángel Lamas,base.ve
+municipal_ve_41,l10n_ve_address_extended.state_ve_4,José Félix Ribas,base.ve
+municipal_ve_42,l10n_ve_address_extended.state_ve_4,José Rafael Revenga,base.ve
+municipal_ve_43,l10n_ve_address_extended.state_ve_4,Libertador,base.ve
+municipal_ve_44,l10n_ve_address_extended.state_ve_4,Mario Briceño Iragorry,base.ve
+municipal_ve_45,l10n_ve_address_extended.state_ve_4,Ocumare de la Costa de Oro,base.ve
+municipal_ve_46,l10n_ve_address_extended.state_ve_4,San Casimiro,base.ve
+municipal_ve_47,l10n_ve_address_extended.state_ve_4,San Sebastián,base.ve
+municipal_ve_48,l10n_ve_address_extended.state_ve_4,Santiago Mariño,base.ve
+municipal_ve_49,l10n_ve_address_extended.state_ve_4,Santos Michelena,base.ve
+municipal_ve_50,l10n_ve_address_extended.state_ve_4,Sucre,base.ve
+municipal_ve_51,l10n_ve_address_extended.state_ve_4,Tovar,base.ve
+municipal_ve_52,l10n_ve_address_extended.state_ve_4,Urdaneta,base.ve
+municipal_ve_53,l10n_ve_address_extended.state_ve_4,Zamora,base.ve
+municipal_ve_54,l10n_ve_address_extended.state_ve_5,Alberto Arvelo Torrealba,base.ve
+municipal_ve_55,l10n_ve_address_extended.state_ve_5,Andrés Eloy Blanco,base.ve
+municipal_ve_56,l10n_ve_address_extended.state_ve_5,Antonio José de Sucre,base.ve
+municipal_ve_57,l10n_ve_address_extended.state_ve_5,Arismendi,base.ve
+municipal_ve_58,l10n_ve_address_extended.state_ve_5,Barinas,base.ve
+municipal_ve_59,l10n_ve_address_extended.state_ve_5,Bolívar,base.ve
+municipal_ve_60,l10n_ve_address_extended.state_ve_5,Cruz Paredes,base.ve
+municipal_ve_61,l10n_ve_address_extended.state_ve_5,Ezequiel Zamora,base.ve
+municipal_ve_62,l10n_ve_address_extended.state_ve_5,Obispos,base.ve
+municipal_ve_63,l10n_ve_address_extended.state_ve_5,Pedraza,base.ve
+municipal_ve_64,l10n_ve_address_extended.state_ve_5,Rojas,base.ve
+municipal_ve_65,l10n_ve_address_extended.state_ve_5,Sosa,base.ve
+municipal_ve_66,l10n_ve_address_extended.state_ve_6,Caroní,base.ve
+municipal_ve_67,l10n_ve_address_extended.state_ve_6,Cedeño,base.ve
+municipal_ve_68,l10n_ve_address_extended.state_ve_6,El Callao,base.ve
+municipal_ve_69,l10n_ve_address_extended.state_ve_6,Gran Sabana,base.ve
+municipal_ve_70,l10n_ve_address_extended.state_ve_6,Heres,base.ve
+municipal_ve_71,l10n_ve_address_extended.state_ve_6,Piar,base.ve
+municipal_ve_72,l10n_ve_address_extended.state_ve_6,Angostura Raúl Leoni),base.ve
+municipal_ve_73,l10n_ve_address_extended.state_ve_6,Roscio,base.ve
+municipal_ve_74,l10n_ve_address_extended.state_ve_6,Sifontes,base.ve
+municipal_ve_75,l10n_ve_address_extended.state_ve_6,Sucre,base.ve
+municipal_ve_76,l10n_ve_address_extended.state_ve_6,Padre Pedro Chien,base.ve
+municipal_ve_77,l10n_ve_address_extended.state_ve_7,Bejuma,base.ve
+municipal_ve_78,l10n_ve_address_extended.state_ve_7,Carlos Arvelo,base.ve
+municipal_ve_79,l10n_ve_address_extended.state_ve_7,Diego Ibarra,base.ve
+municipal_ve_80,l10n_ve_address_extended.state_ve_7,Guacara,base.ve
+municipal_ve_81,l10n_ve_address_extended.state_ve_7,Juan José Mora,base.ve
+municipal_ve_82,l10n_ve_address_extended.state_ve_7,Libertador,base.ve
+municipal_ve_83,l10n_ve_address_extended.state_ve_7,Los Guayos,base.ve
+municipal_ve_84,l10n_ve_address_extended.state_ve_7,Miranda,base.ve
+municipal_ve_85,l10n_ve_address_extended.state_ve_7,Montalbán,base.ve
+municipal_ve_86,l10n_ve_address_extended.state_ve_7,Naguanagua,base.ve
+municipal_ve_87,l10n_ve_address_extended.state_ve_7,Puerto Cabello,base.ve
+municipal_ve_88,l10n_ve_address_extended.state_ve_7,San Diego,base.ve
+municipal_ve_89,l10n_ve_address_extended.state_ve_7,San Joaquín,base.ve
+municipal_ve_90,l10n_ve_address_extended.state_ve_7,Valencia,base.ve
+municipal_ve_91,l10n_ve_address_extended.state_ve_8,Anzoátegui,base.ve
+municipal_ve_92,l10n_ve_address_extended.state_ve_8,Tinaquillo,base.ve
+municipal_ve_93,l10n_ve_address_extended.state_ve_8,Girardot,base.ve
+municipal_ve_94,l10n_ve_address_extended.state_ve_8,Lima Blanco,base.ve
+municipal_ve_95,l10n_ve_address_extended.state_ve_8,Pao de San Juan Bautista,base.ve
+municipal_ve_96,l10n_ve_address_extended.state_ve_8,Ricaurte,base.ve
+municipal_ve_97,l10n_ve_address_extended.state_ve_8,Rómulo Gallegos,base.ve
+municipal_ve_98,l10n_ve_address_extended.state_ve_8,San Carlos,base.ve
+municipal_ve_99,l10n_ve_address_extended.state_ve_8,Tinaco,base.ve
+municipal_ve_100,l10n_ve_address_extended.state_ve_9,Antonio Díaz,base.ve
+municipal_ve_101,l10n_ve_address_extended.state_ve_9,Casacoima,base.ve
+municipal_ve_102,l10n_ve_address_extended.state_ve_9,Pedernales,base.ve
+municipal_ve_103,l10n_ve_address_extended.state_ve_9,Tucupita,base.ve
+municipal_ve_104,l10n_ve_address_extended.state_ve_10,Acosta,base.ve
+municipal_ve_105,l10n_ve_address_extended.state_ve_10,Bolívar,base.ve
+municipal_ve_106,l10n_ve_address_extended.state_ve_10,Buchivacoa,base.ve
+municipal_ve_107,l10n_ve_address_extended.state_ve_10,Cacique Manaure,base.ve
+municipal_ve_108,l10n_ve_address_extended.state_ve_10,Carirubana,base.ve
+municipal_ve_109,l10n_ve_address_extended.state_ve_10,Colina,base.ve
+municipal_ve_110,l10n_ve_address_extended.state_ve_10,Dabajuro,base.ve
+municipal_ve_111,l10n_ve_address_extended.state_ve_10,Democracia,base.ve
+municipal_ve_112,l10n_ve_address_extended.state_ve_10,Falcón,base.ve
+municipal_ve_113,l10n_ve_address_extended.state_ve_10,Federación,base.ve
+municipal_ve_114,l10n_ve_address_extended.state_ve_10,Jacura,base.ve
+municipal_ve_115,l10n_ve_address_extended.state_ve_10,José Laurencio Silva,base.ve
+municipal_ve_116,l10n_ve_address_extended.state_ve_10,Los Taques,base.ve
+municipal_ve_117,l10n_ve_address_extended.state_ve_10,Mauroa,base.ve
+municipal_ve_118,l10n_ve_address_extended.state_ve_10,Miranda,base.ve
+municipal_ve_119,l10n_ve_address_extended.state_ve_10,Monseñor Iturriza,base.ve
+municipal_ve_120,l10n_ve_address_extended.state_ve_10,Palmasola,base.ve
+municipal_ve_121,l10n_ve_address_extended.state_ve_10,Petit,base.ve
+municipal_ve_122,l10n_ve_address_extended.state_ve_10,Píritu,base.ve
+municipal_ve_123,l10n_ve_address_extended.state_ve_10,San Francisco,base.ve
+municipal_ve_124,l10n_ve_address_extended.state_ve_10,Sucre,base.ve
+municipal_ve_125,l10n_ve_address_extended.state_ve_10,Tocópero,base.ve
+municipal_ve_126,l10n_ve_address_extended.state_ve_10,Unión,base.ve
+municipal_ve_127,l10n_ve_address_extended.state_ve_10,Urumaco,base.ve
+municipal_ve_128,l10n_ve_address_extended.state_ve_10,Zamora,base.ve
+municipal_ve_129,l10n_ve_address_extended.state_ve_11,Camaguán,base.ve
+municipal_ve_130,l10n_ve_address_extended.state_ve_11,Chaguaramas,base.ve
+municipal_ve_131,l10n_ve_address_extended.state_ve_11,El Socorro,base.ve
+municipal_ve_132,l10n_ve_address_extended.state_ve_11,José Félix Ribas,base.ve
+municipal_ve_133,l10n_ve_address_extended.state_ve_11,José Tadeo Monagas,base.ve
+municipal_ve_134,l10n_ve_address_extended.state_ve_11,Juan Germán Roscio,base.ve
+municipal_ve_135,l10n_ve_address_extended.state_ve_11,Julián Mellado,base.ve
+municipal_ve_136,l10n_ve_address_extended.state_ve_11,Las Mercedes,base.ve
+municipal_ve_137,l10n_ve_address_extended.state_ve_11,Leonardo Infante,base.ve
+municipal_ve_138,l10n_ve_address_extended.state_ve_11,Pedro Zaraza,base.ve
+municipal_ve_139,l10n_ve_address_extended.state_ve_11,Ortíz,base.ve
+municipal_ve_140,l10n_ve_address_extended.state_ve_11,San Gerónimo de Guayabal,base.ve
+municipal_ve_141,l10n_ve_address_extended.state_ve_11,San José de Guaribe,base.ve
+municipal_ve_142,l10n_ve_address_extended.state_ve_11,Santa María de Ipire,base.ve
+municipal_ve_143,l10n_ve_address_extended.state_ve_11,Sebastián Francisco de Miranda,base.ve
+municipal_ve_144,l10n_ve_address_extended.state_ve_12,Andrés Eloy Blanco,base.ve
+municipal_ve_145,l10n_ve_address_extended.state_ve_12,Crespo,base.ve
+municipal_ve_146,l10n_ve_address_extended.state_ve_12,Iribarren,base.ve
+municipal_ve_147,l10n_ve_address_extended.state_ve_12,Jiménez,base.ve
+municipal_ve_148,l10n_ve_address_extended.state_ve_12,Morán,base.ve
+municipal_ve_149,l10n_ve_address_extended.state_ve_12,Palavecino,base.ve
+municipal_ve_150,l10n_ve_address_extended.state_ve_12,Simón Planas,base.ve
+municipal_ve_151,l10n_ve_address_extended.state_ve_12,Torres,base.ve
+municipal_ve_152,l10n_ve_address_extended.state_ve_12,Urdaneta,base.ve
+municipal_ve_179,l10n_ve_address_extended.state_ve_13,Alberto Adriani,base.ve
+municipal_ve_180,l10n_ve_address_extended.state_ve_13,Andrés Bello,base.ve
+municipal_ve_181,l10n_ve_address_extended.state_ve_13,Antonio Pinto Salinas,base.ve
+municipal_ve_182,l10n_ve_address_extended.state_ve_13,Aricagua,base.ve
+municipal_ve_183,l10n_ve_address_extended.state_ve_13,Arzobispo Chacón,base.ve
+municipal_ve_184,l10n_ve_address_extended.state_ve_13,Campo Elías,base.ve
+municipal_ve_185,l10n_ve_address_extended.state_ve_13,Caracciolo Parra Olmedo,base.ve
+municipal_ve_186,l10n_ve_address_extended.state_ve_13,Cardenal Quintero,base.ve
+municipal_ve_187,l10n_ve_address_extended.state_ve_13,Guaraque,base.ve
+municipal_ve_188,l10n_ve_address_extended.state_ve_13,Julio César Salas,base.ve
+municipal_ve_189,l10n_ve_address_extended.state_ve_13,Justo Briceño,base.ve
+municipal_ve_190,l10n_ve_address_extended.state_ve_13,Libertador,base.ve
+municipal_ve_191,l10n_ve_address_extended.state_ve_13,Miranda,base.ve
+municipal_ve_192,l10n_ve_address_extended.state_ve_13,Obispo Ramos de Lora,base.ve
+municipal_ve_193,l10n_ve_address_extended.state_ve_13,Padre Noguera,base.ve
+municipal_ve_194,l10n_ve_address_extended.state_ve_13,Pueblo Llano,base.ve
+municipal_ve_195,l10n_ve_address_extended.state_ve_13,Rangel,base.ve
+municipal_ve_196,l10n_ve_address_extended.state_ve_13,Rivas Dávila,base.ve
+municipal_ve_197,l10n_ve_address_extended.state_ve_13,Santos Marquina,base.ve
+municipal_ve_198,l10n_ve_address_extended.state_ve_13,Sucre,base.ve
+municipal_ve_199,l10n_ve_address_extended.state_ve_13,Tovar,base.ve
+municipal_ve_200,l10n_ve_address_extended.state_ve_13,Tulio Febres Cordero,base.ve
+municipal_ve_201,l10n_ve_address_extended.state_ve_13,Zea,base.ve
+municipal_ve_223,l10n_ve_address_extended.state_ve_14,Acevedo,base.ve
+municipal_ve_224,l10n_ve_address_extended.state_ve_14,Andrés Bello,base.ve
+municipal_ve_225,l10n_ve_address_extended.state_ve_14,Baruta,base.ve
+municipal_ve_226,l10n_ve_address_extended.state_ve_14,Brión,base.ve
+municipal_ve_227,l10n_ve_address_extended.state_ve_14,Buroz,base.ve
+municipal_ve_228,l10n_ve_address_extended.state_ve_14,Carrizal,base.ve
+municipal_ve_229,l10n_ve_address_extended.state_ve_14,Chacao,base.ve
+municipal_ve_230,l10n_ve_address_extended.state_ve_14,Cristóbal Rojas,base.ve
+municipal_ve_231,l10n_ve_address_extended.state_ve_14,El Hatillo,base.ve
+municipal_ve_232,l10n_ve_address_extended.state_ve_14,Guaicaipuro,base.ve
+municipal_ve_233,l10n_ve_address_extended.state_ve_14,Independencia,base.ve
+municipal_ve_234,l10n_ve_address_extended.state_ve_14,Lander,base.ve
+municipal_ve_235,l10n_ve_address_extended.state_ve_14,Los Salias,base.ve
+municipal_ve_236,l10n_ve_address_extended.state_ve_14,Páez,base.ve
+municipal_ve_237,l10n_ve_address_extended.state_ve_14,Paz Castillo,base.ve
+municipal_ve_238,l10n_ve_address_extended.state_ve_14,Pedro Gual,base.ve
+municipal_ve_239,l10n_ve_address_extended.state_ve_14,Plaza,base.ve
+municipal_ve_240,l10n_ve_address_extended.state_ve_14,Simón Bolívar,base.ve
+municipal_ve_241,l10n_ve_address_extended.state_ve_14,Sucre,base.ve
+municipal_ve_242,l10n_ve_address_extended.state_ve_14,Urdaneta,base.ve
+municipal_ve_243,l10n_ve_address_extended.state_ve_14,Zamora,base.ve
+municipal_ve_258,l10n_ve_address_extended.state_ve_15,Acosta,base.ve
+municipal_ve_259,l10n_ve_address_extended.state_ve_15,Aguasay,base.ve
+municipal_ve_260,l10n_ve_address_extended.state_ve_15,Bolívar,base.ve
+municipal_ve_261,l10n_ve_address_extended.state_ve_15,Caripe,base.ve
+municipal_ve_262,l10n_ve_address_extended.state_ve_15,Cedeño,base.ve
+municipal_ve_263,l10n_ve_address_extended.state_ve_15,Ezequiel Zamora,base.ve
+municipal_ve_264,l10n_ve_address_extended.state_ve_15,Libertador,base.ve
+municipal_ve_265,l10n_ve_address_extended.state_ve_15,Maturín,base.ve
+municipal_ve_266,l10n_ve_address_extended.state_ve_15,Piar,base.ve
+municipal_ve_267,l10n_ve_address_extended.state_ve_15,Punceres,base.ve
+municipal_ve_268,l10n_ve_address_extended.state_ve_15,Santa Bárbara,base.ve
+municipal_ve_269,l10n_ve_address_extended.state_ve_15,Sotillo,base.ve
+municipal_ve_270,l10n_ve_address_extended.state_ve_15,Uracoa,base.ve
+municipal_ve_271,l10n_ve_address_extended.state_ve_16,Antolín del Campo,base.ve
+municipal_ve_272,l10n_ve_address_extended.state_ve_16,Arismendi,base.ve
+municipal_ve_273,l10n_ve_address_extended.state_ve_16,García,base.ve
+municipal_ve_274,l10n_ve_address_extended.state_ve_16,Gómez,base.ve
+municipal_ve_275,l10n_ve_address_extended.state_ve_16,Maneiro,base.ve
+municipal_ve_276,l10n_ve_address_extended.state_ve_16,Marcano,base.ve
+municipal_ve_277,l10n_ve_address_extended.state_ve_16,Mariño,base.ve
+municipal_ve_278,l10n_ve_address_extended.state_ve_16,Península de Macanao,base.ve
+municipal_ve_279,l10n_ve_address_extended.state_ve_16,Tubores,base.ve
+municipal_ve_280,l10n_ve_address_extended.state_ve_16,Villalba,base.ve
+municipal_ve_281,l10n_ve_address_extended.state_ve_16,Díaz,base.ve
+municipal_ve_282,l10n_ve_address_extended.state_ve_17,Agua Blanca,base.ve
+municipal_ve_283,l10n_ve_address_extended.state_ve_17,Araure,base.ve
+municipal_ve_284,l10n_ve_address_extended.state_ve_17,Esteller,base.ve
+municipal_ve_285,l10n_ve_address_extended.state_ve_17,Guanare,base.ve
+municipal_ve_286,l10n_ve_address_extended.state_ve_17,Guanarito,base.ve
+municipal_ve_287,l10n_ve_address_extended.state_ve_17,Monseñor José Vicente de Unda,base.ve
+municipal_ve_288,l10n_ve_address_extended.state_ve_17,Ospino,base.ve
+municipal_ve_289,l10n_ve_address_extended.state_ve_17,Páez,base.ve
+municipal_ve_290,l10n_ve_address_extended.state_ve_17,Papelón,base.ve
+municipal_ve_291,l10n_ve_address_extended.state_ve_17,San Genaro de Boconoíto,base.ve
+municipal_ve_292,l10n_ve_address_extended.state_ve_17,San Rafael de Onoto,base.ve
+municipal_ve_293,l10n_ve_address_extended.state_ve_17,Santa Rosalía,base.ve
+municipal_ve_294,l10n_ve_address_extended.state_ve_17,Sucre,base.ve
+municipal_ve_295,l10n_ve_address_extended.state_ve_17,Turén,base.ve
+municipal_ve_296,l10n_ve_address_extended.state_ve_18,Andrés Eloy Blanco,base.ve
+municipal_ve_297,l10n_ve_address_extended.state_ve_18,Andrés Mata,base.ve
+municipal_ve_298,l10n_ve_address_extended.state_ve_18,Arismendi,base.ve
+municipal_ve_299,l10n_ve_address_extended.state_ve_18,Benítez,base.ve
+municipal_ve_300,l10n_ve_address_extended.state_ve_18,Bermúdez,base.ve
+municipal_ve_301,l10n_ve_address_extended.state_ve_18,Bolívar,base.ve
+municipal_ve_302,l10n_ve_address_extended.state_ve_18,Cajigal,base.ve
+municipal_ve_303,l10n_ve_address_extended.state_ve_18,Cruz Salmerón Acosta,base.ve
+municipal_ve_304,l10n_ve_address_extended.state_ve_18,Libertador,base.ve
+municipal_ve_305,l10n_ve_address_extended.state_ve_18,Mariño,base.ve
+municipal_ve_306,l10n_ve_address_extended.state_ve_18,Mejía,base.ve
+municipal_ve_307,l10n_ve_address_extended.state_ve_18,Montes,base.ve
+municipal_ve_308,l10n_ve_address_extended.state_ve_18,Ribero,base.ve
+municipal_ve_309,l10n_ve_address_extended.state_ve_18,Sucre,base.ve
+municipal_ve_310,l10n_ve_address_extended.state_ve_18,Valdéz,base.ve
+municipal_ve_341,l10n_ve_address_extended.state_ve_19,Andrés Bello,base.ve
+municipal_ve_342,l10n_ve_address_extended.state_ve_19,Antonio Rómulo Costa,base.ve
+municipal_ve_343,l10n_ve_address_extended.state_ve_19,Ayacucho,base.ve
+municipal_ve_344,l10n_ve_address_extended.state_ve_19,Bolívar,base.ve
+municipal_ve_345,l10n_ve_address_extended.state_ve_19,Cárdenas,base.ve
+municipal_ve_346,l10n_ve_address_extended.state_ve_19,Córdoba,base.ve
+municipal_ve_347,l10n_ve_address_extended.state_ve_19,Fernández Feo,base.ve
+municipal_ve_348,l10n_ve_address_extended.state_ve_19,Francisco de Miranda,base.ve
+municipal_ve_349,l10n_ve_address_extended.state_ve_19,García de Hevia,base.ve
+municipal_ve_350,l10n_ve_address_extended.state_ve_19,Guásimos,base.ve
+municipal_ve_351,l10n_ve_address_extended.state_ve_19,Independencia,base.ve
+municipal_ve_352,l10n_ve_address_extended.state_ve_19,Jáuregui,base.ve
+municipal_ve_353,l10n_ve_address_extended.state_ve_19,José María Vargas,base.ve
+municipal_ve_354,l10n_ve_address_extended.state_ve_19,Junín,base.ve
+municipal_ve_355,l10n_ve_address_extended.state_ve_19,Libertad,base.ve
+municipal_ve_356,l10n_ve_address_extended.state_ve_19,Libertador,base.ve
+municipal_ve_357,l10n_ve_address_extended.state_ve_19,Lobatera,base.ve
+municipal_ve_358,l10n_ve_address_extended.state_ve_19,Michelena,base.ve
+municipal_ve_359,l10n_ve_address_extended.state_ve_19,Panamericano,base.ve
+municipal_ve_360,l10n_ve_address_extended.state_ve_19,Pedro María Ureña,base.ve
+municipal_ve_361,l10n_ve_address_extended.state_ve_19,Rafael Urdaneta,base.ve
+municipal_ve_362,l10n_ve_address_extended.state_ve_19,Samuel Darío Maldonado,base.ve
+municipal_ve_363,l10n_ve_address_extended.state_ve_19,San Cristóbal,base.ve
+municipal_ve_364,l10n_ve_address_extended.state_ve_19,Seboruco,base.ve
+municipal_ve_365,l10n_ve_address_extended.state_ve_19,Simón Rodríguez,base.ve
+municipal_ve_366,l10n_ve_address_extended.state_ve_19,Sucre,base.ve
+municipal_ve_367,l10n_ve_address_extended.state_ve_19,Torbes,base.ve
+municipal_ve_368,l10n_ve_address_extended.state_ve_19,Uribante,base.ve
+municipal_ve_369,l10n_ve_address_extended.state_ve_19,San Judas Tadeo,base.ve
+municipal_ve_370,l10n_ve_address_extended.state_ve_20,Andrés Bello,base.ve
+municipal_ve_371,l10n_ve_address_extended.state_ve_20,Boconó,base.ve
+municipal_ve_372,l10n_ve_address_extended.state_ve_20,Bolívar,base.ve
+municipal_ve_373,l10n_ve_address_extended.state_ve_20,Candelaria,base.ve
+municipal_ve_374,l10n_ve_address_extended.state_ve_20,Carache,base.ve
+municipal_ve_375,l10n_ve_address_extended.state_ve_20,Escuque,base.ve
+municipal_ve_376,l10n_ve_address_extended.state_ve_20,José Felipe Márquez Cañizalez,base.ve
+municipal_ve_377,l10n_ve_address_extended.state_ve_20,Juan Vicente Campos Elías,base.ve
+municipal_ve_378,l10n_ve_address_extended.state_ve_20,La Ceiba,base.ve
+municipal_ve_379,l10n_ve_address_extended.state_ve_20,Miranda,base.ve
+municipal_ve_380,l10n_ve_address_extended.state_ve_20,Monte Carmelo,base.ve
+municipal_ve_381,l10n_ve_address_extended.state_ve_20,Motatán,base.ve
+municipal_ve_382,l10n_ve_address_extended.state_ve_20,Pampán,base.ve
+municipal_ve_383,l10n_ve_address_extended.state_ve_20,Pampanito,base.ve
+municipal_ve_384,l10n_ve_address_extended.state_ve_20,Rafael Rangel,base.ve
+municipal_ve_385,l10n_ve_address_extended.state_ve_20,San Rafael de Carvajal,base.ve
+municipal_ve_386,l10n_ve_address_extended.state_ve_20,Sucre,base.ve
+municipal_ve_387,l10n_ve_address_extended.state_ve_20,Trujillo,base.ve
+municipal_ve_388,l10n_ve_address_extended.state_ve_20,Urdaneta,base.ve
+municipal_ve_389,l10n_ve_address_extended.state_ve_20,Valera,base.ve
+municipal_ve_390,l10n_ve_address_extended.state_ve_21,Vargas,base.ve
+municipal_ve_391,l10n_ve_address_extended.state_ve_22,Arístides Bastidas,base.ve
+municipal_ve_392,l10n_ve_address_extended.state_ve_22,Bolívar,base.ve
+municipal_ve_407,l10n_ve_address_extended.state_ve_22,Bruzual,base.ve
+municipal_ve_408,l10n_ve_address_extended.state_ve_22,Cocorote,base.ve
+municipal_ve_409,l10n_ve_address_extended.state_ve_22,Independencia,base.ve
+municipal_ve_410,l10n_ve_address_extended.state_ve_22,José Antonio Páez,base.ve
+municipal_ve_411,l10n_ve_address_extended.state_ve_22,La Trinidad,base.ve
+municipal_ve_412,l10n_ve_address_extended.state_ve_22,Manuel Monge,base.ve
+municipal_ve_413,l10n_ve_address_extended.state_ve_22,Nirgua,base.ve
+municipal_ve_414,l10n_ve_address_extended.state_ve_22,Peña,base.ve
+municipal_ve_415,l10n_ve_address_extended.state_ve_22,San Felipe,base.ve
+municipal_ve_416,l10n_ve_address_extended.state_ve_22,Sucre,base.ve
+municipal_ve_417,l10n_ve_address_extended.state_ve_22,Urachiche,base.ve
+municipal_ve_418,l10n_ve_address_extended.state_ve_22,José Joaquín Veroes,base.ve
+municipal_ve_441,l10n_ve_address_extended.state_ve_23,Almirante Padilla,base.ve
+municipal_ve_442,l10n_ve_address_extended.state_ve_23,Baralt,base.ve
+municipal_ve_443,l10n_ve_address_extended.state_ve_23,Cabimas,base.ve
+municipal_ve_444,l10n_ve_address_extended.state_ve_23,Catatumbo,base.ve
+municipal_ve_445,l10n_ve_address_extended.state_ve_23,Colón,base.ve
+municipal_ve_446,l10n_ve_address_extended.state_ve_23,Francisco Javier Pulgar,base.ve
+municipal_ve_447,l10n_ve_address_extended.state_ve_23,Páez,base.ve
+municipal_ve_448,l10n_ve_address_extended.state_ve_23,Jesús Enrique Losada,base.ve
+municipal_ve_449,l10n_ve_address_extended.state_ve_23,Jesús María Semprún,base.ve
+municipal_ve_450,l10n_ve_address_extended.state_ve_23,La Cañada de Urdaneta,base.ve
+municipal_ve_451,l10n_ve_address_extended.state_ve_23,Lagunillas,base.ve
+municipal_ve_452,l10n_ve_address_extended.state_ve_23,Machiques de Perijá,base.ve
+municipal_ve_453,l10n_ve_address_extended.state_ve_23,Mara,base.ve
+municipal_ve_454,l10n_ve_address_extended.state_ve_23,Maracaibo,base.ve
+municipal_ve_455,l10n_ve_address_extended.state_ve_23,Miranda,base.ve
+municipal_ve_456,l10n_ve_address_extended.state_ve_23,Rosario de Perijá,base.ve
+municipal_ve_457,l10n_ve_address_extended.state_ve_23,San Francisco,base.ve
+municipal_ve_458,l10n_ve_address_extended.state_ve_23,Santa Rita,base.ve
+municipal_ve_459,l10n_ve_address_extended.state_ve_23,Simón Bolívar,base.ve
+municipal_ve_460,l10n_ve_address_extended.state_ve_23,Sucre,base.ve
+municipal_ve_461,l10n_ve_address_extended.state_ve_23,Valmore Rodríguez,base.ve
+municipal_ve_462,l10n_ve_address_extended.state_ve_24,Libertador,base.ve

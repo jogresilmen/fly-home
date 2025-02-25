@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_product_bundle_portal_internal,access_product_bundle_internal,sh_base_bundle.model_sh_product_bundle,base.group_user,1,1,1,1
+access_product_bundle_portal_portal,access_product_bundle_portal,sh_base_bundle.model_sh_product_bundle,base.group_portal,1,0,0,0
+access_product_bundle_portal_public,access_product_bundle_public,sh_base_bundle.model_sh_product_bundle,base.group_public,1,0,0,0

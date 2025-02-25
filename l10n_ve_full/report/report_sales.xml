@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_saleorder_document_custom" inherit_id="sale.report_saleorder_document">
+            <xpath expr="//div[@class='page']" position="inside">
+                <t t-if="not doc.env.context.get('email_mode', False)">
+                    <img src="/technipore/static/src/img/marca_de_agua.png" class="watermark" style="position: absolute; z-index: -1; top: 250px; left: 50%;
+                width: 25em; margin-left: -12.5em;"/>
+                </t>
+            </xpath>
+            <xpath expr="//t[@t-set='address']" position="replace">
+                    <div style="text-align: left;">
+                        <div t-field="doc.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
+                        <p t-if="doc.partner_id.vat">
+                            <t t-if="doc.company_id.account_fiscal_country_id.vat_label" t-out="doc.company_id.account_fiscal_country_id.vat_label"/>
+                            <t t-else="">Tax ID</t>: <span t-field="doc.partner_id.vat"/>
+                        </p>
+                    </div>
+            </xpath>
+            <xpath expr="//div[@class='row mt-4 mb-2' and @id='informations']" position="replace">
+                
+            </xpath>
+
+            <xpath expr="//table[@class='table table-sm o_main_table table-borderless mt-4']" position="before">
+                <table class="table table-custom">
+                    <thead>
+                        <tr>
+                            <th>Fecha de emisión</th>
+                            <th>Fecha de vencimiento</th>
+                            <th>Orden de compra</th>
+                            <th>Condiciones de pago</th>
+                            <th>Vendedor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;"><span t-field="doc.date_order" t-options='{"widget": "date"}'/></td>
+                            <td style="text-align: center;"><span t-field="doc.validity_date" t-options='{"widget": "date"}'/></td>
+                            <td style="text-align: center;"><span t-field="doc.name"/></td>
+                            <td style="text-align: center;"><span t-field="doc.payment_term_id.name"/></td>
+                            <td style="text-align: center;"><span t-field="doc.user_id.name"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </xpath>
+            
+            <xpath expr="//table[@class='table table-sm o_main_table table-borderless mt-4']" position="replace">
+                <table class="table table-sm o_main_table table-borderless mt-4" style="font-size: 11px; vertical-align: middle;">
+                    <!-- In case we want to repeat the header, remove "display: table-row-group" -->
+                    <thead style="display: table-row-group">
+                        <tr>
+                            <th name="th_item" class="text-center">ITEM</th>
+                            <th name="th_code" class="text-center">CÓDIGO</th>
+                            <th name="th_description" class="text-center">DESCRIPCIÓN</th>
+                            <th name="th_taxes" class="text-center">I.V.A.</th>
+                            <th name="th_quantity" class="text-center">CANTIDAD</th>
+                            <th name="th_priceunit" class="text-center">PRECIO UNITARIO</th>
+                            <th name="th_discount" class="text-center">
+                                <span>%Desc</span>
+                            </th>
+                            <th name="th_pricesubtotal" class="text-center">PRECIO BRUTO</th>
+                            <th name="th_subtotal" class="text-end">
+                                <span>PRECIO</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="sale_tbody">
+                        <t t-set="counter" t-value="1"/>
+
+                        <t t-foreach="lines_to_report" t-as="line">
+                            <tr t-att-class="'bg-200 fw-bold o_line_section' if line.display_type == 'line_section' else 'fst-italic o_line_note' if line.display_type == 'line_note' else ''">
+                                <t t-if="not line.display_type">
+                                    <td name="td_item" class="text-center">
+                                        <span t-esc="counter"/>
+                                    </td>
+                                    <t t-set="counter" t-value="counter + 1"/>
+
+                                    <td name="td_code" class="text-center">
+                                        <span t-esc="line.product_id.product_tmpl_id.default_code or 'N/A'"/>
+                                    </td>
+
+                                    <td name="td_description" class="text-center">
+                                        <span t-esc="line.name"/>
+                                    </td>
+
+                                    <t t-set="taxes" t-value="', '.join([(tax.invoice_label or tax.name) for tax in line.tax_id])"/>
+                                    <td name="td_taxes" class="text-center">
+                                        <span t-out="taxes or '0%'"/>
+                                    </td>
+
+                                    <td name="td_quantity" class="text-center">
+                                        <span t-field="line.product_uom_qty"/>
+                                    </td>
+
+                                    <td name="td_priceunit" class="text-center">
+                                        <span t-field="line.price_unit"/>
+                                    </td>
+
+                                    <td name="td_discount" class="text-center">
+                                        <span t-field="line.discount"/>
+                                    </td>
+
+                                    <td name="td_pricesubtotal" class="text-center">
+                                        <span t-field="line.price_subtotal"/>
+                                    </td>
+
+                                    <td name="td_subtotal" class="text-end">
+                                        <span t-field="line.price_total"/>
+                                    </td>
+                                </t>
+
+                                <t t-elif="line.display_type == 'line_section'">
+                                    <td name="td_section_line" colspan="99">
+                                        <span t-field="line.name"/>
+                                    </td>
+                                </t>
+
+                                <t t-elif="line.display_type == 'line_note'">
+                                    <td name="td_note_line" colspan="99">
+                                        <span t-field="line.name"/>
+                                    </td>
+                                </t>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </xpath>
+            
+            <xpath expr="//table[@class='table table-sm o_main_table table-borderless mt-4']" position="after">
+                <div>
+                    <p><strong>Notas de ventas:</strong></p>
+                    <p t-field="doc.note"/>
+                </div>
+            </xpath>
+            <xpath expr="//h2[@class='mt-4']" position="replace">
+                <span>   </span>
+            </xpath>
+            <xpath expr="//div[@class='clearfix' and @name='so_total_summary']" position="after">
+                <div class="mt-4" style="text-align: left;">
+                    <p style="font-size: small;">
+                        Para cumplir con lo dispuesto en GO Nro. 42.339, PA000013 esta factura será objeto de IGTF por la alícuota del 3% vigente a partir del 28-03-2022, sobre el monto neto a pagar, siempre y cuando el pago sea realizado en divisas,
+                         criptomonedas o criptoactivos diferentes a los emitidos por la República Bolivariana de Venezuela, sin mediación de instituciones financieras.
+                    </p>
+                    <p style="font-size: small;">
+                        - Favor transferir a la cuenta <strong>1234567890</strong> a nombre de <strong>CORPORACIÓN TECHNIPORE, S.A.</strong><br/>
+                        - Esta factura devengará intereses de mora a la tasa vigente después de su vencimiento.<br/>
+                        - <strong>FAVOR REVISAR SU MERCANCÍA, NO SE ACEPTAN DEVOLUCIONES.</strong><br/>
+                        - <strong>EL PAGO DE ESTA FACTURA DEBERÁ HACERSE AL CAMBIO VIGENTE A LA FECHA DE CANCELACIÓN.</strong><br/>
+                        <strong>VSCBN-03132003104</strong>
+                    </p>
+                </div>
+            </xpath>  
+            <xpath expr="//p[@t-if='not is_html_empty(doc.payment_term_id.note)']" position="replace">
+                <p>
+                
+                </p>
+            </xpath>
+        </template>
+    </data>
+</odoo>

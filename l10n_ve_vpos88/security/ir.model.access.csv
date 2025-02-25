@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sn.zettle.payment.request,access.sn.zettle.payment.request,model_sn_zettle_payment_request,base.group_user,1,1,1,0
+access_sn.zettle.payment.request,access.sn.zettle.payment.request,model_sn_zettle_payment_request,base.group_erp_manager,1,1,1,1
+access_sn.zettle.security,access.sn.zettle.security,model_sn_zettle_security,base.group_erp_manager,1,1,1,1

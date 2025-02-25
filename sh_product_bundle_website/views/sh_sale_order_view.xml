@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="sh_sale_order_form_view_website" model="ir.ui.view">
+        <field name="name">sh.sale.order.form.view.website</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']//tree//field[@name='product_id']" position="after">
+                <field name="is_bundle_item" invisible="1" column_invisible="True" />
+                <field name="sh_bundle_initial_qty" invisible="1" column_invisible="True" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

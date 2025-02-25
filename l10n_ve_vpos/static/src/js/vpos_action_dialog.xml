@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates >
+    <t t-name="l10n_ve_vpos.VPOSActionWizard">
+        <Dialog title="props.title" size="'medium'">
+            <div class="p-3">
+                <t t-if="state.isLoading">
+                    <p>Executing VPOS action...</p>
+                </t>
+                <t t-elif="state.result">
+                    <p>Action executed successfully!</p>
+                    <pre t-esc="JSON.stringify(state.result, null, 2)"/>
+                </t>
+                <t t-elif="state.error">
+                    <p class="text-danger">Error: <t t-esc="state.error"/></p>
+                </t>
+                <t t-else="">
+                    <p>Are you sure you want to execute the VPOS action: <strong t-esc="props.action"></strong>?</p>
+                </t>
+            </div>
+            <t t-set-slot="footer">
+                <button class="btn btn-primary" t-on-click="executeAction" t-att-disabled="state.isLoading || state.result">
+                    Execute Action
+                </button>
+                <button class="btn btn-secondary" t-on-click="() => this.props.close()">Close</button>
+            </t>
+        </Dialog>
+    </t>
+</templates>

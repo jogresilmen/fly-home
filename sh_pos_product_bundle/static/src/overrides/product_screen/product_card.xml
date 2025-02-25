@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-extend="ProductsWidget" t-inherit="point_of_sale.ProductsWidget" t-inherit-mode="extension">
+        <!-- <xpath expr="//ProductCard" position="attributes">
+            <attribute name="sh_is_bundle">product.sh_is_bundle</attribute>
+        </xpath> -->
+    </t>
+
+    <t t-extend="ProductCard" t-inherit="point_of_sale.ProductCard" t-inherit-mode="extension">
+        <xpath expr="//span[hasclass('price-tag')]" position="after">
+            <t t-if="this.env.services.pos.config.enable_product_bundle and props.sh_is_bundle">
+                <div class="sh_product_box_icon">
+                    <span class="product-image-icon" >
+                        <i class="fa fa-bars" t-on-click="() => this.env.services.pos.showStock(props.productId)" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </t>
+        </xpath>
+    </t>
+</templates>

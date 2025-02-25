@@ -1,0 +1,7 @@
+<templates>
+    <t t-name="YourModule.OpenModalButton">
+        <button type="button" t-on-click="openModal" class="btn btn-primary">
+            Abrir Modal
+        </button>
+    </t>
+</templates>

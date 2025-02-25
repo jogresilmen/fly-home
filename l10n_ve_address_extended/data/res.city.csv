@@ -1,0 +1,499 @@
+id,state_id:id,name,is_capital,country_id:id
+city_ve_1,l10n_ve_address_extended.state_ve_1,Maroa,0,base.ve
+city_ve_2,l10n_ve_address_extended.state_ve_1,Puerto Ayacucho,1,base.ve
+city_ve_3,l10n_ve_address_extended.state_ve_1,San Fernando de Atabapo,0,base.ve
+city_ve_4,l10n_ve_address_extended.state_ve_2,Anaco,0,base.ve
+city_ve_5,l10n_ve_address_extended.state_ve_2,Aragua de Barcelona,0,base.ve
+city_ve_6,l10n_ve_address_extended.state_ve_2,Barcelona,1,base.ve
+city_ve_7,l10n_ve_address_extended.state_ve_2,Boca de Uchire,0,base.ve
+city_ve_8,l10n_ve_address_extended.state_ve_2,Cantaura,0,base.ve
+city_ve_9,l10n_ve_address_extended.state_ve_2,Clarines,0,base.ve
+city_ve_10,l10n_ve_address_extended.state_ve_2,El Chaparro,0,base.ve
+city_ve_11,l10n_ve_address_extended.state_ve_2,El Pao Anzoátegui,0,base.ve
+city_ve_12,l10n_ve_address_extended.state_ve_2,El Tigre,0,base.ve
+city_ve_13,l10n_ve_address_extended.state_ve_2,El Tigrito,0,base.ve
+city_ve_14,l10n_ve_address_extended.state_ve_2,Guanape,0,base.ve
+city_ve_15,l10n_ve_address_extended.state_ve_2,Guanta,0,base.ve
+city_ve_16,l10n_ve_address_extended.state_ve_2,Lechería,0,base.ve
+city_ve_17,l10n_ve_address_extended.state_ve_2,Onoto,0,base.ve
+city_ve_18,l10n_ve_address_extended.state_ve_2,Pariaguán,0,base.ve
+city_ve_19,l10n_ve_address_extended.state_ve_2,Píritu,0,base.ve
+city_ve_20,l10n_ve_address_extended.state_ve_2,Puerto La Cruz,0,base.ve
+city_ve_21,l10n_ve_address_extended.state_ve_2,Puerto Píritu,0,base.ve
+city_ve_22,l10n_ve_address_extended.state_ve_2,Sabana de Uchire,0,base.ve
+city_ve_23,l10n_ve_address_extended.state_ve_2,San Mateo Anzoátegui,0,base.ve
+city_ve_24,l10n_ve_address_extended.state_ve_2,San Pablo Anzoátegui,0,base.ve
+city_ve_25,l10n_ve_address_extended.state_ve_2,San Tomé,0,base.ve
+city_ve_26,l10n_ve_address_extended.state_ve_2,Santa Ana de Anzoátegui,0,base.ve
+city_ve_27,l10n_ve_address_extended.state_ve_2,Santa Fe Anzoátegui,0,base.ve
+city_ve_28,l10n_ve_address_extended.state_ve_2,Santa Rosa,0,base.ve
+city_ve_29,l10n_ve_address_extended.state_ve_2,Soledad,0,base.ve
+city_ve_30,l10n_ve_address_extended.state_ve_2,Urica,0,base.ve
+city_ve_31,l10n_ve_address_extended.state_ve_2,Valle de Guanape,0,base.ve
+city_ve_43,l10n_ve_address_extended.state_ve_3,Achaguas,0,base.ve
+city_ve_44,l10n_ve_address_extended.state_ve_3,Biruaca,0,base.ve
+city_ve_45,l10n_ve_address_extended.state_ve_3,Bruzual,0,base.ve
+city_ve_46,l10n_ve_address_extended.state_ve_3,El Amparo,0,base.ve
+city_ve_47,l10n_ve_address_extended.state_ve_3,El Nula,0,base.ve
+city_ve_48,l10n_ve_address_extended.state_ve_3,Elorza,0,base.ve
+city_ve_49,l10n_ve_address_extended.state_ve_3,Guasdualito,0,base.ve
+city_ve_50,l10n_ve_address_extended.state_ve_3,Mantecal,0,base.ve
+city_ve_51,l10n_ve_address_extended.state_ve_3,Puerto Páez,0,base.ve
+city_ve_52,l10n_ve_address_extended.state_ve_3,San Fernando de Apure,1,base.ve
+city_ve_53,l10n_ve_address_extended.state_ve_3,San Juan de Payara,0,base.ve
+city_ve_54,l10n_ve_address_extended.state_ve_4,Barbacoas,0,base.ve
+city_ve_55,l10n_ve_address_extended.state_ve_4,Cagua,0,base.ve
+city_ve_56,l10n_ve_address_extended.state_ve_4,Camatagua,0,base.ve
+city_ve_58,l10n_ve_address_extended.state_ve_4,Choroní,0,base.ve
+city_ve_59,l10n_ve_address_extended.state_ve_4,Colonia Tovar,0,base.ve
+city_ve_60,l10n_ve_address_extended.state_ve_4,El Consejo,0,base.ve
+city_ve_61,l10n_ve_address_extended.state_ve_4,La Victoria,0,base.ve
+city_ve_62,l10n_ve_address_extended.state_ve_4,Las Tejerías,0,base.ve
+city_ve_63,l10n_ve_address_extended.state_ve_4,Magdaleno,0,base.ve
+city_ve_64,l10n_ve_address_extended.state_ve_4,Maracay,1,base.ve
+city_ve_65,l10n_ve_address_extended.state_ve_4,Ocumare de La Costa,0,base.ve
+city_ve_66,l10n_ve_address_extended.state_ve_4,Palo Negro,0,base.ve
+city_ve_67,l10n_ve_address_extended.state_ve_4,San Casimiro,0,base.ve
+city_ve_68,l10n_ve_address_extended.state_ve_4,San Mateo,0,base.ve
+city_ve_69,l10n_ve_address_extended.state_ve_4,San Sebastián,0,base.ve
+city_ve_70,l10n_ve_address_extended.state_ve_4,Santa Cruz de Aragua,0,base.ve
+city_ve_71,l10n_ve_address_extended.state_ve_4,Tocorón,0,base.ve
+city_ve_72,l10n_ve_address_extended.state_ve_4,Turmero,0,base.ve
+city_ve_73,l10n_ve_address_extended.state_ve_4,Villa de Cura,0,base.ve
+city_ve_74,l10n_ve_address_extended.state_ve_4,Zuata,0,base.ve
+city_ve_75,l10n_ve_address_extended.state_ve_5,Barinas,1,base.ve
+city_ve_76,l10n_ve_address_extended.state_ve_5,Barinitas,0,base.ve
+city_ve_77,l10n_ve_address_extended.state_ve_5,Barrancas,0,base.ve
+city_ve_78,l10n_ve_address_extended.state_ve_5,Calderas,0,base.ve
+city_ve_79,l10n_ve_address_extended.state_ve_5,Capitanejo,0,base.ve
+city_ve_80,l10n_ve_address_extended.state_ve_5,Ciudad Bolivia,0,base.ve
+city_ve_81,l10n_ve_address_extended.state_ve_5,El Cantón,0,base.ve
+city_ve_82,l10n_ve_address_extended.state_ve_5,Las Veguitas,0,base.ve
+city_ve_83,l10n_ve_address_extended.state_ve_5,Libertad de Barinas,0,base.ve
+city_ve_84,l10n_ve_address_extended.state_ve_5,Sabaneta,0,base.ve
+city_ve_85,l10n_ve_address_extended.state_ve_5,Santa Bárbara de Barinas,0,base.ve
+city_ve_86,l10n_ve_address_extended.state_ve_5,Socopó,0,base.ve
+city_ve_87,l10n_ve_address_extended.state_ve_6,Caicara del Orinoco,0,base.ve
+city_ve_88,l10n_ve_address_extended.state_ve_6,Canaima,0,base.ve
+city_ve_89,l10n_ve_address_extended.state_ve_6,Ciudad Bolívar,1,base.ve
+city_ve_90,l10n_ve_address_extended.state_ve_6,Ciudad Piar,0,base.ve
+city_ve_91,l10n_ve_address_extended.state_ve_6,El Callao,0,base.ve
+city_ve_92,l10n_ve_address_extended.state_ve_6,El Dorado,0,base.ve
+city_ve_93,l10n_ve_address_extended.state_ve_6,El Manteco,0,base.ve
+city_ve_94,l10n_ve_address_extended.state_ve_6,El Palmar,0,base.ve
+city_ve_95,l10n_ve_address_extended.state_ve_6,El Pao,0,base.ve
+city_ve_96,l10n_ve_address_extended.state_ve_6,Guasipati,0,base.ve
+city_ve_97,l10n_ve_address_extended.state_ve_6,Guri,0,base.ve
+city_ve_98,l10n_ve_address_extended.state_ve_6,La Paragua,0,base.ve
+city_ve_99,l10n_ve_address_extended.state_ve_6,Matanzas,0,base.ve
+city_ve_100,l10n_ve_address_extended.state_ve_6,Puerto Ordaz,0,base.ve
+city_ve_101,l10n_ve_address_extended.state_ve_6,San Félix,0,base.ve
+city_ve_102,l10n_ve_address_extended.state_ve_6,Santa Elena de Uairén,0,base.ve
+city_ve_103,l10n_ve_address_extended.state_ve_6,Tumeremo,0,base.ve
+city_ve_104,l10n_ve_address_extended.state_ve_6,Unare,0,base.ve
+city_ve_105,l10n_ve_address_extended.state_ve_6,Upata,0,base.ve
+city_ve_106,l10n_ve_address_extended.state_ve_7,Bejuma,0,base.ve
+city_ve_107,l10n_ve_address_extended.state_ve_7,Belén,0,base.ve
+city_ve_108,l10n_ve_address_extended.state_ve_7,Campo de Carabobo,0,base.ve
+city_ve_109,l10n_ve_address_extended.state_ve_7,Canoabo,0,base.ve
+city_ve_110,l10n_ve_address_extended.state_ve_7,Central Tacarigua,0,base.ve
+city_ve_111,l10n_ve_address_extended.state_ve_7,Chirgua,0,base.ve
+city_ve_112,l10n_ve_address_extended.state_ve_7,Ciudad Alianza,0,base.ve
+city_ve_113,l10n_ve_address_extended.state_ve_7,El Palito,0,base.ve
+city_ve_114,l10n_ve_address_extended.state_ve_7,Guacara,0,base.ve
+city_ve_115,l10n_ve_address_extended.state_ve_7,Guigue,0,base.ve
+city_ve_116,l10n_ve_address_extended.state_ve_7,Las Trincheras,0,base.ve
+city_ve_117,l10n_ve_address_extended.state_ve_7,Los Guayos,0,base.ve
+city_ve_118,l10n_ve_address_extended.state_ve_7,Mariara,0,base.ve
+city_ve_119,l10n_ve_address_extended.state_ve_7,Miranda,0,base.ve
+city_ve_120,l10n_ve_address_extended.state_ve_7,Montalbán,0,base.ve
+city_ve_121,l10n_ve_address_extended.state_ve_7,Morón,0,base.ve
+city_ve_122,l10n_ve_address_extended.state_ve_7,Naguanagua,0,base.ve
+city_ve_123,l10n_ve_address_extended.state_ve_7,Puerto Cabello,0,base.ve
+city_ve_124,l10n_ve_address_extended.state_ve_7,San Joaquín,0,base.ve
+city_ve_125,l10n_ve_address_extended.state_ve_7,Tocuyito,0,base.ve
+city_ve_126,l10n_ve_address_extended.state_ve_7,Urama,0,base.ve
+city_ve_127,l10n_ve_address_extended.state_ve_7,Valencia,1,base.ve
+city_ve_128,l10n_ve_address_extended.state_ve_7,Vigirimita,0,base.ve
+city_ve_129,l10n_ve_address_extended.state_ve_8,Aguirre,0,base.ve
+city_ve_130,l10n_ve_address_extended.state_ve_8,Apartaderos Cojedes,0,base.ve
+city_ve_131,l10n_ve_address_extended.state_ve_8,Arismendi,0,base.ve
+city_ve_132,l10n_ve_address_extended.state_ve_8,Camuriquito,0,base.ve
+city_ve_133,l10n_ve_address_extended.state_ve_8,El Baúl,0,base.ve
+city_ve_134,l10n_ve_address_extended.state_ve_8,El Limón,0,base.ve
+city_ve_135,l10n_ve_address_extended.state_ve_8,El Pao Cojedes,0,base.ve
+city_ve_136,l10n_ve_address_extended.state_ve_8,El Socorro,0,base.ve
+city_ve_137,l10n_ve_address_extended.state_ve_8,La Aguadita,0,base.ve
+city_ve_138,l10n_ve_address_extended.state_ve_8,Las Vegas,0,base.ve
+city_ve_139,l10n_ve_address_extended.state_ve_8,Libertad de Cojedes,0,base.ve
+city_ve_140,l10n_ve_address_extended.state_ve_8,Mapuey,0,base.ve
+city_ve_141,l10n_ve_address_extended.state_ve_8,Piñedo,0,base.ve
+city_ve_142,l10n_ve_address_extended.state_ve_8,Samancito,0,base.ve
+city_ve_143,l10n_ve_address_extended.state_ve_8,San Carlos,1,base.ve
+city_ve_144,l10n_ve_address_extended.state_ve_8,Sucre,0,base.ve
+city_ve_145,l10n_ve_address_extended.state_ve_8,Tinaco,0,base.ve
+city_ve_146,l10n_ve_address_extended.state_ve_8,Tinaquillo,0,base.ve
+city_ve_147,l10n_ve_address_extended.state_ve_8,Vallecito,0,base.ve
+city_ve_148,l10n_ve_address_extended.state_ve_9,Tucupita,1,base.ve
+city_ve_149,l10n_ve_address_extended.state_ve_24,Caracas,1,base.ve
+city_ve_150,l10n_ve_address_extended.state_ve_24,El Junquito,0,base.ve
+city_ve_151,l10n_ve_address_extended.state_ve_10,Adícora,0,base.ve
+city_ve_152,l10n_ve_address_extended.state_ve_10,Boca de Aroa,0,base.ve
+city_ve_153,l10n_ve_address_extended.state_ve_10,Cabure,0,base.ve
+city_ve_154,l10n_ve_address_extended.state_ve_10,Capadare,0,base.ve
+city_ve_155,l10n_ve_address_extended.state_ve_10,Capatárida,0,base.ve
+city_ve_156,l10n_ve_address_extended.state_ve_10,Chichiriviche,0,base.ve
+city_ve_157,l10n_ve_address_extended.state_ve_10,Churuguara,0,base.ve
+city_ve_158,l10n_ve_address_extended.state_ve_10,Coro,1,base.ve
+city_ve_159,l10n_ve_address_extended.state_ve_10,Cumarebo,0,base.ve
+city_ve_160,l10n_ve_address_extended.state_ve_10,Dabajuro,0,base.ve
+city_ve_161,l10n_ve_address_extended.state_ve_10,Judibana,0,base.ve
+city_ve_162,l10n_ve_address_extended.state_ve_10,La Cruz de Taratara,0,base.ve
+city_ve_163,l10n_ve_address_extended.state_ve_10,La Vela de Coro,0,base.ve
+city_ve_164,l10n_ve_address_extended.state_ve_10,Los Taques,0,base.ve
+city_ve_165,l10n_ve_address_extended.state_ve_10,Maparari,0,base.ve
+city_ve_166,l10n_ve_address_extended.state_ve_10,Mene de Mauroa,0,base.ve
+city_ve_167,l10n_ve_address_extended.state_ve_10,Mirimire,0,base.ve
+city_ve_168,l10n_ve_address_extended.state_ve_10,Pedregal,0,base.ve
+city_ve_169,l10n_ve_address_extended.state_ve_10,Píritu Falcón,0,base.ve
+city_ve_170,l10n_ve_address_extended.state_ve_10,Pueblo Nuevo Falcón,0,base.ve
+city_ve_171,l10n_ve_address_extended.state_ve_10,Puerto Cumarebo,0,base.ve
+city_ve_172,l10n_ve_address_extended.state_ve_10,Punta Cardón,0,base.ve
+city_ve_173,l10n_ve_address_extended.state_ve_10,Punto Fijo,0,base.ve
+city_ve_174,l10n_ve_address_extended.state_ve_10,San Juan de Los Cayos,0,base.ve
+city_ve_175,l10n_ve_address_extended.state_ve_10,San Luis,0,base.ve
+city_ve_176,l10n_ve_address_extended.state_ve_10,Santa Ana Falcón,0,base.ve
+city_ve_177,l10n_ve_address_extended.state_ve_10,Santa Cruz De Bucaral,0,base.ve
+city_ve_178,l10n_ve_address_extended.state_ve_10,Tocopero,0,base.ve
+city_ve_179,l10n_ve_address_extended.state_ve_10,Tocuyo de La Costa,0,base.ve
+city_ve_180,l10n_ve_address_extended.state_ve_10,Tucacas,0,base.ve
+city_ve_181,l10n_ve_address_extended.state_ve_10,Yaracal,0,base.ve
+city_ve_182,l10n_ve_address_extended.state_ve_11,Altagracia de Orituco,0,base.ve
+city_ve_183,l10n_ve_address_extended.state_ve_11,Cabruta,0,base.ve
+city_ve_184,l10n_ve_address_extended.state_ve_11,Calabozo,0,base.ve
+city_ve_185,l10n_ve_address_extended.state_ve_11,Camaguán,0,base.ve
+city_ve_196,l10n_ve_address_extended.state_ve_11,Chaguaramas Guárico,0,base.ve
+city_ve_197,l10n_ve_address_extended.state_ve_11,El Socorro,0,base.ve
+city_ve_198,l10n_ve_address_extended.state_ve_11,El Sombrero,0,base.ve
+city_ve_199,l10n_ve_address_extended.state_ve_11,Las Mercedes de Los Llanos,0,base.ve
+city_ve_200,l10n_ve_address_extended.state_ve_11,Lezama,0,base.ve
+city_ve_201,l10n_ve_address_extended.state_ve_11,Onoto,0,base.ve
+city_ve_202,l10n_ve_address_extended.state_ve_11,Ortíz,0,base.ve
+city_ve_203,l10n_ve_address_extended.state_ve_11,San José de Guaribe,0,base.ve
+city_ve_204,l10n_ve_address_extended.state_ve_11,San Juan de Los Morros,1,base.ve
+city_ve_205,l10n_ve_address_extended.state_ve_11,San Rafael de Laya,0,base.ve
+city_ve_206,l10n_ve_address_extended.state_ve_11,Santa María de Ipire,0,base.ve
+city_ve_207,l10n_ve_address_extended.state_ve_11,Tucupido,0,base.ve
+city_ve_208,l10n_ve_address_extended.state_ve_11,Valle de La Pascua,0,base.ve
+city_ve_209,l10n_ve_address_extended.state_ve_11,Zaraza,0,base.ve
+city_ve_210,l10n_ve_address_extended.state_ve_12,Aguada Grande,0,base.ve
+city_ve_211,l10n_ve_address_extended.state_ve_12,Atarigua,0,base.ve
+city_ve_212,l10n_ve_address_extended.state_ve_12,Barquisimeto,1,base.ve
+city_ve_213,l10n_ve_address_extended.state_ve_12,Bobare,0,base.ve
+city_ve_214,l10n_ve_address_extended.state_ve_12,Cabudare,0,base.ve
+city_ve_215,l10n_ve_address_extended.state_ve_12,Carora,0,base.ve
+city_ve_216,l10n_ve_address_extended.state_ve_12,Cubiro,0,base.ve
+city_ve_217,l10n_ve_address_extended.state_ve_12,Cují,0,base.ve
+city_ve_218,l10n_ve_address_extended.state_ve_12,Duaca,0,base.ve
+city_ve_219,l10n_ve_address_extended.state_ve_12,El Manzano,0,base.ve
+city_ve_220,l10n_ve_address_extended.state_ve_12,El Tocuyo,0,base.ve
+city_ve_221,l10n_ve_address_extended.state_ve_12,Guaríco,0,base.ve
+city_ve_222,l10n_ve_address_extended.state_ve_12,Humocaro Alto,0,base.ve
+city_ve_223,l10n_ve_address_extended.state_ve_12,Humocaro Bajo,0,base.ve
+city_ve_224,l10n_ve_address_extended.state_ve_12,La Miel,0,base.ve
+city_ve_225,l10n_ve_address_extended.state_ve_12,Moroturo,0,base.ve
+city_ve_226,l10n_ve_address_extended.state_ve_12,Quíbor,0,base.ve
+city_ve_227,l10n_ve_address_extended.state_ve_12,Río Claro,0,base.ve
+city_ve_228,l10n_ve_address_extended.state_ve_12,Sanare,0,base.ve
+city_ve_229,l10n_ve_address_extended.state_ve_12,Santa Inés,0,base.ve
+city_ve_230,l10n_ve_address_extended.state_ve_12,Sarare,0,base.ve
+city_ve_231,l10n_ve_address_extended.state_ve_12,Siquisique,0,base.ve
+city_ve_232,l10n_ve_address_extended.state_ve_12,Tintorero,0,base.ve
+city_ve_233,l10n_ve_address_extended.state_ve_13,Apartaderos Mérida,0,base.ve
+city_ve_234,l10n_ve_address_extended.state_ve_13,Arapuey,0,base.ve
+city_ve_235,l10n_ve_address_extended.state_ve_13,Bailadores,0,base.ve
+city_ve_236,l10n_ve_address_extended.state_ve_13,Caja Seca,0,base.ve
+city_ve_237,l10n_ve_address_extended.state_ve_13,Canaguá,0,base.ve
+city_ve_238,l10n_ve_address_extended.state_ve_13,Chachopo,0,base.ve
+city_ve_239,l10n_ve_address_extended.state_ve_13,Chiguara,0,base.ve
+city_ve_240,l10n_ve_address_extended.state_ve_13,Ejido,0,base.ve
+city_ve_241,l10n_ve_address_extended.state_ve_13,El Vigía,0,base.ve
+city_ve_242,l10n_ve_address_extended.state_ve_13,La Azulita,0,base.ve
+city_ve_243,l10n_ve_address_extended.state_ve_13,La Playa,0,base.ve
+city_ve_244,l10n_ve_address_extended.state_ve_13,Lagunillas Mérida,0,base.ve
+city_ve_245,l10n_ve_address_extended.state_ve_13,Mérida,1,base.ve
+city_ve_246,l10n_ve_address_extended.state_ve_13,Mesa de Bolívar,0,base.ve
+city_ve_247,l10n_ve_address_extended.state_ve_13,Mucuchíes,0,base.ve
+city_ve_248,l10n_ve_address_extended.state_ve_13,Mucujepe,0,base.ve
+city_ve_249,l10n_ve_address_extended.state_ve_13,Mucuruba,0,base.ve
+city_ve_250,l10n_ve_address_extended.state_ve_13,Nueva Bolivia,0,base.ve
+city_ve_251,l10n_ve_address_extended.state_ve_13,Palmarito,0,base.ve
+city_ve_252,l10n_ve_address_extended.state_ve_13,Pueblo Llano,0,base.ve
+city_ve_253,l10n_ve_address_extended.state_ve_13,Santa Cruz de Mora,0,base.ve
+city_ve_254,l10n_ve_address_extended.state_ve_13,Santa Elena de Arenales,0,base.ve
+city_ve_255,l10n_ve_address_extended.state_ve_13,Santo Domingo,0,base.ve
+city_ve_256,l10n_ve_address_extended.state_ve_13,Tabáy,0,base.ve
+city_ve_257,l10n_ve_address_extended.state_ve_13,Timotes,0,base.ve
+city_ve_258,l10n_ve_address_extended.state_ve_13,Torondoy,0,base.ve
+city_ve_259,l10n_ve_address_extended.state_ve_13,Tovar,0,base.ve
+city_ve_260,l10n_ve_address_extended.state_ve_13,Tucani,0,base.ve
+city_ve_261,l10n_ve_address_extended.state_ve_13,Zea,0,base.ve
+city_ve_262,l10n_ve_address_extended.state_ve_14,Araguita,0,base.ve
+city_ve_263,l10n_ve_address_extended.state_ve_14,Carrizal,0,base.ve
+city_ve_264,l10n_ve_address_extended.state_ve_14,Caucagua,0,base.ve
+city_ve_265,l10n_ve_address_extended.state_ve_14,Chaguaramas Miranda,0,base.ve
+city_ve_266,l10n_ve_address_extended.state_ve_14,Charallave,0,base.ve
+city_ve_267,l10n_ve_address_extended.state_ve_14,Chirimena,0,base.ve
+city_ve_268,l10n_ve_address_extended.state_ve_14,Chuspa,0,base.ve
+city_ve_269,l10n_ve_address_extended.state_ve_14,Cúa,0,base.ve
+city_ve_270,l10n_ve_address_extended.state_ve_14,Cupira,0,base.ve
+city_ve_271,l10n_ve_address_extended.state_ve_14,Curiepe,0,base.ve
+city_ve_272,l10n_ve_address_extended.state_ve_14,El Guapo,0,base.ve
+city_ve_273,l10n_ve_address_extended.state_ve_14,El Jarillo,0,base.ve
+city_ve_274,l10n_ve_address_extended.state_ve_14,Filas de Mariche,0,base.ve
+city_ve_275,l10n_ve_address_extended.state_ve_14,Guarenas,0,base.ve
+city_ve_276,l10n_ve_address_extended.state_ve_14,Guatire,0,base.ve
+city_ve_277,l10n_ve_address_extended.state_ve_14,Higuerote,0,base.ve
+city_ve_278,l10n_ve_address_extended.state_ve_14,Los Anaucos,0,base.ve
+city_ve_279,l10n_ve_address_extended.state_ve_14,Los Teques,1,base.ve
+city_ve_280,l10n_ve_address_extended.state_ve_14,Ocumare del Tuy,0,base.ve
+city_ve_281,l10n_ve_address_extended.state_ve_14,Panaquire,0,base.ve
+city_ve_282,l10n_ve_address_extended.state_ve_14,Paracotos,0,base.ve
+city_ve_283,l10n_ve_address_extended.state_ve_14,Río Chico,0,base.ve
+city_ve_284,l10n_ve_address_extended.state_ve_14,San Antonio de Los Altos,0,base.ve
+city_ve_285,l10n_ve_address_extended.state_ve_14,San Diego de Los Altos,0,base.ve
+city_ve_286,l10n_ve_address_extended.state_ve_14,San Fernando del Guapo,0,base.ve
+city_ve_287,l10n_ve_address_extended.state_ve_14,San Francisco de Yare,0,base.ve
+city_ve_288,l10n_ve_address_extended.state_ve_14,San José de Los Altos,0,base.ve
+city_ve_289,l10n_ve_address_extended.state_ve_14,San José de Río Chico,0,base.ve
+city_ve_290,l10n_ve_address_extended.state_ve_14,San Pedro de Los Altos,0,base.ve
+city_ve_291,l10n_ve_address_extended.state_ve_14,Santa Lucía,0,base.ve
+city_ve_292,l10n_ve_address_extended.state_ve_14,Santa Teresa,0,base.ve
+city_ve_293,l10n_ve_address_extended.state_ve_14,Tacarigua de La Laguna,0,base.ve
+city_ve_294,l10n_ve_address_extended.state_ve_14,Tacarigua de Mamporal,0,base.ve
+city_ve_295,l10n_ve_address_extended.state_ve_14,Tácata,0,base.ve
+city_ve_296,l10n_ve_address_extended.state_ve_14,Turumo,0,base.ve
+city_ve_297,l10n_ve_address_extended.state_ve_15,Aguasay,0,base.ve
+city_ve_298,l10n_ve_address_extended.state_ve_15,Aragua de Maturín,0,base.ve
+city_ve_299,l10n_ve_address_extended.state_ve_15,Barrancas del Orinoco,0,base.ve
+city_ve_300,l10n_ve_address_extended.state_ve_15,Caicara de Maturín,0,base.ve
+city_ve_301,l10n_ve_address_extended.state_ve_15,Caripe,0,base.ve
+city_ve_302,l10n_ve_address_extended.state_ve_15,Caripito,0,base.ve
+city_ve_303,l10n_ve_address_extended.state_ve_15,Chaguaramal,0,base.ve
+city_ve_305,l10n_ve_address_extended.state_ve_15,Chaguaramas Monagas,0,base.ve
+city_ve_307,l10n_ve_address_extended.state_ve_15,El Furrial,0,base.ve
+city_ve_308,l10n_ve_address_extended.state_ve_15,El Tejero,0,base.ve
+city_ve_309,l10n_ve_address_extended.state_ve_15,Jusepín,0,base.ve
+city_ve_310,l10n_ve_address_extended.state_ve_15,La Toscana,0,base.ve
+city_ve_311,l10n_ve_address_extended.state_ve_15,Maturín,1,base.ve
+city_ve_312,l10n_ve_address_extended.state_ve_15,Miraflores,0,base.ve
+city_ve_313,l10n_ve_address_extended.state_ve_15,Punta de Mata,0,base.ve
+city_ve_314,l10n_ve_address_extended.state_ve_15,Quiriquire,0,base.ve
+city_ve_315,l10n_ve_address_extended.state_ve_15,San Antonio de Maturín,0,base.ve
+city_ve_316,l10n_ve_address_extended.state_ve_15,San Vicente Monagas,0,base.ve
+city_ve_317,l10n_ve_address_extended.state_ve_15,Santa Bárbara,0,base.ve
+city_ve_318,l10n_ve_address_extended.state_ve_15,Temblador,0,base.ve
+city_ve_319,l10n_ve_address_extended.state_ve_15,Teresen,0,base.ve
+city_ve_320,l10n_ve_address_extended.state_ve_15,Uracoa,0,base.ve
+city_ve_321,l10n_ve_address_extended.state_ve_16,Altagracia,0,base.ve
+city_ve_322,l10n_ve_address_extended.state_ve_16,Boca de Pozo,0,base.ve
+city_ve_323,l10n_ve_address_extended.state_ve_16,Boca de Río,0,base.ve
+city_ve_324,l10n_ve_address_extended.state_ve_16,El Espinal,0,base.ve
+city_ve_325,l10n_ve_address_extended.state_ve_16,El Valle del Espíritu Santo,0,base.ve
+city_ve_326,l10n_ve_address_extended.state_ve_16,El Yaque,0,base.ve
+city_ve_327,l10n_ve_address_extended.state_ve_16,Juangriego,0,base.ve
+city_ve_328,l10n_ve_address_extended.state_ve_16,La Asunción,1,base.ve
+city_ve_329,l10n_ve_address_extended.state_ve_16,La Guardia,0,base.ve
+city_ve_330,l10n_ve_address_extended.state_ve_16,Pampatar,0,base.ve
+city_ve_331,l10n_ve_address_extended.state_ve_16,Porlamar,0,base.ve
+city_ve_332,l10n_ve_address_extended.state_ve_16,Puerto Fermín,0,base.ve
+city_ve_333,l10n_ve_address_extended.state_ve_16,Punta de Piedras,0,base.ve
+city_ve_334,l10n_ve_address_extended.state_ve_16,San Francisco de Macanao,0,base.ve
+city_ve_335,l10n_ve_address_extended.state_ve_16,San Juan Bautista,0,base.ve
+city_ve_336,l10n_ve_address_extended.state_ve_16,San Pedro de Coche,0,base.ve
+city_ve_337,l10n_ve_address_extended.state_ve_16,Santa Ana de Nueva Esparta,0,base.ve
+city_ve_338,l10n_ve_address_extended.state_ve_16,Villa Rosa,0,base.ve
+city_ve_339,l10n_ve_address_extended.state_ve_17,Acarigua,0,base.ve
+city_ve_340,l10n_ve_address_extended.state_ve_17,Agua Blanca,0,base.ve
+city_ve_341,l10n_ve_address_extended.state_ve_17,Araure,0,base.ve
+city_ve_342,l10n_ve_address_extended.state_ve_17,Biscucuy,0,base.ve
+city_ve_343,l10n_ve_address_extended.state_ve_17,Boconoito,0,base.ve
+city_ve_344,l10n_ve_address_extended.state_ve_17,Campo Elías,0,base.ve
+city_ve_345,l10n_ve_address_extended.state_ve_17,Chabasquén,0,base.ve
+city_ve_346,l10n_ve_address_extended.state_ve_17,Guanare,1,base.ve
+city_ve_347,l10n_ve_address_extended.state_ve_17,Guanarito,0,base.ve
+city_ve_348,l10n_ve_address_extended.state_ve_17,La Aparición,0,base.ve
+city_ve_349,l10n_ve_address_extended.state_ve_17,La Misión,0,base.ve
+city_ve_350,l10n_ve_address_extended.state_ve_17,Mesa de Cavacas,0,base.ve
+city_ve_351,l10n_ve_address_extended.state_ve_17,Ospino,0,base.ve
+city_ve_352,l10n_ve_address_extended.state_ve_17,Papelón,0,base.ve
+city_ve_353,l10n_ve_address_extended.state_ve_17,Payara,0,base.ve
+city_ve_354,l10n_ve_address_extended.state_ve_17,Pimpinela,0,base.ve
+city_ve_355,l10n_ve_address_extended.state_ve_17,Píritu de Portuguesa,0,base.ve
+city_ve_356,l10n_ve_address_extended.state_ve_17,San Rafael de Onoto,0,base.ve
+city_ve_357,l10n_ve_address_extended.state_ve_17,Santa Rosalía,0,base.ve
+city_ve_358,l10n_ve_address_extended.state_ve_17,Turén,0,base.ve
+city_ve_359,l10n_ve_address_extended.state_ve_18,Altos de Sucre,0,base.ve
+city_ve_360,l10n_ve_address_extended.state_ve_18,Araya,0,base.ve
+city_ve_361,l10n_ve_address_extended.state_ve_18,Cariaco,0,base.ve
+city_ve_362,l10n_ve_address_extended.state_ve_18,Carúpano,0,base.ve
+city_ve_363,l10n_ve_address_extended.state_ve_18,Casanay,0,base.ve
+city_ve_364,l10n_ve_address_extended.state_ve_18,Cumaná,1,base.ve
+city_ve_365,l10n_ve_address_extended.state_ve_18,Cumanacoa,0,base.ve
+city_ve_366,l10n_ve_address_extended.state_ve_18,El Morro Puerto Santo,0,base.ve
+city_ve_367,l10n_ve_address_extended.state_ve_18,El Pilar,0,base.ve
+city_ve_368,l10n_ve_address_extended.state_ve_18,El Poblado,0,base.ve
+city_ve_369,l10n_ve_address_extended.state_ve_18,Guaca,0,base.ve
+city_ve_370,l10n_ve_address_extended.state_ve_18,Guiria,0,base.ve
+city_ve_371,l10n_ve_address_extended.state_ve_18,Irapa,0,base.ve
+city_ve_372,l10n_ve_address_extended.state_ve_18,Manicuare,0,base.ve
+city_ve_373,l10n_ve_address_extended.state_ve_18,Mariguitar,0,base.ve
+city_ve_374,l10n_ve_address_extended.state_ve_18,Río Caribe,0,base.ve
+city_ve_375,l10n_ve_address_extended.state_ve_18,San Antonio del Golfo,0,base.ve
+city_ve_376,l10n_ve_address_extended.state_ve_18,San José de Aerocuar,0,base.ve
+city_ve_377,l10n_ve_address_extended.state_ve_18,San Vicente de Sucre,0,base.ve
+city_ve_378,l10n_ve_address_extended.state_ve_18,Santa Fe de Sucre,0,base.ve
+city_ve_379,l10n_ve_address_extended.state_ve_18,Tunapuy,0,base.ve
+city_ve_380,l10n_ve_address_extended.state_ve_18,Yaguaraparo,0,base.ve
+city_ve_381,l10n_ve_address_extended.state_ve_18,Yoco,0,base.ve
+city_ve_382,l10n_ve_address_extended.state_ve_19,Abejales,0,base.ve
+city_ve_383,l10n_ve_address_extended.state_ve_19,Borota,0,base.ve
+city_ve_384,l10n_ve_address_extended.state_ve_19,Bramon,0,base.ve
+city_ve_385,l10n_ve_address_extended.state_ve_19,Capacho,0,base.ve
+city_ve_386,l10n_ve_address_extended.state_ve_19,Colón,0,base.ve
+city_ve_387,l10n_ve_address_extended.state_ve_19,Coloncito,0,base.ve
+city_ve_388,l10n_ve_address_extended.state_ve_19,Cordero,0,base.ve
+city_ve_389,l10n_ve_address_extended.state_ve_19,El Cobre,0,base.ve
+city_ve_390,l10n_ve_address_extended.state_ve_19,El Pinal,0,base.ve
+city_ve_391,l10n_ve_address_extended.state_ve_19,Independencia,0,base.ve
+city_ve_392,l10n_ve_address_extended.state_ve_19,La Fría,0,base.ve
+city_ve_393,l10n_ve_address_extended.state_ve_19,La Grita,0,base.ve
+city_ve_394,l10n_ve_address_extended.state_ve_19,La Pedrera,0,base.ve
+city_ve_395,l10n_ve_address_extended.state_ve_19,La Tendida,0,base.ve
+city_ve_396,l10n_ve_address_extended.state_ve_19,Las Delicias,0,base.ve
+city_ve_397,l10n_ve_address_extended.state_ve_19,Las Hernández,0,base.ve
+city_ve_398,l10n_ve_address_extended.state_ve_19,Lobatera,0,base.ve
+city_ve_399,l10n_ve_address_extended.state_ve_19,Michelena,0,base.ve
+city_ve_400,l10n_ve_address_extended.state_ve_19,Palmira,0,base.ve
+city_ve_401,l10n_ve_address_extended.state_ve_19,Pregonero,0,base.ve
+city_ve_402,l10n_ve_address_extended.state_ve_19,Queniquea,0,base.ve
+city_ve_403,l10n_ve_address_extended.state_ve_19,Rubio,0,base.ve
+city_ve_404,l10n_ve_address_extended.state_ve_19,San Antonio del Tachira,0,base.ve
+city_ve_405,l10n_ve_address_extended.state_ve_19,San Cristobal,1,base.ve
+city_ve_406,l10n_ve_address_extended.state_ve_19,San José de Bolívar,0,base.ve
+city_ve_407,l10n_ve_address_extended.state_ve_19,San Josecito,0,base.ve
+city_ve_408,l10n_ve_address_extended.state_ve_19,San Pedro del Río,0,base.ve
+city_ve_409,l10n_ve_address_extended.state_ve_19,Santa Ana Táchira,0,base.ve
+city_ve_410,l10n_ve_address_extended.state_ve_19,Seboruco,0,base.ve
+city_ve_411,l10n_ve_address_extended.state_ve_19,Táriba,0,base.ve
+city_ve_412,l10n_ve_address_extended.state_ve_19,Umuquena,0,base.ve
+city_ve_413,l10n_ve_address_extended.state_ve_19,Ureña,0,base.ve
+city_ve_414,l10n_ve_address_extended.state_ve_20,Batatal,0,base.ve
+city_ve_415,l10n_ve_address_extended.state_ve_20,Betijoque,0,base.ve
+city_ve_416,l10n_ve_address_extended.state_ve_20,Boconó,0,base.ve
+city_ve_417,l10n_ve_address_extended.state_ve_20,Carache,0,base.ve
+city_ve_418,l10n_ve_address_extended.state_ve_20,Chejende,0,base.ve
+city_ve_419,l10n_ve_address_extended.state_ve_20,Cuicas,0,base.ve
+city_ve_420,l10n_ve_address_extended.state_ve_20,El Dividive,0,base.ve
+city_ve_421,l10n_ve_address_extended.state_ve_20,El Jaguito,0,base.ve
+city_ve_422,l10n_ve_address_extended.state_ve_20,Escuque,0,base.ve
+city_ve_423,l10n_ve_address_extended.state_ve_20,Isnotú,0,base.ve
+city_ve_424,l10n_ve_address_extended.state_ve_20,Jajó,0,base.ve
+city_ve_425,l10n_ve_address_extended.state_ve_20,La Ceiba,0,base.ve
+city_ve_426,l10n_ve_address_extended.state_ve_20,La Concepción de Trujllo,0,base.ve
+city_ve_427,l10n_ve_address_extended.state_ve_20,La Mesa de Esnujaque,0,base.ve
+city_ve_428,l10n_ve_address_extended.state_ve_20,La Puerta,0,base.ve
+city_ve_429,l10n_ve_address_extended.state_ve_20,La Quebrada,0,base.ve
+city_ve_430,l10n_ve_address_extended.state_ve_20,Mendoza Fría,0,base.ve
+city_ve_431,l10n_ve_address_extended.state_ve_20,Meseta de Chimpire,0,base.ve
+city_ve_432,l10n_ve_address_extended.state_ve_20,Monay,0,base.ve
+city_ve_433,l10n_ve_address_extended.state_ve_20,Motatán,0,base.ve
+city_ve_434,l10n_ve_address_extended.state_ve_20,Pampán,0,base.ve
+city_ve_435,l10n_ve_address_extended.state_ve_20,Pampanito,0,base.ve
+city_ve_436,l10n_ve_address_extended.state_ve_20,Sabana de Mendoza,0,base.ve
+city_ve_437,l10n_ve_address_extended.state_ve_20,San Lázaro,0,base.ve
+city_ve_438,l10n_ve_address_extended.state_ve_20,Santa Ana de Trujillo,0,base.ve
+city_ve_439,l10n_ve_address_extended.state_ve_20,Tostós,0,base.ve
+city_ve_440,l10n_ve_address_extended.state_ve_20,Trujillo,1,base.ve
+city_ve_441,l10n_ve_address_extended.state_ve_20,Valera,0,base.ve
+city_ve_442,l10n_ve_address_extended.state_ve_21,Carayaca,0,base.ve
+city_ve_443,l10n_ve_address_extended.state_ve_21,Litoral,0,base.ve
+city_ve_444,l10n_ve_address_extended.state_ve_25,Archipiélago Los Roques,0,base.ve
+city_ve_445,l10n_ve_address_extended.state_ve_22,Aroa,0,base.ve
+city_ve_446,l10n_ve_address_extended.state_ve_22,Boraure,0,base.ve
+city_ve_447,l10n_ve_address_extended.state_ve_22,Campo Elías de Yaracuy,0,base.ve
+city_ve_448,l10n_ve_address_extended.state_ve_22,Chivacoa,0,base.ve
+city_ve_449,l10n_ve_address_extended.state_ve_22,Cocorote,0,base.ve
+city_ve_450,l10n_ve_address_extended.state_ve_22,Farriar,0,base.ve
+city_ve_451,l10n_ve_address_extended.state_ve_22,Guama,0,base.ve
+city_ve_452,l10n_ve_address_extended.state_ve_22,Marín,0,base.ve
+city_ve_453,l10n_ve_address_extended.state_ve_22,Nirgua,0,base.ve
+city_ve_454,l10n_ve_address_extended.state_ve_22,Sabana de Parra,0,base.ve
+city_ve_455,l10n_ve_address_extended.state_ve_22,Salom,0,base.ve
+city_ve_456,l10n_ve_address_extended.state_ve_22,San Felipe,1,base.ve
+city_ve_457,l10n_ve_address_extended.state_ve_22,San Pablo de Yaracuy,0,base.ve
+city_ve_458,l10n_ve_address_extended.state_ve_22,Urachiche,0,base.ve
+city_ve_459,l10n_ve_address_extended.state_ve_22,Yaritagua,0,base.ve
+city_ve_460,l10n_ve_address_extended.state_ve_22,Yumare,0,base.ve
+city_ve_461,l10n_ve_address_extended.state_ve_23,Bachaquero,0,base.ve
+city_ve_462,l10n_ve_address_extended.state_ve_23,Bobures,0,base.ve
+city_ve_463,l10n_ve_address_extended.state_ve_23,Cabimas,0,base.ve
+city_ve_464,l10n_ve_address_extended.state_ve_23,Campo Concepción,0,base.ve
+city_ve_465,l10n_ve_address_extended.state_ve_23,Campo Mara,0,base.ve
+city_ve_466,l10n_ve_address_extended.state_ve_23,Campo Rojo,0,base.ve
+city_ve_467,l10n_ve_address_extended.state_ve_23,Carrasquero,0,base.ve
+city_ve_468,l10n_ve_address_extended.state_ve_23,Casigua,0,base.ve
+city_ve_469,l10n_ve_address_extended.state_ve_23,Chiquinquirá,0,base.ve
+city_ve_470,l10n_ve_address_extended.state_ve_23,Ciudad Ojeda,0,base.ve
+city_ve_471,l10n_ve_address_extended.state_ve_23,El Batey,0,base.ve
+city_ve_472,l10n_ve_address_extended.state_ve_23,El Carmelo,0,base.ve
+city_ve_473,l10n_ve_address_extended.state_ve_23,El Chivo,0,base.ve
+city_ve_474,l10n_ve_address_extended.state_ve_23,El Guayabo,0,base.ve
+city_ve_475,l10n_ve_address_extended.state_ve_23,El Mene,0,base.ve
+city_ve_476,l10n_ve_address_extended.state_ve_23,El Venado,0,base.ve
+city_ve_477,l10n_ve_address_extended.state_ve_23,Encontrados,0,base.ve
+city_ve_478,l10n_ve_address_extended.state_ve_23,Gibraltar,0,base.ve
+city_ve_479,l10n_ve_address_extended.state_ve_23,Isla de Toas,0,base.ve
+city_ve_480,l10n_ve_address_extended.state_ve_23,La Concepción del Zulia,0,base.ve
+city_ve_481,l10n_ve_address_extended.state_ve_23,La Paz,0,base.ve
+city_ve_482,l10n_ve_address_extended.state_ve_23,La Sierrita,0,base.ve
+city_ve_483,l10n_ve_address_extended.state_ve_23,Lagunillas del Zulia,0,base.ve
+city_ve_484,l10n_ve_address_extended.state_ve_23,Las Piedras de Perijá,0,base.ve
+city_ve_485,l10n_ve_address_extended.state_ve_23,Los Cortijos,0,base.ve
+city_ve_486,l10n_ve_address_extended.state_ve_23,Machiques,0,base.ve
+city_ve_487,l10n_ve_address_extended.state_ve_23,Maracaibo,1,base.ve
+city_ve_488,l10n_ve_address_extended.state_ve_23,Mene Grande,0,base.ve
+city_ve_489,l10n_ve_address_extended.state_ve_23,Palmarejo,0,base.ve
+city_ve_490,l10n_ve_address_extended.state_ve_23,Paraguaipoa,0,base.ve
+city_ve_491,l10n_ve_address_extended.state_ve_23,Potrerito,0,base.ve
+city_ve_492,l10n_ve_address_extended.state_ve_23,Pueblo Nuevo del Zulia,0,base.ve
+city_ve_493,l10n_ve_address_extended.state_ve_23,Puertos de Altagracia,0,base.ve
+city_ve_494,l10n_ve_address_extended.state_ve_23,Punta Gorda,0,base.ve
+city_ve_495,l10n_ve_address_extended.state_ve_23,Sabaneta de Palma,0,base.ve
+city_ve_496,l10n_ve_address_extended.state_ve_23,San Francisco,0,base.ve
+city_ve_497,l10n_ve_address_extended.state_ve_23,San José de Perijá,0,base.ve
+city_ve_498,l10n_ve_address_extended.state_ve_23,San Rafael del Moján,0,base.ve
+city_ve_499,l10n_ve_address_extended.state_ve_23,San Timoteo,0,base.ve
+city_ve_500,l10n_ve_address_extended.state_ve_23,Santa Bárbara Del Zulia,0,base.ve
+city_ve_501,l10n_ve_address_extended.state_ve_23,Santa Cruz de Mara,0,base.ve
+city_ve_502,l10n_ve_address_extended.state_ve_23,Santa Cruz del Zulia,0,base.ve
+city_ve_503,l10n_ve_address_extended.state_ve_23,Santa Rita,0,base.ve
+city_ve_504,l10n_ve_address_extended.state_ve_23,Sinamaica,0,base.ve
+city_ve_505,l10n_ve_address_extended.state_ve_23,Tamare,0,base.ve
+city_ve_506,l10n_ve_address_extended.state_ve_23,Tía Juana,0,base.ve
+city_ve_507,l10n_ve_address_extended.state_ve_23,Villa del Rosario,0,base.ve
+city_ve_508,l10n_ve_address_extended.state_ve_21,La Guaira,1,base.ve
+city_ve_509,l10n_ve_address_extended.state_ve_21,Catia La Mar,0,base.ve
+city_ve_510,l10n_ve_address_extended.state_ve_21,Macuto,0,base.ve
+city_ve_511,l10n_ve_address_extended.state_ve_21,Naiguatá,0,base.ve
+city_ve_512,l10n_ve_address_extended.state_ve_25,Archipiélago Los Monjes,0,base.ve
+city_ve_513,l10n_ve_address_extended.state_ve_25,Isla La Tortuga y Cayos adyacentes,0,base.ve
+city_ve_514,l10n_ve_address_extended.state_ve_25,Isla La Sola,0,base.ve
+city_ve_515,l10n_ve_address_extended.state_ve_25,Islas Los Testigos,0,base.ve
+city_ve_516,l10n_ve_address_extended.state_ve_25,Islas Los Frailes,0,base.ve
+city_ve_517,l10n_ve_address_extended.state_ve_25,Isla La Orchila,0,base.ve
+city_ve_518,l10n_ve_address_extended.state_ve_25,Archipiélago Las Aves,0,base.ve
+city_ve_519,l10n_ve_address_extended.state_ve_25,Isla de Aves,0,base.ve
+city_ve_520,l10n_ve_address_extended.state_ve_25,Isla La Blanquilla,0,base.ve
+city_ve_521,l10n_ve_address_extended.state_ve_25,Isla de Patos,0,base.ve
+city_ve_522,l10n_ve_address_extended.state_ve_25,Islas Los Hermanos,0,base.ve

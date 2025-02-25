@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="partner_screen" xml:space="preserve">
+    <t t-name="PartnerDetailsEdit" t-inherit="point_of_sale.PartnerDetailsEdit" t-inherit-mode="extension" owl="1">
+        <label for="vat" position="before">
+            <div class="partner-detail">
+                <span class="label">Tipo de Cliente</span>
+                <select class="detail" name="company_type" t-on-change="captureChange">
+                    <option value="person" t-att-selected="props.partner.company_type == 'person'" >Individual</option>
+                    <option value="company" t-att-selected="props.partner.company_type == 'company'">Compañía</option>
+                </select>
+            </div>
+        </label>
+        <label for="vat" position="after">
+            <label  class="form-label label" for="vat">CE/RIF</label>
+        </label>
+        <label for="vat" position="attributes">
+            <attribute name="placeholder">Ej.: 123456478/J-01234567-8</attribute>
+        </label>
+    </t>
+</templates>

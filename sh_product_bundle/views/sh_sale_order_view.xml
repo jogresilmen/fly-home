@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="sh_sale_order_form_view" model="ir.ui.view">
+        <field name="name">sh.sale.order.form.view</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook//page[@name='order_lines']//field[@name='order_line']" position="before">
+                <button name="action_bundle_product" string="Agregar Paquete/Combo" class="oe_highlight" type="object" />
+            </xpath>
+            <xpath expr="//page/field[@name='order_line']/form/group/group/div[@name='ordered_qty']/field[@name='product_uom_qty']" position="after">
+                    <button name="action_custom_function"
+                            string="Botón Personalizado"
+                            type="object"
+                            class="btn btn-primary"
+                            icon="fa fa-star"/>
+                </xpath>
+        </field>
+    </record>
+</odoo>

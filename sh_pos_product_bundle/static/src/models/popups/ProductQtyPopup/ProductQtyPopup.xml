@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="sh_pos_product_bundle.ProductQtyPopup" owl="1">
+        <div class="popup popup-textinput sh_product_bundle_popup">
+            <div class="modal-header">
+                <h4 class="title">
+                    <t t-esc="props.title" ></t>
+                </h4>
+            </div>
+            
+
+           <div class="modal-body">
+            <main class="main-body touch-scrollable scrollable-y sh_product_bundle_body">
+                <div class="sh_qty_price_div">
+                    <div class="sh_qty">
+                        <label class="sh_lbl">Quantity : </label>
+                        <input type="text" id="product_qty" t-model="state.product_qty" t-att-product_id="state.product_id" t-on-change="captureChange" />
+                    </div>
+                    <div class="sh_price" style="margin-left: 10px;">
+                        <label class="sh_lbl">Price : </label>
+                        <input type="text" id="product_price" t-model="state.product_price" />
+                    </div>
+                    
+                </div>
+                <!-- <br /> -->
+                <t t-if="product.sh_is_flash">
+                    <div class="sh_qty_price_div">
+                        <div class="" style="margin-left: 10px;">
+                            <label class="sh_lbl">Quitar Descuento : </label>
+                            <input type="checkbox" t-on-change='checkTaxes' name="checktax" id="checktax" />
+                            
+                        </div>
+                    </div>
+                    
+                </t>
+                
+                <center style="margin-bottom: 10px;font-size: 18px; font-weight:600;">Bundle Products</center>
+
+                <t t-set="count" t-value="1" />
+                <div class="sh_bundle_table_div">
+                    <table width="100%" class="wh_qty" id="bundle_product_table">
+                        <tr>
+                            <th width="10%" class="head_td">No</th>
+                            <th width="55%" class="head_td">Product</th>
+                            <th width="15%" class="head_td">Qty</th>
+                            <th width="20%" class="head_td">UOM</th>
+                        </tr>
+                        <tbody >
+                            <tr class="data_tr" t-foreach="props.bundle_by_product_id" t-as="value" t-key="value" t-att-data-id="value[0]" t-if="pos.db.get_product_by_id(value[0])">
+                                <t t-set="total_price" t-value="0" />
+                                <t t-set="total_price" t-value="value[1] * value[3]" />
+                                <td class="data_td">
+                                    <t t-esc="count"></t>
+                                </td>
+                                <td class="data_td">
+                                    <t t-esc="pos.db.get_product_by_id(value[0]).display_name"></t>
+                                </td>
+                                <td class="data_td">
+                                    <input type="text" class="qty_input" onfocus="blur();" t-model="state.combo_products[value[0]].qty" />
+                                </td>
+                                <td class="data_td">
+                                    <t t-if="pos.units_by_id[value[2]]">
+                                        <t t-esc="pos.units_by_id[value[2]].name"></t>
+                                    </t>
+                                    <t t-else="">
+                                            -
+                                    </t>
+                                </td>
+                                <t t-set="count" t-value="count + 1" />
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+           </div>
+
+            <footer class="footer modal-footer">
+                <div class="button confirm highlight" t-on-click="confirm">Add To Cart</div>
+                <div class="button cancel" t-on-click="cancel">Close</div>
+            </footer>
+        </div>
+    </t>
+</templates>
+<!-- 
+
+    <?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="sh_pos_product_bundle.ProductQtyPopup" owl="1">
+        <div class="popup popup-textinput sh_product_bundle_popup">
+            <div class="modal-header">
+                <h4 class="title">
+                    <t t-esc="props.title"></t>
+                </h4>
+            </div>
+            
+            <div class="modal-body">
+                <main class="main-body touch-scrollable scrollable-y sh_product_bundle_body">
+                    <div class="sh_qty_price_div">
+                        <div class="sh_qty">
+                            <label class="sh_lbl">Quantity : </label>
+                            <input type="text" id="product_qty" t-model="state.product_qty" t-att-product_id="state.product_id" t-on-change="captureChange"/>
+                        </div>
+                        <div class="sh_price" style="margin-left: 10px;">
+                            <label class="sh_lbl">Price : </label>
+                            <input type="text" id="product_price" t-model="state.product_price"/>
+                        </div>
+                    </div>
+                    <br />
+                    <center style="margin-bottom: 10px;font-size: 18px; font-weight:600;">Bundle Products</center>
+
+                    <t t-set="count" t-value="1"/>
+                    <div class="sh_bundle_table_div">
+                        <table width="100%" class="wh_qty" id="bundle_product_table">
+                            <tr>
+                                <th width="10%" class="head_td">No</th>
+                                <th width="55%" class="head_td">Product</th>
+                                <th width="15%" class="head_td">Qty</th>
+                                <th width="20%" class="head_td">UOM</th>
+                            </tr>
+                            <tbody>
+                                <t t-foreach="props.bundle_by_product_id" t-as="value" t-key="value" t-att-data-id="value[0]" t-if="pos.db.get_product_by_id(value[0])">
+                                    <tr  class="data_tr" >
+                                        <td></td>
+                                        <td  class="data_td" colspan="2">
+                                            <input type="text"  placeholder="Enter product serial" class="input" t-on-keyup="searchProductByBarcode"/>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="data_tr" >
+                                        <td class="data_td">
+                                            <t t-esc="count"/>
+                                        </td>
+                                        <td class="data_td">
+                                            <select t-ref="selectElement" t-on-change="updateProducts" t-att-data-current-product-id="value[0]" class="form-control o_wetrack_select2_tags">
+                                                <option t-att-value="value[0]" t-att-data-product-id="pos.db.get_product_by_id(value[0]).barcode">
+                                                    <t t-esc="pos.db.get_product_by_id(value[0]).display_name"/>
+                                                </option>
+                                                <t t-set="r" t-value="Array.isArray(state.optional_products[value[0]]) ? state.optional_products[value[0]] : []"/>
+                                                <t t-foreach="r" t-as="product" t-key="product.id" t-if="product">
+                                                    <option t-att-value="product.id" t-att-data-product-id="product.barcode">
+                                                         <t t-esc="product.display_name"/>
+                                                    </option>
+                                                </t>
+                                            </select>
+                                        </td>
+                                        
+                                        <td class="data_td">
+                                            <input type="text" class="qty_input" onfocus="blur();" t-model="state.combo_products[value[0]].qty"/>
+                                        </td>
+                                        <td class="data_td">
+                                            <t t-if="pos.units_by_id[value[2]]">
+                                                <t t-esc="pos.units_by_id[value[2]].name"/>
+                                            </t>
+                                            <t t-else="">-</t>
+                                        </td>
+                                        <t t-set="count" t-value="count + 1"/>
+                                    </tr>
+                                </t>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </main>
+            </div>
+
+            <footer class="footer modal-footer">
+                <div class="button confirm highlight" t-on-click="confirm">Add To Cart</div>
+                <div class="button cancel" t-on-click="cancel">Close</div>
+            </footer>
+        </div>
+    </t>
+</templates>
+
+ --> 
+ 
