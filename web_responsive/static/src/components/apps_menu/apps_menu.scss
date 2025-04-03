@@ -3,25 +3,30 @@
  * Copyright 2023 Taras Shabaranskyi
  * License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). */
 
-:root {
+ :root {
     .o_grid_apps_menu[data-theme="milk"] {
-        --app-menu-background: url("../../img/home-menu-bg-overlay.png"),
+        --app-menu-background: url("../../img/home.png"),
             linear-gradient(
                 to bottom,
                 #{$app-menu-background-color},
-                #{desaturate(lighten($app-menu-background-color, 20%), 15)}
+                #{desaturate(lighten($app-menu-background-color, 20%), 20)}
             );
+        background-size: 200px; /* Asegura que la imagen cubra todo el área del fondo */
+        background-position: center; /* Centra la imagen */
     }
 
     .o_grid_apps_menu[data-theme="community"] {
-        --app-menu-background: url("../../img/home-menu-bg-overlay.png"),
+        --app-menu-background: url("../../img/home.png"),
             linear-gradient(
                 to bottom,
                 #{$o-brand-primary},
-                #{desaturate(lighten($o-brand-primary, 20%), 15)}
+                #{desaturate(lighten($o-brand-primary, 20%), 20)}
             );
+        background-size: 200px; /* Asegura que la imagen cubra todo el área del fondo */
+        background-position: center; /* Centra la imagen */
     }
 }
+
 
 .o_brand_developed_by {
   position: absolute;
