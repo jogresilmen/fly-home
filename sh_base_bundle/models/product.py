@@ -89,6 +89,7 @@ class ShBundleProduct(models.Model):
     sh_price_unit = fields.Float('Precio Unitario')
     sh_cost_price = fields.Float(compute="custom_sh_cost_price", )
     sh_price_subtotal = fields.Float('Subtotal', readonly=True, store=True) 
+    nota = fields.Char(string='Nota')
 
     @api.depends('sh_product_id')
     def custom_sh_cost_price(self):

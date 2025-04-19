@@ -56,6 +56,7 @@
                             <field name="sh_cost_price"/>
                             <field name="sh_price_unit" />
                             <field name="sh_price_subtotal" force_save="1" />
+                            <field name="nota" />
                         </tree>
                     </field>
                     <group name="note_group" col="6">
