@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <odoo>
+         <!-- Vista Formulario para la Cotización -->
+         <record id="view_registration_editor_form" model="ir.ui.view">
+            <field name="name">crm.quote.form</field>
+            <field name="model">crm.quote</field>
+            <field name="arch" type="xml">
+                <form string="Cotización">
+                    <sheet>
+                        <group>
+                            <field name="is_plan_category" invisible="1" />
+                            <field name="type_plan_id"
+                                   options="{'no_create': True, 'no_create_edit': True}"/>
+                            <field name="show_multiviajes" invisible="1"/>
+                        </group>
+                        <group col="4">
+                            <group string="" colspan="2" col="2" >
+                                <field name="origen_id" invisible="show_multiviajes == True" options="{'no_create': True, 'no_create_edit': True}"/>
+                                <field name="destinos" invisible="show_multiviajes == True" options="{'no_create': True, 'no_create_edit': True}"/>
+                                
+                            </group>
+                            <group string="" colspan="2" col="2">
+                                <field name="fecha_salida_sim" invisible="show_multiviajes == True"/>
+                                <field name="fecha_retorno_sim" invisible="show_multiviajes == True"/>
+                            </group>
+                           
+                            
+                        </group>
+        
+                        <notebook>
+                            <page string="Grupos de Edades">
+                                <field name="edades_ids">
+                                    <tree create="false" delete="false" editable="top">
+                                        <field name="edad_id" readonly="1"/>
+                                        <field name="cantidad"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Viajes" invisible="show_multiviajes == False">
+                                <field name="viaje_ids">
+                                    <tree editable="bottom">
+                                        <field name="origen_id" options="{'no_create': True, 'no_create_edit': True}"/>
+                                        <field name="fecha_salida"/>
+                                        <field name="destino_id" options="{'no_create': True, 'no_create_edit': True}"/>
+                                        <field name="fecha_retorno"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <footer>
+                        <button name="action_cotizar"
+                                type="object"
+                                string="Cotizar"
+                                class="btn-primary"
+                                context="{}"/>
+                        <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_crm_quote_result_wizard_form" model="ir.ui.view">
+            <field name="name">crm.quote.result.wizard.form</field>
+            <field name="model">crm.quote.result.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Resultado de Cotización">
+                    <group>
+                        <field name="producto_line_ids">
+                            <tree editable="bottom" create="false" delete="false">
+                                <field name="product_id" options="{'no_create': True, 'no_create_edit': True}"/>
+                                <field name="precio_final"/>
+                                <field name="selection" />
+                            </tree>
+                        </field>
+                        
+                        <!-- <field name="selected_product_id" widget="radio"/>  -->
+                        
+                        
+                       
+                    </group>
+                    <footer>
+                        <button name="action_confirmar_producto"
+                                string="Confirmar Selección"
+                                type="object"
+                                class="btn-primary"/>
+                        <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        
+
+        <!-- Vista Formulario para la Línea de Edad -->
+        <record id="view_crm_quote_age_line_form" model="ir.ui.view">
+            <field name="name">crm.quote.age.line.form</field>
+            <field name="model">crm.quote.age.line</field>
+            <field name="arch" type="xml">
+                <form string="Línea de Edad">
+                    <sheet>
+                        <group>
+                            <field name="quote_id"/>
+                            <field name="edad_id"/>
+                            <field name="cantidad"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Acción para abrir el formulario de Cotización -->
+        <record id="action_open_crm_quote_wizard" model="ir.actions.act_window">
+            <field name="name">Editor de Cotización</field>
+            <field name="res_model">crm.quote</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_registration_editor_form"/>
+            <field name="target">new</field>
+        </record>
+
+</odoo>

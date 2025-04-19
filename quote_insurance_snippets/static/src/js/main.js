@@ -15,14 +15,14 @@ publicWidget.registry.PublicWidgetQuoteInsurance = publicWidget.Widget.extend({
 
         jsonrpc('/get_countries', {})
             .then(function (data) {
-                console.log(data);
+                // console.log(data);
                 self._populateSelectOptions('origin-country', data.origin_country);
                 self._populateSelectOptions('destination', data.destination_country);
                 self.countryData = data;
             });
 
         $('#typeviaje').on('change', function () {
-            console.log($(this).val())
+            // console.log($(this).val())
             var selectedType = $(this).val();
             if (selectedType === 'Multidestino') {
                 $('#ida-vuelta-fields').hide();
@@ -44,7 +44,7 @@ publicWidget.registry.PublicWidgetQuoteInsurance = publicWidget.Widget.extend({
         $('#add-destinations-btn').on('click', function () {
 
             $('#MultidestinoModal').modal('show');
-            console.log('tstststststs')
+            
         });
         $('#confirmMultidestino').on('click', function () {
             var destinations = [];
@@ -67,7 +67,7 @@ publicWidget.registry.PublicWidgetQuoteInsurance = publicWidget.Widget.extend({
             var emailPattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
             var phonePattern = /^[0-9]{10}$/;
             var today = new Date().toISOString().split('T')[0];
-            console.log(emailPattern.test(email))
+            // console.log(emailPattern.test(email))
 
             if (!email || !emailPattern.test(email)) {
                 alert('Por favor, ingrese un correo electrónico válido.');
@@ -78,17 +78,6 @@ publicWidget.registry.PublicWidgetQuoteInsurance = publicWidget.Widget.extend({
                 alert('Por favor, ingrese un número de teléfono válido (10 dígitos).');
                 return;
             }
-
-            // if (!departureDate || departureDate < today) {
-            //     alert('Por favor, ingrese una fecha de salida válida.');
-            //     return;
-            // }
-
-            // if (!returnDate || returnDate <= departureDate) {
-            //     alert('Por favor, ingrese una fecha de retorno válida.');
-            //     return;
-            // }
-
 
             var formData = $(this).serializeArray();
             var serializedFormData = {};
@@ -105,7 +94,7 @@ publicWidget.registry.PublicWidgetQuoteInsurance = publicWidget.Widget.extend({
 
             jsonrpc('/get_submit_quote',{ formData: JSON.stringify(serializedFormData) })
                 .then(function (data) {
-                    console.log(data['data'])
+                    // console.log(data['data'])
                     window.location.href = "/pag_plan?id=" + data['data'];
                 }).catch(function (error) {
                     // Handle errors (e.g., show error message)
@@ -305,7 +294,7 @@ publicWidget.registry.PublicWidgetQuoteInsurance = publicWidget.Widget.extend({
 
 
     _populateSelectOptions: function (selectId, optionsData) {
-        console.log(selectId, optionsData)
+        // console.log(selectId, optionsData)
         var selectElement = $('#' + selectId);
         selectElement.empty(); // Clear existing options
         selectElement.append('<option>Seleccione</option>');

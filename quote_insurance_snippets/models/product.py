@@ -12,9 +12,9 @@ class ProductCode(models.Model):
     
     def _compute_prices_from_coverages(self):
         for product in self:
-            coberturas = self.env['product.plan.cobertura'].search([('product_ids','=',product.id),('operation_type','=','asset')])
-            total_cost = sum(cobertura.cost for cobertura in coberturas)
-            total_price = sum(cobertura.prist_list for cobertura in coberturas)
+            coberturas = self.env['sh.product.bundle'].search([('sh_bundle_id','=',product.id)])
+            total_cost = sum(cobertura.sh_cost_price for cobertura in coberturas)
+            total_price = sum(cobertura.sh_price_unit for cobertura in coberturas)
             product.standard_price = total_cost
             product.list_price = total_price
 

@@ -9,7 +9,7 @@ class ShAccountInvoice(models.Model):
     def action_bundle_product(self):
         if self:
             return {
-                'name': 'Agregar Paquete',
+                'name': 'Add Pack/Bundle',
                 'type': 'ir.actions.act_window',
                 'view_type': 'form',
                 'view_mode': 'form',

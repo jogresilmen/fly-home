@@ -20,12 +20,11 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','product'],
+    'depends': ['base','product', 'website_sale'],
 
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        'views/snippets_quote.xml',
         'views/views.xml',
         'views/templates.xml',
         'data/crons.xml',
@@ -35,6 +34,8 @@
             'quote_insurance_snippets/static/src/css/main.css',
             'quote_insurance_snippets/static/src/js/main.js',
             'quote_insurance_snippets/static/src/js/plan.js',
+            'quote_insurance_snippets/static/src/js/card.js',
+            'quote_insurance_snippets/static/src/js/snippets_quote.xml'
             
         ]
     },

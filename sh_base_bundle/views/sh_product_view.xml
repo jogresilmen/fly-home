@@ -48,12 +48,14 @@
                         <tree editable="bottom">
                             <field name="sh_bundle_id" column_invisible='True'/>
                             <field name="sh_product_id" domain="[('product_tmpl_id', '!=', parent.id)]" />
-                            <field name="sh_qty" />
-                            <field name="sh_uom" />
+                            <field name="sh_quote" />
+                            <field name="sh_clasificacion_id" widget="many2many_tags"/>
+                            <field name="sh_condicion" widget="many2many_tags"/>
+                            <field name="sh_qty" column_invisible='True'/>
+                            <field name="sh_uom" column_invisible='True'/>
                             <field name="sh_cost_price"/>
                             <field name="sh_price_unit" />
                             <field name="sh_price_subtotal" force_save="1" />
-                            <field name="sh_options_bundle_product_ids" widget="many2many_tags" />
                         </tree>
                     </field>
                     <group name="note_group" col="6">

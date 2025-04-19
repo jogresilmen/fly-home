@@ -14,16 +14,16 @@ Do you want to make a combo of several products? This module is useful to make a
  Website Bunch Products, All In One Products App, Website Product Package, Product Combo Module, Particular Product Bundle, Product Pack On Shop, Mass Products On Shop, Multiple Products On Shop, Multiple Products In Pack, Make Product Bunch, All In One Products Combo, All In One Products Bunch, All In One Products Pack,All In One Products Bundle Odoo.
                     """,
     "version": "0.0.2",
-    "depends": [
-        "product"
-    ],
+    "depends": ["product", "quote_insurance_snippets"],
     "application": True,
     "data": [
         "security/ir.model.access.csv",
         "views/sh_product_view.xml",
-        'data/cron_data.xml',
+        "data/cron_data.xml",
     ],
     "auto_install": False,
     "installable": True,
-    "images": ['static/description/background.png', ]
+    "images": [
+        "static/description/background.png",
+    ],
 }

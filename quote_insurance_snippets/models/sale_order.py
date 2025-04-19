@@ -31,5 +31,6 @@ class SaleOrder(models.TransientModel):
     email_address = fields.Char(string='')
     mobile_number = fields.Char(string='')
     trip_type = fields.Char(string='')
+    data_set= fields.Char()
    
     

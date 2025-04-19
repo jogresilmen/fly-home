@@ -1,0 +1,52 @@
+<odoo>
+  <data>
+    <!-- <record id="view_sale_order_form_inherit_event" model="ir.ui.view">
+      <field name="name">crm.lead.form.inherit.cotizacion</field>
+      <field name="model">crm.lead</field>
+      <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//button[@name='action_set_won_rainbowman']" position="before">
+          <button name="action_abrir_cotizacion" type="object" string="Cotización" class="btn-primary"/>
+        </xpath>
+        <xpath expr="//page[@name='internal_notes']" position="before">
+          <page string="Cotización Seleccionada">
+            <field name="quote_selection_ids">
+              <tree editable="false" create="false" delete="false">
+                <field name="product_id"/>
+                <field name="precio_final"/>
+                <field name="fecha_seleccion"/>
+              </tree>
+            </field>
+          </page>
+        </xpath>
+      </field>
+    </record> -->
+    <record id="view_order_form_inherit_quote_wizard" model="ir.ui.view">
+      <field name="name">sale.order.form.inherit.quote.wizard</field>
+      <field name="model">sale.order</field>
+      <field name="inherit_id" ref="sale.view_order_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//header" position="inside">
+          <button name="action_open_custom_quote_wizard" type="object" string="Cotización" invisible="state != 'draft'" context="{'open_from_quote': True}" class="oe_highlight"/>
+        </xpath>
+      </field>
+    </record>
+    <record id="view_product_category_form_inherit_plan_fields" model="ir.ui.view">
+      <field name="name">product.category.form.inherit.plan.fields</field>
+      <field name="model">product.category</field>
+      <field name="inherit_id" ref="product.product_category_form_view"/>
+      <!-- Heredamos la vista original -->
+      <field name="arch" type="xml">
+        <xpath expr="//sheet/group" position="inside">
+          <group string="Planes">
+            <field name="is_plan"/>
+            <field name="type_plan" invisible="is_plan == False"/>
+            <field name="is_multi" invisible="is_plan == False"/>
+          </group>
+        </xpath>
+      </field>
+    </record>
+
+
+  </data>
+</odoo>

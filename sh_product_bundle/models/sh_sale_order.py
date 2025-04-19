@@ -1,6 +1,6 @@
 # Copyright (C) Softhealer Technologies.
 
-from odoo import models, fields
+from odoo import models
 
 
 class ShSaleOrder(models.Model):
@@ -9,7 +9,7 @@ class ShSaleOrder(models.Model):
     def action_bundle_product(self):
         if self:
             return {
-                'name': 'Agregar paquete',
+                'name': 'Add Pack/Bundle',
                 'type': 'ir.actions.act_window',
                 'view_type': 'form',
                 'view_mode': 'form',
@@ -17,15 +17,3 @@ class ShSaleOrder(models.Model):
                 'target': 'new',
                 'context': {'default_sh_partner_id': self.partner_id.id, },
             }
-
-
-class ShSaleOrderLine(models.Model):
-    _inherit = 'sale.order.line'
-
-    sh_bundle_id = fields.Many2one(
-        'sh.product.bundle',
-        string='Paquete',
-        )
-    
-    def action_custom_function(self):
-        pass

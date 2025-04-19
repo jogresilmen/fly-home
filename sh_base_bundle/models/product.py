@@ -80,20 +80,19 @@ class ShBundleProduct(models.Model):
 
     sh_bundle_id = fields.Many2one('product.template', 'ID del Paquete')
     sh_product_id = fields.Many2one(
-        'product.product', 'Producto', required=True)
-    sh_qty = fields.Float("Cantidad")
-    sh_uom = fields.Many2one('uom.uom', 'Unidad de Medida', required=True)
+        'product.product', 'Nombre de Cobertura', required=True)
+    sh_quote = fields.Float(string='Cobertura')
+    sh_qty = fields.Float("Cantidad", default=1.0)
+    sh_clasificacion_id = fields.Many2many('product.categoria.cobertura', string='Clasificación - Sintomas', ondelete='restrict')
+    sh_condicion = fields.Many2many('product.condicion', string="Condicion")   
+    sh_uom = fields.Many2one('uom.uom', 'Unidad de Medida')
     sh_price_unit = fields.Float('Precio Unitario')
     sh_cost_price = fields.Float(compute="custom_sh_cost_price", )
-    sh_price_subtotal = fields.Float('Subtotal', readonly=True, store=True)
-    sh_options_bundle_product_ids = fields.Many2many(
-        'product.template',
-        string="Opciones de Cambio",
-    )
+    sh_price_subtotal = fields.Float('Subtotal', readonly=True, store=True) 
 
     @api.depends('sh_product_id')
     def custom_sh_cost_price(self):
-        for record in self:
+        for record in self: 
             record.sh_cost_price = record.sh_product_id.standard_price
 
     @api.onchange('sh_product_id')

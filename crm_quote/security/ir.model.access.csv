@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_crm_quote,crm.quote,model_crm_quote,base.group_user,1,1,1,1
+access_crm_quote_age_line,ccrm_quote_age_line,model_crm_quote_age_line,base.group_user,1,1,1,1
+access_crm_quote_trip_line,crm.quote.trip.line,model_crm_quote_trip_line,base.group_user,1,1,1,1
+access_crm_quote_result_wizard,crm.quote.result.wizard,model_crm_quote_result_wizard,base.group_user,1,1,1,1
+access_crm_quote_result_lined,crm.quote.result_line,model_crm_quote_result_line,base.group_user,1,1,1,1
+
+

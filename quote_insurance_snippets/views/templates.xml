@@ -1,7 +1,7 @@
 <odoo>
   <template id="template_pag_plan" name="Nombre de la Plantilla">
-      <t t-call="website.layout">
-        <style>
+    <t t-call="website.layout">
+      <style>
 
           .container {
             margin-right: auto;
@@ -70,109 +70,121 @@
             height: auto;
           }
           
-        </style>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            
-                            <section class="feature-list section">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="heading">
-                                                <h2>plans</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-        
-                                    <!-- Bucle para mostrar la lista de productos -->
-                                    <t t-set="counter" t-value="1"/>
-                                    <t t-foreach="productos" t-as="producto">
-                                      <br/>
-                                      <t t-set="counter" t-value="counter + 1"/>
-                                      <t t-if="counter % 2 == 0"> <!-- Verificar si el índice del producto es par -->
-                                          <div class="row">
-                                              <div class="col-md-6 text-center">
-                                                  <img class="img-responsive" t-attf-src="data:image/png;base64,{{producto['image_url']}}" style="border:auto; width: 500px; height: auto;"/>
-                                              </div>
-                                              <div class="col-md-6">
-                                                  <div class="content mt-100">
-                                                      <h4 class="subheading"><t t-esc="producto['name']"/></h4>
-                                                      <p><t t-esc="producto['description']"/></p>
-                                                      <table class="responsive" style="width: 100%;"> 
-                                                              <thead>
-                                                                <tr>
-                                                                  <th>Condición</th>
-                                                                  <th>Monto de la cobertura </th>
-                                                                  <th>Condición</th>
-                                                                </tr>
-                                                              </thead>
-                                                            
-                                                              <tbody>
-                                                                <t t-foreach="producto['coberturas']" t-as="cobertura">
-                                                                  <tr>
-                                                                    <td><t t-esc="cobertura['name']"/></td>
-                                                                    <td><t t-esc="cobertura['scopes']"/></td>
-                                                                    <td><t t-esc="cobertura['condicion']"/></td>
-                                                                  </tr>
-                                                                </t>
-                                                          </tbody>
-                                                            </table>
-                                                            
-                                                        
-                                                      <a href="#" class="btn btn-main btn-main-sm" t-attf-data-product-id="{{producto['id']}}"  t-attf-data-plan-id="{{plan}}" t-attf-data-product-price="{{producto['list_price']}}">Price $ <t t-esc="producto['list_price']"/></a>
-
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </t>
-                                      <t t-else=""> 
-                                        <div class="row">
-                                
-                                          <div class="col-md-6">
-                                              <div class="content mt-100">
-                                                <h4 class="subheading"><t t-esc="producto['name']"/></h4>
-                                                <p><t t-esc="producto['description']"/></p>
-                                                <table class="responsive" style="width: 100%;"> 
-                                                  <thead>
-                                                    <tr>
-                                                      <th>Condición</th>
-                                                      <th>Monto de la cobertura </th>
-                                                      <th>Condición</th>
-                                                    </tr>
-                                                  </thead>
-                                                
-                                                  <tbody>
-                                                    <t t-foreach="producto['coberturas']" t-as="cobertura">
-                                                      <tr>
-                                                        <td><t t-esc="cobertura['name']"/></td>
-                                                        <td><t t-esc="cobertura['scopes']"/></td>
-                                                        <td><t t-esc="cobertura['condicion']"/></td>
-                                                      </tr>
-                                                    </t>
-                                              </tbody>
-                                                </table>
-                                                <a href="#" class="btn btn-main btn-main-sm" t-attf-data-product-id="{{producto['id']}}" t-attf-data-plan-id="{{plan}}" t-attf-data-product-price="{{producto['list_price']}}">Price $ <t t-esc="producto['list_price']"/></a>
-
-                                              </div>
-                                          </div>
-                                          <div class="col-md-6 text-center">
-                                              <img class="img-responsive" t-attf-src="data:image/png;base64,{{producto['image_url']}}" style="border:auto; width: 500px; height: auto;"/>
-                                          </div>
-                                      </div>
-
-                                    </t>
-                                  </t>
-                                  
-        
-                                </div>
-                            </section>
-                            <br/>
-                        </div>
+      </style>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <section class="feature-list section">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="heading">
+                      <h2>plans</h2>
                     </div>
+                  </div>
                 </div>
-      </t>
+                <t t-set="counter" t-value="1"/>
+                <t t-foreach="productos" t-as="producto">
+                  <br/>
+                  <t t-set="counter" t-value="counter + 1"/>
+                  <t t-if="counter % 2 == 0">
+                    <div class="row">
+                      <div class="col-md-6 text-center">
+                        <img class="img-responsive" t-attf-src="data:image/png;base64,{{producto['image_url']}}" style="border:auto; width: 500px; height: auto;"/>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="content mt-100">
+                          <h4 class="subheading">
+                            <t t-esc="producto['name']"/>
+                          </h4>
+                          <p>
+                            <t t-esc="producto['description']"/>
+                          </p>
+                          <table class="responsive" style="width: 100%;">
+                            <thead>
+                              <tr>
+                                <th>Coverage description </th>
+                                <th>Pile of coverage </th>
+                                <th>Condition</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <t t-foreach="producto['coberturas']" t-as="cobertura">
+                                <tr>
+                                  <td>
+                                    <t t-esc="cobertura['name']"/>
+                                  </td>
+                                  <td>
+                                    <t t-esc="cobertura['scopes']"/>
+                                  </td>
+                                  <td>
+                                    <t t-foreach="cobertura['condicion']" t-as="condicion">
+                                      <t t-esc="condicion"/>
+                                      <br/>
+                                    </t>
+                                  </td>
+                                </tr>
+                              </t>
+                            </tbody>
+                          </table>
+                          <a href="#" class="btn btn-main btn-main-sm" t-attf-data-product-id="{{producto['id']}}" t-attf-data-plan-id="{{plan}}" t-attf-data-product-price="{{producto['list_price']}}">Price $ <t t-esc="producto['list_price']"/>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </t>
+                  <t t-else="">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="content mt-100">
+                          <h4 class="subheading">
+                            <t t-esc="producto['name']"/>
+                          </h4>
+                          <p>
+                            <t t-esc="producto['description']"/>
+                          </p>
+                          <table class="responsive" style="width: 100%;">
+                            <thead>
+                              <tr>
+                                <th>Coverage description </th>
+                                <th>Pile of coverage </th>
+                                <th>Condition</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <t t-foreach="producto['coberturas']" t-as="cobertura">
+                                <tr>
+                                  <td>
+                                    <t t-esc="cobertura['name']"/>
+                                  </td>
+                                  <td>
+                                    <t t-esc="cobertura['scopes']"/>
+                                  </td>
+                                  <t t-foreach="cobertura['condicion']" t-as="condicion">
+                                    <t t-esc="condicion"/>
+                                    <br/>
+                                  </t>
+                                </tr>
+                              </t>
+                            </tbody>
+                          </table>
+                          <a href="#" class="btn btn-main btn-main-sm" t-attf-data-product-id="{{producto['id']}}" t-attf-data-plan-id="{{plan}}" t-attf-data-product-price="{{producto['list_price']}}">Price $ <t t-esc="producto['list_price']"/>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-md-6 text-center">
+                        <img class="img-responsive" t-attf-src="data:image/png;base64,{{producto['image_url']}}" style="border:auto; width: 500px; height: auto;"/>
+                      </div>
+                    </div>
+                  </t>
+                </t>
+              </div>
+            </section>
+            <br/>
+          </div>
+        </div>
+      </div>
+    </t>
   </template>
 
   <template id="sale_order_Cobertura_inherit" name="Coberturas de portal" inherit_id="sale.sale_order_portal_content">
@@ -198,100 +210,211 @@
           white-space: nowrap; /* Ensure the text doesn't wrap */
           text-align: center;
         }
-    </style>
+      </style>
       <div class="watermark-container">
-          <div class="watermark-text">NO VÁLIDO</div>
+        <div class="watermark-text">NO VÁLIDO</div>
       </div>
-  </xpath>
-  <xpath expr="//div">
-   <div class="watermark-text">NO VÁLIDO</div>
-  </xpath>
+    </xpath>
+    <xpath expr="//div">
+      <div class="watermark-text">NO VÁLIDO</div>
+    </xpath>
     <xpath expr="//section[@id='terms']" position="before">
-        <section class="mt-5">
-            <h3 class="">Coberturas</h3>
-            <hr class="mt-0 mb-1"/>
+      <section class="mt-5">
+        <h3 class="">Coberturas</h3>
+        <hr class="mt-0 mb-1"/>
+
+        <t t-set="lines_to_report" t-value="sale_order._get_order_lines_to_report()"/>
+        <t t-foreach="lines_to_report" t-as="line">
+          <div>
+            <p>In our company, we are committed to offering you a comprehensive and high-quality service. Below you will find a detailed list of the services included in the quote:</p>
+
+            <h3>Plans: <span t-field="line.product_id.name"/>
+            </h3>
+            <t t-set="coberturas" t-value="env['sh.product.bundle'].search([('sh_bundle_id', '=', line.product_id.id)])"/>
+            <t t-out="coberturas"/>
+            <t t-out=" line.product_id.id"/>
+            <div class="watermark-text">NO VÁLIDO</div>
             
-                <t t-set="lines_to_report" t-value="sale_order._get_order_lines_to_report()"/>
-                <t t-foreach="lines_to_report" t-as="line">
-                    <div>
-                      <p>In our company, we are committed to offering you a comprehensive and high-quality service. Below you will find a detailed list of the services included in the quote:</p>
-                      
-                        <h3>Plans: <span t-field="line.product_id.name"/></h3>
-                        <t t-set="coberturas" t-value="env['product.plan.cobertura'].search([('product_ids', 'in', line.product_id.id)])"/>
-                        <div class="watermark-text">NO VÁLIDO</div>
-                        <table class="responsive" style="width: 100%;"> 
-                          <thead>
-                            <tr>
-                              <th>Coverage</th>
-                              <th>Coverage amount</th>
-                              <th>Conditions </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                        
-                        <t t-foreach="coberturas" t-as="cobertura">
-                            <div>
-                              <tr  class='border'>
-                                <td><span t-field="cobertura.name"/></td>
-                                <td><span t-field="cobertura.montos"/></td>
-                                <td><span t-field="cobertura.condicion"/></td>
-                              </tr>
-                                
-                            </div>
-                        </t>
-                      </tbody>
-                    </table>
-                    </div>
-                </t>
-            
-            
-        </section>
-        <section class="mt-5">
-          <h3 class="">Clasificación - Sintomas</h3>
-          <hr class="mt-0 mb-1"/>
-          
-              <t t-set="lines_to_report" t-value="sale_order._get_order_lines_to_report()"/>
-              <t t-foreach="lines_to_report" t-as="line">
+            <table class="responsive" style="width: 100%;">
+              <thead>
+                <tr>
+                  <th>Coverage</th>
+                  <th>Coverage amount</th>
+                  <th>Conditions </th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <t t-foreach="coberturas" t-as="cobertura">
                   <div>
-                    <p>At fly-assist, we understand the importance of an accurate diagnosis for the proper treatment of any medical condition.
-                      Our plan, <span t-field="line.product_id.name"/>, covers a wide range of symptoms to ensure you receive the necessary support when you need it most.
-                       Below you will find a detailed list of the symptom categories that our coverage includes</p>
-                    
-                      
-                      <t t-set="coberturas" t-value="env['product.plan.cobertura'].search([('product_ids', 'in', line.product_id.id)])"/>
-                      <table class="responsive" style="width: 100%;"> 
-                        <thead>
-                          <tr>
-                            <th>Symptom</th>
-                            <th>Description </th>
-                          </tr>
-                        </thead>
-                        <div class="watermark-text">NO VÁLIDO</div>
-                        <tbody>
-                      
-                      <t t-foreach="coberturas" t-as="cobertura">
-                        
-                            <tr class='border'>
-                              <td><span t-out="cobertura.Clasificación_id.name"/></td>
-                              <td>
-                                <t t-foreach="cobertura.Clasificación_id.sintoma_ids" t-as="sintoma_id">
-                                    <span t-out="sintoma_id.name"/>
-                                  <br/>
-                                 </t>
-                              </td>
-                            </tr>
-                      </t>
-                    </tbody>
-                  </table>
+                    <tr class='border'>
+                      <td>
+                        <span t-field="cobertura.sh_product_id.name"/>
+                       
+                      </td>
+                      <td>
+                        <span t-field="cobertura.sh_quote"/>
+                      </td>
+                      <td>
+                        <t t-foreach="cobertura.sh_condicion" t-as="cond">
+                          <span t-out="cond.name"/><br/>
+                        </t>
+                      </td>
+                    </tr>
+
                   </div>
-              </t>
-          
-          
+                </t>
+              </tbody>
+            </table>
+          </div>
+        </t>
+
+
+      </section>
+      <section class="mt-5">
+        <h3 class="">Clasificación - Sintomas</h3>
+        <hr class="mt-0 mb-1"/>
+
+        <t t-set="lines_to_report" t-value="sale_order._get_order_lines_to_report()"/>
+        <t t-foreach="lines_to_report" t-as="line">
+          <div>
+            <p>At fly-assist, we understand the importance of an accurate diagnosis for the proper treatment of any medical condition.
+                      Our plan, <span t-field="line.product_id.name"/>
+, covers a wide range of symptoms to ensure you receive the necessary support when you need it most.
+                       Below you will find a detailed list of the symptom categories that our coverage includes</p>
+
+
+            <t t-set="coberturas" t-value="env['sh.product.bundle'].search([('sh_bundle_id', '=', line.product_id.id)])"/>
+            <table class="responsive" style="width: 100%;">
+              <thead>
+                <tr>
+                  <th>Symptom</th>
+                  <th>Description </th>
+                </tr>
+              </thead>
+              <div class="watermark-text">NO VÁLIDO</div>
+              <tbody>
+
+                <t t-foreach="coberturas" t-as="cobertura">
+                  <tr class='border'>
+                    <td>
+                      <!-- <span t-out="cobertura.sh_clasificación_id.name"/> -->
+                      <t t-foreach="cobertura.sh_clasificacion_id" t-as="clasificacion">
+                        <span t-out="clasificacion.name"/><br/>
+                      </t>
+                    </td>
+                    <td>
+                      <t t-foreach="cobertura.sh_clasificacion_id.sintoma_ids" t-as="sintoma_id">
+                        <span t-out="sintoma_id.name"/>
+                        <br/>
+                      </t>
+                    </td>
+                  </tr>
+                </t>
+                
+              </tbody>
+            </table>
+          </div>
+        </t>
+
+
       </section>
     </xpath>
-    
-    
-</template>
+
+
+  </template>
+
+
+  <template id="remove_cart_qty" inherit_id="website_sale.cart_lines" name="Hide Quantity in Cart">
+    <xpath expr="//div[@name='website_sale_cart_line_quantity']" position="replace">
+      <div class="d-flex flex-column align-items-end d-none">
+        <div t-attf-class="css_quantity input-group mb-2" name="website_sale_cart_line_quantity">
+          <t t-if="not line._is_not_sellable_line()">
+            <t t-if="show_qty">
+              <a href="#" class="js_add_cart_json btn btn-link d-inline-block border-end-0" aria-label="Remove one" title="Remove one">
+                <i class="position-relative z-index-1 fa fa-minus"/>
+              </a>
+              <input type="text" class="js_quantity quantity form-control border-start-0 border-end-0" t-att-data-line-id="line.id" t-att-data-product-id="line.product_id.id" t-att-value="line._get_displayed_quantity()"/>
+              <t t-if="line._get_shop_warning(clear=False)">
+                <a href="#" class="btn btn-link">
+                  <i class='fa fa-warning text-warning' t-att-title="line._get_shop_warning()" role="img" aria-label="Warning"/>
+                </a>
+              </t>
+              <a t-else="" href="#" class="js_add_cart_json d-inline-block float_left btn btn-link border-start-0" aria-label="Add one" title="Add one">
+                <i class="fa fa-plus position-relative z-index-1"/>
+              </a>
+            </t>
+            <t t-else="">
+              <input type="hidden" class="js_quantity form-control quantity" t-att-data-line-id="line.id" t-att-data-product-id="line.product_id.id" t-att-value="line._get_displayed_quantity()"/>
+            </t>
+          </t>
+          <t t-else="">
+            <span class="w-100 text-muted" t-esc="int(line.product_uom_qty)"/>
+            <input type="hidden" class="js_quantity quantity form-control" t-att-data-line-id="line.id" t-att-data-product-id="line.product_id.id" t-att-value="line._get_displayed_quantity()"/>
+          </t>
+        </div>
+        <div class="mb-0 h6 fw-bold text-end" name="website_sale_cart_line_price">
+          <t t-if="line.discount">
+            <del t-attf-class="#{'text-danger mr8'}" style="white-space: nowrap;" t-out="line._get_displayed_unit_price() * line.product_uom_qty" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+          </t>
+          <t t-if="website.show_line_subtotals_tax_selection == 'tax_excluded'" t-set='product_price' t-value='line.price_subtotal'/>
+          <t t-else="" t-set='product_price' t-value='line.price_total'/>
+          <span t-out="product_price" style="white-space: nowrap;" t-options="{'widget': 'monetary', 'display_currency': website_sale_order.currency_id}"/>
+          <small t-if="not line._is_not_sellable_line() and line.product_id.base_unit_price" class="cart_product_base_unit_price d-block text-muted" groups="website_sale.group_show_uom_price">
+            <t t-call='website_sale.base_unit_price'>
+              <t t-set='product' t-value='line.product_id'/>
+              <t t-set='combination_info' t-value="{'base_unit_price': product._get_base_unit_price(product_price/line.product_uom_qty)}"/>
+            </t>
+          </small>
+        </div>
+      </div>
+    </xpath>
+    <xpath expr="//div[@id='cart_products']/div" position="attributes">
+      <attribute name="t-if">line.product_id and line.product_id.product_tmpl_id.sh_is_bundle</attribute>
+    </xpath>
+    <xpath expr="//a[contains(@class, 'js_delete_product') and contains(@class, 'd-none')]" position="replace">
+      <a href='#' class="js_delete_product_ d-none d-md-inline-block small" aria-label="Remove from cart" title="Remove from cart">Remove</a>
+      <button class="js_delete_product_ btn btn-prymar  " title="remove">
+        <i class="fa fa-trash-o"/>
+      </button>
+    </xpath>
+  </template>
+
+  <template id="remove_cart_extra_info" inherit_id="website_sale.navigation_buttons">
+    <!-- <xpath expr="//a[@class='text-center']" position="replace">
+</xpath> -->
+
+  </template>
+
 
   
+
+<template id="custom_invoice_terms_extension" inherit_id="account.report_invoice_document">
+  <!-- Insertar ANTES de los términos de pago -->
+  <xpath expr="//div[@id='payment_term']" position="replace">
+      <div id="custom_coverage_block" class="mb-4">
+          <strong>Cobertura:</strong>
+          <p>La presente factura cubre los servicios prestados durante el período acordado según contrato.</p>
+      </div>
+  </xpath>
+</template>
+
+<template id="report_invoice_documentd" inherit_id="account.report_invoice_document" primary="True">
+  <xpath expr="//div[@id='informations']" position="before">
+    <div id="custom_coverage_block" class="mb-4">
+      <strong>Cobertura:</strong>
+      <p>La presente factura cubre los servicios prestados durante el período acordado según contrato.</p>
+  </div>
+  </xpath>
+
+</template>
+<!-- <template id="report_invoice" inherit_id="account.report_invoice">
+  <xpath expr='//t[@t-call="account.report_invoice_document"]' position="after">
+      <t t-elif="o._get_name_invoice_report() == 'l10n_zm_account.report_invoice_document'"
+         t-call="l10n_zm_account.report_invoice_document"
+         t-lang="lang"/>
+  </xpath>
+</template> -->
+
+
 </odoo>

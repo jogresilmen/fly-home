@@ -6,7 +6,7 @@
         <field name="inherit_id" ref="account.view_move_form" />
         <field name="arch" type="xml">
             <xpath expr="//notebook//field[@name='invoice_line_ids']" position="before">
-                <button name="action_bundle_product" string="Agregar Paquete/Combo" class="oe_highlight" type="object" />
+                <button name="action_bundle_product" string="Add Pack/Bundle" class="oe_highlight" type="object" />
             </xpath>
         </field>
     </record>

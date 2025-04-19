@@ -17,20 +17,14 @@ Bunch Products Module, All In One Products, Generate Product Package, Manage Pro
     "data": [
         "security/ir.model.access.csv",
         "views/sh_sale_order_view.xml",
-        # "views/sh_purchase_order_view.xml",
-        # "views/sh_account_invoice_view.xml",
-        # "views/template.xml",
-        # "views/sh_stock_picking_view.xml",
+        "views/sh_purchase_order_view.xml",
+        "views/sh_account_invoice_view.xml",
+        "views/sh_stock_picking_view.xml",
         "wizard/sh_product_bundle_wizard_view.xml",
     ],
     "images": [
         "static/description/background.png",
     ],
-    'assets': {
-        'web.assets_backend': [
-            'sh_product_bundle/static/src/**/*',
-        ],
-    },
     "installable": True,
     "auto_install": False,
     "application": True,
