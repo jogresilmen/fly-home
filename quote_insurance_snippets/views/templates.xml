@@ -253,7 +253,12 @@
                        
                       </td>
                       <td>
-                        <span t-field="cobertura.sh_quote"/>
+                        <t t-if="cobertura.sh_quote != 0">
+                          <span t-field="cobertura.sh_quote"/>
+                      </t>
+                      <t t-else="">
+                          <span t-field="cobertura.nota"/>
+                      </t>
                       </td>
                       <td>
                         <t t-foreach="cobertura.sh_condicion" t-as="cond">
