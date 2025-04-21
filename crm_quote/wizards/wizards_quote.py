@@ -263,7 +263,7 @@ class CrmQuote(models.TransientModel):
             "target": "new",
         }
 
-
+ 
 class CrmQuoteResultWizard(models.TransientModel):
     _name = "crm.quote.result.wizard"
     _description = "Resultado de Cotización"
@@ -311,7 +311,7 @@ class CrmQuoteResultLine(models.TransientModel):
     _description = "Línea de Producto Cotizado"
 
     wizard_id = fields.Many2one("crm.quote.result.wizard", string="Wizard")
-    product_id = fields.Many2one("product.product", string="Producto")
+    product_id = fields.Many2one("product.template", string="Producto")
     precio_final = fields.Float(string="Precio Final")
     selection = fields.Boolean(default=False)
     order_id = fields.Many2one("sale.order", string="Oportunidad Relacionada")
